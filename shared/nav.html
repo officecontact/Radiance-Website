@@ -1,0 +1,248 @@
+<nav class="site-nav" id="site-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" height="46">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" onclick="mobOpen()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="Product.html" id="mega-trigger" onclick="megaToggle(event)">
+            Products <span class="nav-caret">&#9660;</span>
+          </a>
+        </li>
+        <li><a href="Certification.html">Certifications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Contact.html#form" class="nav-btn">Get a Quote ›</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MEGA PANEL — direct child of nav, not inside <li> -->
+  <div class="mega" id="mega" role="region" aria-label="Products menu">
+    <div class="mega__inner">
+      <div class="mega__cats" id="mega-cats">
+        <div class="mega-cat mega-cat--active" data-cat="rice" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">🌾</span>
+      <span class="mega-cat__label">Indian Rice ★</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="spices" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">🌶</span>
+      <span class="mega-cat__label">Indian Spices ★</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="oilseeds" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">🌻</span>
+      <span class="mega-cat__label">Oil Seeds ★</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="pulses" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">🫘</span>
+      <span class="mega-cat__label">Pulses ★</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="coffee" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">☕</span>
+      <span class="mega-cat__label">Coffee</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="cereals" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">🌾</span>
+      <span class="mega-cat__label">Cereals & Flour</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="dryfruits" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">🫐</span>
+      <span class="mega-cat__label">Dry Fruits</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="dehydrated" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">🧅</span>
+      <span class="mega-cat__label">Dehydrated Products</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="herbs" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">🌿</span>
+      <span class="mega-cat__label">Crude Drugs / Herbs</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="foodchem" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">⚗️</span>
+      <span class="mega-cat__label">Food Chemicals</span>
+      <span class="mega-cat__arrow">›</span>
+    </div><div class="mega-cat" data-cat="animalfeed" onmouseenter="megaActivate(this)">
+      <span class="mega-cat__icon">🐄</span>
+      <span class="mega-cat__label">Animal Feed</span>
+      <span class="mega-cat__arrow">›</span>
+    </div>
+      </div>
+      <div class="mega__panels" id="mega-panels">
+        <div class="mega-panel__content mega-panel__content--visible" id="mega-content-rice">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">🌾 Indian Rice</span>
+        <span class="mega-panel__cat-desc">Basmati & Non-Basmati · APEDA Registered</span>
+        <a href="rice.html" class="mega-panel__view-all" onclick="megaClose()">View all 12 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Basmati Rice</div>
+          <a href="rice-1121-basmati.html" class="mega-prod-link">1121 Basmati</a><a href="rice-pusa-basmati.html" class="mega-prod-link">Pusa Basmati</a><a href="rice-1718-basmati.html" class="mega-prod-link">1718 Basmati</a><a href="rice-1509-basmati.html" class="mega-prod-link">1509 Basmati</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Non-Basmati Rice</div>
+          <a href="rice-pr11.html" class="mega-prod-link">PR 11 / PR 14</a><a href="rice-sona-masoori.html" class="mega-prod-link">Sona Masoori</a><a href="rice-ir64.html" class="mega-prod-link">IR 64 Parboiled</a><a href="rice-swarna.html" class="mega-prod-link">Swarna / MTU 7029</a><a href="rice-ponni.html" class="mega-prod-link">Ponni Boiled</a><a href="rice-gobindobhog.html" class="mega-prod-link">Gobindobhog</a><a href="rice.html" class="mega-prod-link mega-prod-link--more">+2 more →</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-spices">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">🌶 Indian Spices</span>
+        <span class="mega-panel__cat-desc">Whole · Powdered · Blended · Spices Board RCMC</span>
+        <a href="spices.html" class="mega-panel__view-all" onclick="megaClose()">View all 30 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Whole Spices</div>
+          <a href="spice-turmeric.html" class="mega-prod-link">Turmeric Finger</a><a href="spice-cumin.html" class="mega-prod-link">Cumin Seeds</a><a href="spice-black-pepper.html" class="mega-prod-link">Black Pepper</a><a href="spice-cardamom.html" class="mega-prod-link">Green Cardamom</a><a href="spice-coriander.html" class="mega-prod-link">Coriander Seeds</a><a href="spice-red-chilli.html" class="mega-prod-link">Red Chilli</a><a href="spices.html" class="mega-prod-link mega-prod-link--more">+10 more →</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Powdered Spices</div>
+          <a href="spice-turmeric-powder.html" class="mega-prod-link">Turmeric Powder</a><a href="spice-red-chilli-powder.html" class="mega-prod-link">Red Chilli Powder</a><a href="spice-coriander-powder.html" class="mega-prod-link">Coriander Powder</a><a href="spice-cumin-powder.html" class="mega-prod-link">Cumin Powder</a><a href="spice-black-pepper-powder.html" class="mega-prod-link">Black Pepper Powder</a><a href="spice-cardamom-powder.html" class="mega-prod-link">Cardamom Powder</a><a href="spices.html" class="mega-prod-link mega-prod-link--more">+2 more →</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Mixed Spices</div>
+          <a href="spice-curry-powder.html" class="mega-prod-link">Curry Powder</a><a href="spice-garam-masala.html" class="mega-prod-link">Garam Masala</a><a href="spice-biryani-masala.html" class="mega-prod-link">Biryani Masala</a><a href="spice-sambar-powder.html" class="mega-prod-link">Sambar Powder</a><a href="spice-chaat-masala.html" class="mega-prod-link">Chaat Masala</a><a href="spice-tea-masala.html" class="mega-prod-link">Tea Masala</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-oilseeds">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">🌻 Oil Seeds</span>
+        <span class="mega-panel__cat-desc">Sesame · Groundnut · Mustard · IOPEPC Registered</span>
+        <a href="oil-seeds.html" class="mega-panel__view-all" onclick="megaClose()">View all 12 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Sesame Seeds</div>
+          <a href="oilseed-sesame-hulled.html" class="mega-prod-link">Hulled Sesame 99.95%</a><a href="oilseed-sesame-natural.html" class="mega-prod-link">Natural White Sesame</a><a href="oilseed-sesame-black.html" class="mega-prod-link">Black Sesame</a><a href="oilseed-sesame-mixed.html" class="mega-prod-link">Mixed Sesame</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Groundnuts</div>
+          <a href="oilseed-peanut-bold.html" class="mega-prod-link">Peanut Bold 40/50</a><a href="oilseed-java-peanut.html" class="mega-prod-link">Java Peanut 50/60</a><a href="oilseed-runner-peanut.html" class="mega-prod-link">Runner Peanut 60/70</a><a href="oilseed-hps.html" class="mega-prod-link">HPS Groundnuts</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Other Oil Seeds</div>
+          <a href="oilseed-mustard.html" class="mega-prod-link">Mustard Seeds</a><a href="oilseed-flax.html" class="mega-prod-link">Flax / Linseed</a><a href="oilseed-sunflower.html" class="mega-prod-link">Sunflower Seeds</a><a href="oilseed-niger.html" class="mega-prod-link">Niger Seeds</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-pulses">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">🫘 Pulses</span>
+        <span class="mega-panel__cat-desc">Whole & Split Dal · EU Organic · NABL Tested</span>
+        <a href="pulses.html" class="mega-panel__view-all" onclick="megaClose()">View all 13 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Whole Pulses</div>
+          <a href="pulse-chickpeas.html" class="mega-prod-link">Kabuli Chickpeas</a><a href="pulse-desi-chana.html" class="mega-prod-link">Desi Chana</a><a href="pulse-green-moong.html" class="mega-prod-link">Green Moong</a><a href="pulse-black-urad.html" class="mega-prod-link">Black Urad</a><a href="pulse-lobia.html" class="mega-prod-link">Lobia</a><a href="pulse-rajma.html" class="mega-prod-link">Rajma</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Split Pulses / Dal</div>
+          <a href="pulse-toor-dal.html" class="mega-prod-link">Toor Dal</a><a href="pulse-moong-dal.html" class="mega-prod-link">Moong Dal</a><a href="pulse-chana-dal.html" class="mega-prod-link">Chana Dal</a><a href="pulse-masoor-dal.html" class="mega-prod-link">Masoor Dal</a><a href="pulse-urad-dal.html" class="mega-prod-link">Urad Dal</a><a href="pulse-yellow-peas.html" class="mega-prod-link">Yellow Split Peas</a><a href="pulses.html" class="mega-prod-link mega-prod-link--more">+1 more →</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-coffee">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">☕ Coffee</span>
+        <span class="mega-panel__cat-desc">Arabica & Robusta · Freeze Dried · Coffee Board RCMC</span>
+        <a href="coffee.html" class="mega-panel__view-all" onclick="megaClose()">View all 10 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Coffee Beans</div>
+          <a href="coffee-arabica.html" class="mega-prod-link">Arabica Plantation A</a><a href="coffee-arabica-b.html" class="mega-prod-link">Arabica Plantation B</a><a href="coffee-arabica-peaberry.html" class="mega-prod-link">Arabica Peaberry</a><a href="coffee-robusta.html" class="mega-prod-link">Robusta Cherry AB</a><a href="coffee-robusta-c.html" class="mega-prod-link">Robusta Cherry C</a><a href="coffee-robusta-parchment.html" class="mega-prod-link">Robusta Parchment AB</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Instant Coffee</div>
+          <a href="coffee-freeze-dried-arabica.html" class="mega-prod-link">Freeze Dried Arabica</a><a href="coffee-freeze-dried-robusta.html" class="mega-prod-link">Freeze Dried Robusta</a><a href="coffee-freeze-dried-blend.html" class="mega-prod-link">Freeze Dried Blend</a><a href="coffee-spray-dried.html" class="mega-prod-link">Spray Dried</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-cereals">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">🌾 Cereals & Flour</span>
+        <span class="mega-panel__cat-desc">Millets · Wheat · Corn · Sorghum · Milled Flour</span>
+        <a href="cereals.html" class="mega-panel__view-all" onclick="megaClose()">View all 11 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Cereals</div>
+          <a href="cereal-green-millet.html" class="mega-prod-link">Green Millet (Bajra)</a><a href="cereal-wheat.html" class="mega-prod-link">Wheat</a><a href="cereal-corn.html" class="mega-prod-link">Corn / Maize</a><a href="cereal-jowar.html" class="mega-prod-link">Jowar (Sorghum)</a><a href="cereal-ragi.html" class="mega-prod-link">Ragi</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Flour</div>
+          <a href="flour-wheat.html" class="mega-prod-link">Wheat Flour (Atta)</a><a href="flour-corn.html" class="mega-prod-link">Corn Flour</a><a href="flour-semolina.html" class="mega-prod-link">Semolina (Suji)</a><a href="flour-sorghum.html" class="mega-prod-link">Sorghum Flour</a><a href="flour-besan.html" class="mega-prod-link">Besan</a><a href="flour-rice.html" class="mega-prod-link">Rice Flour</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-dryfruits">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">🫐 Dry Fruits</span>
+        <span class="mega-panel__cat-desc">Raisins · Cashews · Walnuts · Almonds · Dates</span>
+        <a href="dry-fruits.html" class="mega-panel__view-all" onclick="megaClose()">View all 9 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Raisins</div>
+          <a href="dryfruit-malayar-raisins.html" class="mega-prod-link">Malayar Raisins</a><a href="dryfruit-golden-raisins.html" class="mega-prod-link">Golden Raisins</a><a href="dryfruit-black-raisins.html" class="mega-prod-link">Black Raisins</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Nuts</div>
+          <a href="dryfruit-cashews.html" class="mega-prod-link">Cashews W180-W450</a><a href="dryfruit-walnuts.html" class="mega-prod-link">Walnuts</a><a href="dryfruit-almonds.html" class="mega-prod-link">Almonds</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Other</div>
+          <a href="dryfruit-nutmeg.html" class="mega-prod-link">Nutmeg</a><a href="dryfruit-figs.html" class="mega-prod-link">Dried Figs</a><a href="dryfruit-dates.html" class="mega-prod-link">Dried Dates</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-dehydrated">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">🧅 Dehydrated Products</span>
+        <span class="mega-panel__cat-desc">Flakes & Powders · Onion · Garlic · Ginger · EU Organic</span>
+        <a href="dehydrated.html" class="mega-panel__view-all" onclick="megaClose()">View all 13 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Pieces & Flakes</div>
+          <a href="dehy-onion-flakes.html" class="mega-prod-link">Onion Flakes</a><a href="dehy-garlic-flakes.html" class="mega-prod-link">Garlic Flakes</a><a href="dehy-ginger-slices.html" class="mega-prod-link">Ginger Slices</a><a href="dehy-tomato-flakes.html" class="mega-prod-link">Tomato Flakes</a><a href="dehy-chilli-flakes.html" class="mega-prod-link">Chilli Flakes</a><a href="dehy-cabbage-flakes.html" class="mega-prod-link">Cabbage Flakes</a><a href="dehydrated.html" class="mega-prod-link mega-prod-link--more">+1 more →</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Powder</div>
+          <a href="dehy-onion-powder.html" class="mega-prod-link">Onion Powder</a><a href="dehy-garlic-powder.html" class="mega-prod-link">Garlic Powder</a><a href="dehy-ginger-powder.html" class="mega-prod-link">Ginger Powder</a><a href="dehy-tomato-powder.html" class="mega-prod-link">Tomato Powder</a><a href="dehy-beetroot-powder.html" class="mega-prod-link">Beetroot Powder</a><a href="dehy-spinach-powder.html" class="mega-prod-link">Spinach Powder</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-herbs">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">🌿 Crude Drugs / Herbs</span>
+        <span class="mega-panel__cat-desc">Leaves · Fruits · Seeds · Roots · Pharma & Nutraceuticals</span>
+        <a href="herbs.html" class="mega-panel__view-all" onclick="megaClose()">View all 21 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Leaves & Flowers</div>
+          <a href="herb-senna.html" class="mega-prod-link">Senna Leaves</a><a href="herb-moringa.html" class="mega-prod-link">Moringa Leaves</a><a href="herb-neem.html" class="mega-prod-link">Neem Leaves</a><a href="herb-brahmi.html" class="mega-prod-link">Brahmi</a><a href="herb-rose-petals.html" class="mega-prod-link">Rose Petals</a><a href="herb-hibiscus.html" class="mega-prod-link">Hibiscus Flowers</a><a href="herbs.html" class="mega-prod-link mega-prod-link--more">+1 more →</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Fruits & Pods</div>
+          <a href="herb-amla.html" class="mega-prod-link">Amla</a><a href="herb-triphala.html" class="mega-prod-link">Triphala</a><a href="herb-baheda.html" class="mega-prod-link">Baheda</a><a href="herb-harad.html" class="mega-prod-link">Harad</a><a href="herb-shikakai.html" class="mega-prod-link">Shikakai</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Seeds</div>
+          <a href="herb-psyllium.html" class="mega-prod-link">Psyllium Husk</a><a href="herb-ajwain.html" class="mega-prod-link">Ajwain</a><a href="herb-kalonji.html" class="mega-prod-link">Kalonji</a><a href="herb-fenugreek-pharma.html" class="mega-prod-link">Fenugreek Pharma</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Roots & Rhizomes</div>
+          <a href="herb-ashwagandha.html" class="mega-prod-link">Ashwagandha</a><a href="herb-shatavari.html" class="mega-prod-link">Shatavari</a><a href="herb-licorice.html" class="mega-prod-link">Licorice Root</a><a href="herb-ginger-root.html" class="mega-prod-link">Dry Ginger Root</a><a href="herb-turmeric-root.html" class="mega-prod-link">Turmeric Root</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-foodchem">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">⚗️ Food Chemicals</span>
+        <span class="mega-panel__cat-desc">Sugars · Additives · Hydrocolloids · Natural Colours · FSSAI</span>
+        <a href="food-chemicals.html" class="mega-panel__view-all" onclick="megaClose()">View all 21 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Sugars & Carbohydrates</div>
+          <a href="chem-citric-acid.html" class="mega-prod-link">Citric Acid</a><a href="chem-dextrose.html" class="mega-prod-link">Dextrose Monohydrate</a><a href="chem-maltodextrin.html" class="mega-prod-link">Maltodextrin</a><a href="chem-corn-starch.html" class="mega-prod-link">Corn Starch</a><a href="chem-tapioca-starch.html" class="mega-prod-link">Tapioca Starch</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Food Additives</div>
+          <a href="chem-tartaric-acid.html" class="mega-prod-link">Tartaric Acid</a><a href="chem-malic-acid.html" class="mega-prod-link">Malic Acid</a><a href="chem-sodium-bicarb.html" class="mega-prod-link">Sodium Bicarbonate</a><a href="chem-potassium-sorbate.html" class="mega-prod-link">Potassium Sorbate</a><a href="chem-xanthan-gum.html" class="mega-prod-link">Xanthan Gum</a><a href="chem-sodium-benzoate.html" class="mega-prod-link">Sodium Benzoate</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Plant Ingredients</div>
+          <a href="chem-guar-powder.html" class="mega-prod-link">Guar Gum Powder</a><a href="chem-guar-splits.html" class="mega-prod-link">Guar Splits</a><a href="chem-psyllium-powder.html" class="mega-prod-link">Psyllium Husk Powder</a><a href="chem-fenugreek-gum.html" class="mega-prod-link">Fenugreek Gum</a><a href="chem-locust-bean.html" class="mega-prod-link">Locust Bean Gum</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Food Colours</div>
+          <a href="chem-curcumin.html" class="mega-prod-link">Curcumin (Turmeric)</a><a href="chem-paprika.html" class="mega-prod-link">Paprika Oleoresin</a><a href="chem-annatto.html" class="mega-prod-link">Annatto Extract</a><a href="chem-beetroot-colour.html" class="mega-prod-link">Beetroot Red</a><a href="chem-caramel.html" class="mega-prod-link">Caramel Colour</a>
+        </div></div>
+    </div><div class="mega-panel__content" id="mega-content-animalfeed">
+      <div class="mega-panel__header">
+        <span class="mega-panel__cat-name">🐄 Animal Feed</span>
+        <span class="mega-panel__cat-desc">Corn · Millets · Protein Meals · GMP+ Certified</span>
+        <a href="animal-feed.html" class="mega-panel__view-all" onclick="megaClose()">View all 13 products →</a>
+      </div>
+      <div class="mega-panel__grid"><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Corn & Maize</div>
+          <a href="feed-yellow-corn.html" class="mega-prod-link">Whole Yellow Corn</a><a href="feed-broken-corn.html" class="mega-prod-link">Broken Corn</a><a href="feed-corn-gluten.html" class="mega-prod-link">Corn Gluten Meal 60%</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Millets</div>
+          <a href="feed-pearl-millet.html" class="mega-prod-link">Pearl Millet (Bajra)</a><a href="feed-green-millet.html" class="mega-prod-link">Green Millet</a><a href="feed-sorghum.html" class="mega-prod-link">Sorghum</a><a href="feed-ragi.html" class="mega-prod-link">Ragi</a>
+        </div><div class="mega-sub-col">
+          <div class="mega-sub-col__title">Other Feed</div>
+          <a href="feed-soybean-meal.html" class="mega-prod-link">Soybean Meal 47.5%</a><a href="feed-wheat-bran.html" class="mega-prod-link">Wheat Bran</a><a href="feed-sunflower-meal.html" class="mega-prod-link">Sunflower Meal</a><a href="feed-mustard-cake.html" class="mega-prod-link">Mustard Cake</a><a href="feed-rice-bran.html" class="mega-prod-link">Rice Bran</a><a href="feed-soybean-hulls.html" class="mega-prod-link">Soybean Hulls</a>
+        </div></div>
+    </div>
+      </div>
+    </div>
+  </div>
+</nav>
+

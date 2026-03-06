@@ -1,0 +1,47 @@
+<script>
+(function() {
+  var nav = document.getElementById('site-nav');
+  var isOpen = false;
+
+  window.megaToggle = function(e) {
+    e.preventDefault();
+    isOpen ? megaClose() : megaOpen();
+  };
+  function megaOpen() {
+    isOpen = true;
+    nav.classList.add('mega-is-open');
+    document.addEventListener('click', megaOutside);
+  }
+  window.megaClose = function() {
+    isOpen = false;
+    nav.classList.remove('mega-is-open');
+    document.removeEventListener('click', megaOutside);
+  };
+  function megaOutside(e) {
+    if (!nav.contains(e.target)) megaClose();
+  }
+  window.megaActivate = function(el) {
+    var catId = el.getAttribute('data-cat');
+    document.querySelectorAll('.mega-cat').forEach(function(c) { c.classList.remove('mega-cat--active'); });
+    document.querySelectorAll('.mega-panel__content').forEach(function(p) { p.classList.remove('mega-panel__content--visible'); });
+    el.classList.add('mega-cat--active');
+    var panel = document.getElementById('mega-content-' + catId);
+    if (panel) panel.classList.add('mega-panel__content--visible');
+  };
+
+  window.mobOpen = function() {
+    document.getElementById('mob-overlay').classList.add('is-open');
+    document.getElementById('mob-drawer').classList.add('is-open');
+    document.getElementById('nav-toggle').classList.add('is-open');
+  };
+  window.mobClose = function() {
+    document.getElementById('mob-overlay').classList.remove('is-open');
+    document.getElementById('mob-drawer').classList.remove('is-open');
+    document.getElementById('nav-toggle').classList.remove('is-open');
+  };
+  window.mobItemToggle = function(el) {
+    el.closest('.mob-item').classList.toggle('is-open');
+  };
+}());
+</script>
+

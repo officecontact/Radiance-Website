@@ -1,0 +1,279 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.html) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+.tw-features-area {
+  z-index: 1;
+}
+.tw-features-area .column-title {
+  margin-right: -32px;
+  margin-top: -4px;
+}
+.tw-features-area:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  content: "";
+  background-image: url("../images/features/wave.html");
+  z-index: -1;
+}
+
+.features-text {
+  position: relative;
+}
+.features-text:after {
+  position: absolute;
+  left: -48px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  content: "";
+  background: #FA6742;
+}
+
+.features-box {
+  text-align: center;
+}
+.features-box .features-icon {
+  margin-bottom: 26px;
+  width: 100%;
+  height: 50px;
+}
+.features-box .features-icon-inner {
+  vertical-align: middle;
+}
+.features-box h3 {
+  font-size: 18px;
+  color: #2f2c2c;
+  margin-bottom: 16px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.features-box p {
+  margin-bottom: 5px;
+}
+.features-box a {
+  margin-top: 10px;
+}
+.features-box:hover {
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.features-box:hover h3 {
+  color: #FA6742;
+}
+
+
+
+.theme_title > h3 {
+    color: #2d6200;
+}
+
+.imgborder{
+	border: 1px solid #a39595;
+	box-sizing: border-box;
+	}
+.service-details ul {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+.service-details{     background: #fff;
+    padding: 10px 20px}
+
+.service-details ul.opportuniti-list li,
+.blog-details ul.opportuniti-list li {
+  color: #050505;
+  font-size: 13px;
+  font-weight: 500;
+     list-style-type: none;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  list-style: disc;
+
+}
+.listMargin{
+	margin: 0 0 0 25px !important;
+	}
+.fntLg {
+    color: #08662a !important;
+    font-size: 7px;
+    margin: 8px 4px 0 0;
+    vertical-align: top;
+}
+.service-details ul.opportuniti-list li:last-child,
+.blog-details ul.opportuniti-list li:last-child {
+  margin-bottom: 0px;
+}
+.service-details ul.opportuniti-list li i,
+.blog-details ul.opportuniti-list li i {
+  color: #ff9000;
+}
+.rs-services-list ul{padding:0px;}
+.rs-services-list li {border-bottom: 1px solid #e5e5e5;
+    list-style-type: none;
+}
+.rs-services-list li a {
+  width: 100%;
+  display: block;
+  color: #747474;
+  font-size: 16px;
+      padding: 15px 0px;
+}
+.rs-services-list li:last-child {border-bottom: none;}
+.rs-services-list li a:hover {
+  color: #ff9000;
+  background-color: #e5e5e5;
+}
+.rs-services-list li a i {
+  margin-right: 15px;
+}
+.service-details-img {
+    position: relative;
+	overflow: hidden;
+}
+.service-details-contant{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 100%;
+	left: 0;
+	background: rgba(32, 184, 6, 0.8);
+	z-index:1;
+	padding: 15px;
+	color: #fff;
+	transition: all ease-in-out 0.5s;
+	}
+
+.service-details-img:hover .service-details-contant{
+	top:0;
+	}
+
+.service-details-contant p{
+	color: #fff;
+	}
+.aboutTxt{
+	text-align: center;
+	font-weight: bold;
+	line-height: 68px;
+	position: relative;
+	margin: 20px 0 24px 0;
+	}
+.aboutTxt:after {
+    background-color: #86c200;
+    content: "";
+    height: 2px;
+    width: 68px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	bottom: 0;
+}
+.boutParagra {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.555em;
+    margin-bottom: 45px;
+	text-align: center;
+	font-family: "Ubuntu",sans-serif;
+	color: #000;
+}
+.newBord{
+	border: 1px solid #ddd;
+	padding: 10px;
+	background: #ecf0f1;
+	}
+.hite {
+    height: 500px;
+}
+.iconBig {
+    color: #fff;
+    font-size: 65px;
+}
+.mb-05{
+	margin-bottom: 5px !important;
+	}
+.wdth img {
+	width: 100%;
+	}

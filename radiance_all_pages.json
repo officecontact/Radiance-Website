@@ -1,0 +1,3766 @@
+[
+  {
+    "level": "static",
+    "file": "index.html"
+  },
+  {
+    "level": "static",
+    "file": "Product.html"
+  },
+  {
+    "level": "static",
+    "file": "Certification.html"
+  },
+  {
+    "level": "static",
+    "file": "Contact.html"
+  },
+  {
+    "level": "static",
+    "file": "blog.html"
+  },
+  {
+    "level": "category",
+    "file": "animal-feed.html"
+  },
+  {
+    "level": "category",
+    "file": "cereals.html"
+  },
+  {
+    "level": "category",
+    "file": "coffee.html"
+  },
+  {
+    "level": "category",
+    "file": "dehydrated.html"
+  },
+  {
+    "level": "category",
+    "file": "dry-fruits.html"
+  },
+  {
+    "level": "category",
+    "file": "food-chemicals.html"
+  },
+  {
+    "level": "category",
+    "file": "herbs.html"
+  },
+  {
+    "level": "category",
+    "file": "oil-seeds.html"
+  },
+  {
+    "level": "category",
+    "file": "pulses.html"
+  },
+  {
+    "level": "category",
+    "file": "rice.html"
+  },
+  {
+    "level": "category",
+    "file": "spices.html"
+  },
+  {
+    "level": "product",
+    "file": "cereal-corn.html",
+    "name": "Corn / Maize",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains"
+  },
+  {
+    "level": "product",
+    "file": "cereal-green-millet.html",
+    "name": "Green Millet (Bajra)",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains"
+  },
+  {
+    "level": "product",
+    "file": "cereal-jowar.html",
+    "name": "Jowar (Sorghum)",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains"
+  },
+  {
+    "level": "product",
+    "file": "cereal-ragi.html",
+    "name": "Ragi (Finger Millet)",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains"
+  },
+  {
+    "level": "product",
+    "file": "cereal-wheat.html",
+    "name": "Wheat",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains"
+  },
+  {
+    "level": "product",
+    "file": "chem-annatto.html",
+    "name": "Annatto Extract",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours"
+  },
+  {
+    "level": "product",
+    "file": "chem-beetroot-colour.html",
+    "name": "Beetroot Red",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours"
+  },
+  {
+    "level": "product",
+    "file": "chem-caramel.html",
+    "name": "Caramel Colour",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours"
+  },
+  {
+    "level": "product",
+    "file": "chem-citric-acid.html",
+    "name": "Citric Acid",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches"
+  },
+  {
+    "level": "product",
+    "file": "chem-corn-starch.html",
+    "name": "Corn Starch",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches"
+  },
+  {
+    "level": "product",
+    "file": "chem-curcumin.html",
+    "name": "Curcumin (Turmeric)",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours"
+  },
+  {
+    "level": "product",
+    "file": "chem-dextrose.html",
+    "name": "Dextrose Monohydrate",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches"
+  },
+  {
+    "level": "product",
+    "file": "chem-fenugreek-gum.html",
+    "name": "Fenugreek Gum",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids"
+  },
+  {
+    "level": "product",
+    "file": "chem-guar-powder.html",
+    "name": "Guar Gum Powder",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids"
+  },
+  {
+    "level": "product",
+    "file": "chem-guar-splits.html",
+    "name": "Guar Splits",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids"
+  },
+  {
+    "level": "product",
+    "file": "chem-locust-bean.html",
+    "name": "Locust Bean Gum",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids"
+  },
+  {
+    "level": "product",
+    "file": "chem-malic-acid.html",
+    "name": "Malic Acid",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives"
+  },
+  {
+    "level": "product",
+    "file": "chem-maltodextrin.html",
+    "name": "Maltodextrin",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches"
+  },
+  {
+    "level": "product",
+    "file": "chem-paprika.html",
+    "name": "Paprika Oleoresin",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours"
+  },
+  {
+    "level": "product",
+    "file": "chem-potassium-sorbate.html",
+    "name": "Potassium Sorbate",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives"
+  },
+  {
+    "level": "product",
+    "file": "chem-psyllium-powder.html",
+    "name": "Psyllium Husk Powder",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids"
+  },
+  {
+    "level": "product",
+    "file": "chem-sodium-benzoate.html",
+    "name": "Sodium Benzoate",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives"
+  },
+  {
+    "level": "product",
+    "file": "chem-sodium-bicarb.html",
+    "name": "Sodium Bicarbonate",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives"
+  },
+  {
+    "level": "product",
+    "file": "chem-tapioca-starch.html",
+    "name": "Tapioca Starch",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches"
+  },
+  {
+    "level": "product",
+    "file": "chem-tartaric-acid.html",
+    "name": "Tartaric Acid",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives"
+  },
+  {
+    "level": "product",
+    "file": "chem-xanthan-gum.html",
+    "name": "Xanthan Gum",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives"
+  },
+  {
+    "level": "product",
+    "file": "coffee-arabica-b.html",
+    "name": "Arabica Plantation B",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans"
+  },
+  {
+    "level": "product",
+    "file": "coffee-arabica-peaberry.html",
+    "name": "Arabica Peaberry",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans"
+  },
+  {
+    "level": "product",
+    "file": "coffee-arabica.html",
+    "name": "Arabica Plantation A",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans"
+  },
+  {
+    "level": "product",
+    "file": "coffee-freeze-dried-arabica.html",
+    "name": "Freeze Dried Arabica",
+    "category": "Coffee",
+    "subcategory": "Instant Coffee"
+  },
+  {
+    "level": "product",
+    "file": "coffee-freeze-dried-blend.html",
+    "name": "Freeze Dried Blend",
+    "category": "Coffee",
+    "subcategory": "Instant Coffee"
+  },
+  {
+    "level": "product",
+    "file": "coffee-freeze-dried-robusta.html",
+    "name": "Freeze Dried Robusta",
+    "category": "Coffee",
+    "subcategory": "Instant Coffee"
+  },
+  {
+    "level": "product",
+    "file": "coffee-robusta-c.html",
+    "name": "Robusta Cherry C",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans"
+  },
+  {
+    "level": "product",
+    "file": "coffee-robusta-parchment.html",
+    "name": "Robusta Parchment AB",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans"
+  },
+  {
+    "level": "product",
+    "file": "coffee-robusta.html",
+    "name": "Robusta Cherry AB",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans"
+  },
+  {
+    "level": "product",
+    "file": "coffee-spray-dried.html",
+    "name": "Spray Dried",
+    "category": "Coffee",
+    "subcategory": "Instant Coffee"
+  },
+  {
+    "level": "product",
+    "file": "dehy-beetroot-powder.html",
+    "name": "Beetroot Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder"
+  },
+  {
+    "level": "product",
+    "file": "dehy-cabbage-flakes.html",
+    "name": "Cabbage Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes"
+  },
+  {
+    "level": "product",
+    "file": "dehy-chilli-flakes.html",
+    "name": "Green Chilli Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes"
+  },
+  {
+    "level": "product",
+    "file": "dehy-garlic-flakes.html",
+    "name": "Garlic Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes"
+  },
+  {
+    "level": "product",
+    "file": "dehy-garlic-powder.html",
+    "name": "Garlic Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder"
+  },
+  {
+    "level": "product",
+    "file": "dehy-ginger-powder.html",
+    "name": "Ginger Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder"
+  },
+  {
+    "level": "product",
+    "file": "dehy-ginger-slices.html",
+    "name": "Ginger Slices",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes"
+  },
+  {
+    "level": "product",
+    "file": "dehy-onion-flakes.html",
+    "name": "Onion Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes"
+  },
+  {
+    "level": "product",
+    "file": "dehy-onion-powder.html",
+    "name": "Onion Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder"
+  },
+  {
+    "level": "product",
+    "file": "dehy-potato-flakes.html",
+    "name": "Potato Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes"
+  },
+  {
+    "level": "product",
+    "file": "dehy-spinach-powder.html",
+    "name": "Spinach Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder"
+  },
+  {
+    "level": "product",
+    "file": "dehy-tomato-flakes.html",
+    "name": "Tomato Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes"
+  },
+  {
+    "level": "product",
+    "file": "dehy-tomato-powder.html",
+    "name": "Tomato Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder"
+  },
+  {
+    "level": "product",
+    "file": "dryfruit-almonds.html",
+    "name": "Almonds",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts"
+  },
+  {
+    "level": "product",
+    "file": "dryfruit-black-raisins.html",
+    "name": "Black Raisins",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Raisins"
+  },
+  {
+    "level": "product",
+    "file": "dryfruit-cashews.html",
+    "name": "Cashews W180–W450",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts"
+  },
+  {
+    "level": "product",
+    "file": "dryfruit-dates.html",
+    "name": "Dried Dates",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Other Dry Fruits"
+  },
+  {
+    "level": "product",
+    "file": "dryfruit-figs.html",
+    "name": "Dried Figs",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Other Dry Fruits"
+  },
+  {
+    "level": "product",
+    "file": "dryfruit-golden-raisins.html",
+    "name": "Golden Raisins",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Raisins"
+  },
+  {
+    "level": "product",
+    "file": "dryfruit-malayar-raisins.html",
+    "name": "Malayar Raisins",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Raisins"
+  },
+  {
+    "level": "product",
+    "file": "dryfruit-nutmeg.html",
+    "name": "Nutmeg",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Other Dry Fruits"
+  },
+  {
+    "level": "product",
+    "file": "dryfruit-walnuts.html",
+    "name": "Walnuts",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts"
+  },
+  {
+    "level": "product",
+    "file": "feed-broken-corn.html",
+    "name": "Broken Corn",
+    "category": "Animal Feed",
+    "subcategory": "Corn & Maize"
+  },
+  {
+    "level": "product",
+    "file": "feed-corn-gluten.html",
+    "name": "Corn Gluten Meal 60%",
+    "category": "Animal Feed",
+    "subcategory": "Corn & Maize"
+  },
+  {
+    "level": "product",
+    "file": "feed-green-millet.html",
+    "name": "Green Millet",
+    "category": "Animal Feed",
+    "subcategory": "Millets"
+  },
+  {
+    "level": "product",
+    "file": "feed-mustard-cake.html",
+    "name": "De-Oiled Mustard Cake",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals"
+  },
+  {
+    "level": "product",
+    "file": "feed-pearl-millet.html",
+    "name": "Pearl Millet (Bajra)",
+    "category": "Animal Feed",
+    "subcategory": "Millets"
+  },
+  {
+    "level": "product",
+    "file": "feed-ragi.html",
+    "name": "Ragi",
+    "category": "Animal Feed",
+    "subcategory": "Millets"
+  },
+  {
+    "level": "product",
+    "file": "feed-rice-bran.html",
+    "name": "Rice Bran",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals"
+  },
+  {
+    "level": "product",
+    "file": "feed-sorghum.html",
+    "name": "Sorghum (Jowar)",
+    "category": "Animal Feed",
+    "subcategory": "Millets"
+  },
+  {
+    "level": "product",
+    "file": "feed-soybean-hulls.html",
+    "name": "Soybean Hulls",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals"
+  },
+  {
+    "level": "product",
+    "file": "feed-soybean-meal.html",
+    "name": "Soybean Meal 47.5%",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals"
+  },
+  {
+    "level": "product",
+    "file": "feed-sunflower-meal.html",
+    "name": "Sunflower Meal",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals"
+  },
+  {
+    "level": "product",
+    "file": "feed-wheat-bran.html",
+    "name": "Wheat Bran",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals"
+  },
+  {
+    "level": "product",
+    "file": "feed-yellow-corn.html",
+    "name": "Whole Yellow Corn",
+    "category": "Animal Feed",
+    "subcategory": "Corn & Maize"
+  },
+  {
+    "level": "product",
+    "file": "flour-besan.html",
+    "name": "Besan (Chickpea Flour)",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled"
+  },
+  {
+    "level": "product",
+    "file": "flour-corn.html",
+    "name": "Corn Flour",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled"
+  },
+  {
+    "level": "product",
+    "file": "flour-rice.html",
+    "name": "Rice Flour",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled"
+  },
+  {
+    "level": "product",
+    "file": "flour-semolina.html",
+    "name": "Semolina (Suji)",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled"
+  },
+  {
+    "level": "product",
+    "file": "flour-sorghum.html",
+    "name": "Sorghum Flour",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled"
+  },
+  {
+    "level": "product",
+    "file": "flour-wheat.html",
+    "name": "Wheat Flour (Atta)",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled"
+  },
+  {
+    "level": "product",
+    "file": "herb-ajwain.html",
+    "name": "Ajwain (Carom)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds"
+  },
+  {
+    "level": "product",
+    "file": "herb-amla.html",
+    "name": "Amla (Gooseberry)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods"
+  },
+  {
+    "level": "product",
+    "file": "herb-ashwagandha.html",
+    "name": "Ashwagandha Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes"
+  },
+  {
+    "level": "product",
+    "file": "herb-baheda.html",
+    "name": "Baheda",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods"
+  },
+  {
+    "level": "product",
+    "file": "herb-brahmi.html",
+    "name": "Brahmi (Bacopa)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers"
+  },
+  {
+    "level": "product",
+    "file": "herb-fenugreek-pharma.html",
+    "name": "Fenugreek Pharma",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds"
+  },
+  {
+    "level": "product",
+    "file": "herb-ginger-root.html",
+    "name": "Dry Ginger Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes"
+  },
+  {
+    "level": "product",
+    "file": "herb-harad.html",
+    "name": "Harad (Haritaki)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods"
+  },
+  {
+    "level": "product",
+    "file": "herb-hibiscus.html",
+    "name": "Hibiscus Flowers",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers"
+  },
+  {
+    "level": "product",
+    "file": "herb-kalonji.html",
+    "name": "Kalonji (Nigella)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds"
+  },
+  {
+    "level": "product",
+    "file": "herb-licorice.html",
+    "name": "Licorice Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes"
+  },
+  {
+    "level": "product",
+    "file": "herb-moringa.html",
+    "name": "Moringa Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers"
+  },
+  {
+    "level": "product",
+    "file": "herb-neem.html",
+    "name": "Neem Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers"
+  },
+  {
+    "level": "product",
+    "file": "herb-psyllium.html",
+    "name": "Psyllium Husk",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds"
+  },
+  {
+    "level": "product",
+    "file": "herb-rose-petals.html",
+    "name": "Rose Petals",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers"
+  },
+  {
+    "level": "product",
+    "file": "herb-senna.html",
+    "name": "Senna Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers"
+  },
+  {
+    "level": "product",
+    "file": "herb-shatavari.html",
+    "name": "Shatavari",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes"
+  },
+  {
+    "level": "product",
+    "file": "herb-shikakai.html",
+    "name": "Shikakai Pods",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods"
+  },
+  {
+    "level": "product",
+    "file": "herb-triphala.html",
+    "name": "Triphala",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods"
+  },
+  {
+    "level": "product",
+    "file": "herb-tulsi.html",
+    "name": "Tulsi Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers"
+  },
+  {
+    "level": "product",
+    "file": "herb-turmeric-root.html",
+    "name": "Turmeric Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-flax.html",
+    "name": "Flax / Linseed",
+    "category": "Oil Seeds",
+    "subcategory": "Other Oil Seeds"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-hps.html",
+    "name": "HPS Groundnuts",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-java-peanut.html",
+    "name": "Java Peanut 50/60",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-mustard.html",
+    "name": "Mustard Seeds",
+    "category": "Oil Seeds",
+    "subcategory": "Other Oil Seeds"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-niger.html",
+    "name": "Niger Seeds",
+    "category": "Oil Seeds",
+    "subcategory": "Other Oil Seeds"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-peanut-bold.html",
+    "name": "Peanut Bold 40/50",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-runner-peanut.html",
+    "name": "Runner Peanut 60/70",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-sesame-black.html",
+    "name": "Black Sesame",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-sesame-hulled.html",
+    "name": "Hulled Sesame 99.95%",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-sesame-mixed.html",
+    "name": "Mixed Sesame",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-sesame-natural.html",
+    "name": "Natural White Sesame",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds"
+  },
+  {
+    "level": "product",
+    "file": "oilseed-sunflower.html",
+    "name": "Sunflower Seeds",
+    "category": "Oil Seeds",
+    "subcategory": "Other Oil Seeds"
+  },
+  {
+    "level": "product",
+    "file": "pulse-black-urad.html",
+    "name": "Black Urad Whole",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses"
+  },
+  {
+    "level": "product",
+    "file": "pulse-chana-dal.html",
+    "name": "Chana Dal",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal"
+  },
+  {
+    "level": "product",
+    "file": "pulse-chickpeas.html",
+    "name": "Kabuli Chickpeas",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses"
+  },
+  {
+    "level": "product",
+    "file": "pulse-desi-chana.html",
+    "name": "Desi Chana",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses"
+  },
+  {
+    "level": "product",
+    "file": "pulse-green-moong.html",
+    "name": "Green Moong Whole",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses"
+  },
+  {
+    "level": "product",
+    "file": "pulse-green-peas.html",
+    "name": "Green Split Peas",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal"
+  },
+  {
+    "level": "product",
+    "file": "pulse-lobia.html",
+    "name": "Lobia",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses"
+  },
+  {
+    "level": "product",
+    "file": "pulse-masoor-dal.html",
+    "name": "Masoor Dal (Red Lentils)",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal"
+  },
+  {
+    "level": "product",
+    "file": "pulse-moong-dal.html",
+    "name": "Moong Dal Split",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal"
+  },
+  {
+    "level": "product",
+    "file": "pulse-rajma.html",
+    "name": "Rajma (Kidney Beans)",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses"
+  },
+  {
+    "level": "product",
+    "file": "pulse-toor-dal.html",
+    "name": "Toor Dal (Arhar)",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal"
+  },
+  {
+    "level": "product",
+    "file": "pulse-urad-dal.html",
+    "name": "Urad Dal White",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal"
+  },
+  {
+    "level": "product",
+    "file": "pulse-yellow-peas.html",
+    "name": "Yellow Split Peas",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal"
+  },
+  {
+    "level": "product",
+    "file": "rice-basmati-1121.html",
+    "name": "1121 Basmati (Sella/Raw)",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-basmati-1509.html",
+    "name": "1509 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-basmati-1718.html",
+    "name": "1718 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-basmati-pusa.html",
+    "name": "Pusa Basmati 1121",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-basmati-traditional.html",
+    "name": "Traditional Basmati (Dehraduni)",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-gobindobhog.html",
+    "name": "Gobindobhog",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-ir64.html",
+    "name": "IR 64 Parboiled",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-miniket.html",
+    "name": "Miniket Rice",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-parboiled.html",
+    "name": "Parboiled Long Grain",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-ponni.html",
+    "name": "Ponni Boiled",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-pr11.html",
+    "name": "PR 11 / PR 14",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-sona-masoori.html",
+    "name": "Sona Masoori",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "rice-swarna.html",
+    "name": "Swarna / MTU 7029",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice"
+  },
+  {
+    "level": "product",
+    "file": "spice-bay-leaves.html",
+    "name": "Bay Leaves",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-biryani-masala.html",
+    "name": "Biryani Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-black-pepper-powder.html",
+    "name": "Black Pepper Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-black-pepper.html",
+    "name": "Black Pepper",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-cardamom-powder.html",
+    "name": "Cardamom Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-cardamom.html",
+    "name": "Green Cardamom",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-chaat-masala.html",
+    "name": "Chaat Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-cinnamon.html",
+    "name": "Cinnamon",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-cloves.html",
+    "name": "Cloves",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-coriander-powder.html",
+    "name": "Coriander Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-coriander.html",
+    "name": "Coriander Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-cumin-powder.html",
+    "name": "Cumin Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-cumin.html",
+    "name": "Cumin Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-curry-powder.html",
+    "name": "Curry Powder",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-fennel-powder.html",
+    "name": "Fennel Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-fennel.html",
+    "name": "Fennel Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-fenugreek-powder.html",
+    "name": "Fenugreek Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-fenugreek.html",
+    "name": "Fenugreek Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-garam-masala.html",
+    "name": "Garam Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-long-pepper.html",
+    "name": "Long Pepper",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-mace.html",
+    "name": "Mace",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-nutmeg-spice.html",
+    "name": "Nutmeg",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-red-chilli-powder.html",
+    "name": "Red Chilli Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-red-chilli.html",
+    "name": "Red Chilli Whole",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-sambar-powder.html",
+    "name": "Sambar Powder",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-star-anise.html",
+    "name": "Star Anise",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-tea-masala.html",
+    "name": "Tea Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-turmeric-powder.html",
+    "name": "Turmeric Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-turmeric.html",
+    "name": "Turmeric Finger",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "product",
+    "file": "spice-white-pepper.html",
+    "name": "White Pepper",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices"
+  },
+  {
+    "level": "variant",
+    "file": "cereal-corn-export.html",
+    "name": "Export Grade",
+    "product": "Corn / Maize",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "cereal-green-millet-export.html",
+    "name": "Export Grade",
+    "product": "Green Millet (Bajra)",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "cereal-jowar-export.html",
+    "name": "Export Grade",
+    "product": "Jowar (Sorghum)",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "cereal-ragi-export.html",
+    "name": "Export Grade",
+    "product": "Ragi (Finger Millet)",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "cereal-wheat-export.html",
+    "name": "Export Grade",
+    "product": "Wheat",
+    "category": "Cereals & Flour",
+    "subcategory": "Cereals / Grains",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-annatto-standard.html",
+    "name": "Standard Grade",
+    "product": "Annatto Extract",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-beetroot-colour-standard.html",
+    "name": "Standard Grade",
+    "product": "Beetroot Red",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-caramel-standard.html",
+    "name": "Standard Grade",
+    "product": "Caramel Colour",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-citric-acid-food.html",
+    "name": "Food Grade",
+    "product": "Citric Acid",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "FCC/BP/USP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-citric-acid-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Citric Acid",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "Technical"
+  },
+  {
+    "level": "variant",
+    "file": "chem-corn-starch-food.html",
+    "name": "Food Grade",
+    "product": "Corn Starch",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "FCC/BP/USP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-corn-starch-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Corn Starch",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "Technical"
+  },
+  {
+    "level": "variant",
+    "file": "chem-curcumin-standard.html",
+    "name": "Standard Grade",
+    "product": "Curcumin (Turmeric)",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-dextrose-food.html",
+    "name": "Food Grade",
+    "product": "Dextrose Monohydrate",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "FCC/BP/USP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-dextrose-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Dextrose Monohydrate",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "Technical"
+  },
+  {
+    "level": "variant",
+    "file": "chem-fenugreek-gum-food.html",
+    "name": "Food Grade",
+    "product": "Fenugreek Gum",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-fenugreek-gum-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Fenugreek Gum",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-guar-powder-food.html",
+    "name": "Food Grade",
+    "product": "Guar Gum Powder",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-guar-powder-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Guar Gum Powder",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-guar-splits-food.html",
+    "name": "Food Grade",
+    "product": "Guar Splits",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-guar-splits-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Guar Splits",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-locust-bean-food.html",
+    "name": "Food Grade",
+    "product": "Locust Bean Gum",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-locust-bean-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Locust Bean Gum",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-malic-acid-food.html",
+    "name": "Food Grade",
+    "product": "Malic Acid",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives",
+    "spec": "FCC/BP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-maltodextrin-food.html",
+    "name": "Food Grade",
+    "product": "Maltodextrin",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "FCC/BP/USP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-maltodextrin-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Maltodextrin",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "Technical"
+  },
+  {
+    "level": "variant",
+    "file": "chem-paprika-standard.html",
+    "name": "Standard Grade",
+    "product": "Paprika Oleoresin",
+    "category": "Food Chemicals",
+    "subcategory": "Natural Food Colours",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-potassium-sorbate-food.html",
+    "name": "Food Grade",
+    "product": "Potassium Sorbate",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives",
+    "spec": "FCC/BP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-psyllium-powder-food.html",
+    "name": "Food Grade",
+    "product": "Psyllium Husk Powder",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-psyllium-powder-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Psyllium Husk Powder",
+    "category": "Food Chemicals",
+    "subcategory": "Hydrocolloids",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "chem-sodium-benzoate-food.html",
+    "name": "Food Grade",
+    "product": "Sodium Benzoate",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives",
+    "spec": "FCC/BP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-sodium-bicarb-food.html",
+    "name": "Food Grade",
+    "product": "Sodium Bicarbonate",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives",
+    "spec": "FCC/BP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-tapioca-starch-food.html",
+    "name": "Food Grade",
+    "product": "Tapioca Starch",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "FCC/BP/USP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-tapioca-starch-industrial.html",
+    "name": "Industrial Grade",
+    "product": "Tapioca Starch",
+    "category": "Food Chemicals",
+    "subcategory": "Sugars & Starches",
+    "spec": "Technical"
+  },
+  {
+    "level": "variant",
+    "file": "chem-tartaric-acid-food.html",
+    "name": "Food Grade",
+    "product": "Tartaric Acid",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives",
+    "spec": "FCC/BP"
+  },
+  {
+    "level": "variant",
+    "file": "chem-xanthan-gum-food.html",
+    "name": "Food Grade",
+    "product": "Xanthan Gum",
+    "category": "Food Chemicals",
+    "subcategory": "Food Additives",
+    "spec": "FCC/BP"
+  },
+  {
+    "level": "variant",
+    "file": "coffee-arabica-a.html",
+    "name": "Arabica Plantation A",
+    "product": "Arabica Plantation A",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans",
+    "spec": "Screen 17+, Washed"
+  },
+  {
+    "level": "variant",
+    "file": "coffee-arabica-b-grade.html",
+    "name": "Arabica Plantation B",
+    "product": "Arabica Plantation B",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans",
+    "spec": "Screen 16, Washed"
+  },
+  {
+    "level": "variant",
+    "file": "coffee-arabica-peaberry-grade.html",
+    "name": "Arabica Peaberry",
+    "product": "Arabica Peaberry",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "coffee-freeze-dried-arabica-standard.html",
+    "name": "Standard",
+    "product": "Freeze Dried Arabica",
+    "category": "Coffee",
+    "subcategory": "Instant Coffee",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "coffee-freeze-dried-blend-standard.html",
+    "name": "Standard",
+    "product": "Freeze Dried Blend",
+    "category": "Coffee",
+    "subcategory": "Instant Coffee",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "coffee-freeze-dried-robusta-standard.html",
+    "name": "Standard",
+    "product": "Freeze Dried Robusta",
+    "category": "Coffee",
+    "subcategory": "Instant Coffee",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "coffee-robusta-ab.html",
+    "name": "Robusta Cherry AB",
+    "product": "Robusta Cherry AB",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans",
+    "spec": "Screen 15+, Natural"
+  },
+  {
+    "level": "variant",
+    "file": "coffee-robusta-c-grade.html",
+    "name": "Robusta Cherry C",
+    "product": "Robusta Cherry C",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans",
+    "spec": "Screen 13-14"
+  },
+  {
+    "level": "variant",
+    "file": "coffee-robusta-parchment-ab.html",
+    "name": "Robusta Parchment AB",
+    "product": "Robusta Parchment AB",
+    "category": "Coffee",
+    "subcategory": "Coffee Beans",
+    "spec": "Washed, Screen 15+"
+  },
+  {
+    "level": "variant",
+    "file": "coffee-spray-dried-standard.html",
+    "name": "Standard",
+    "product": "Spray Dried",
+    "category": "Coffee",
+    "subcategory": "Instant Coffee",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "dehy-beetroot-powder-100mesh.html",
+    "name": "100 Mesh",
+    "product": "Beetroot Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-beetroot-powder-80mesh.html",
+    "name": "80 Mesh",
+    "product": "Beetroot Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "80 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-cabbage-flakes-chopped.html",
+    "name": "Cabbage Flakes 3-5mm",
+    "product": "Cabbage Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Chopped 3-5mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-cabbage-flakes-minced.html",
+    "name": "Cabbage Flakes 10-15mm",
+    "product": "Cabbage Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Minced 10-15mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-chilli-flakes-chopped.html",
+    "name": "Green Chilli Flakes 3-5mm",
+    "product": "Green Chilli Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Chopped 3-5mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-chilli-flakes-minced.html",
+    "name": "Green Chilli Flakes 10-15mm",
+    "product": "Green Chilli Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Minced 10-15mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-garlic-flakes-chopped.html",
+    "name": "Garlic Flakes 3-5mm",
+    "product": "Garlic Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Chopped 3-5mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-garlic-flakes-minced.html",
+    "name": "Garlic Flakes 10-15mm",
+    "product": "Garlic Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Minced 10-15mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-garlic-powder-100mesh.html",
+    "name": "100 Mesh",
+    "product": "Garlic Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-garlic-powder-80mesh.html",
+    "name": "80 Mesh",
+    "product": "Garlic Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "80 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-ginger-powder-100mesh.html",
+    "name": "100 Mesh",
+    "product": "Ginger Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-ginger-powder-80mesh.html",
+    "name": "80 Mesh",
+    "product": "Ginger Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "80 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-ginger-slices-chopped.html",
+    "name": "Ginger Slices 3-5mm",
+    "product": "Ginger Slices",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Chopped 3-5mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-ginger-slices-minced.html",
+    "name": "Ginger Slices 10-15mm",
+    "product": "Ginger Slices",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Minced 10-15mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-onion-flakes-chopped.html",
+    "name": "Onion Flakes 3-5mm",
+    "product": "Onion Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Chopped 3-5mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-onion-flakes-minced.html",
+    "name": "Onion Flakes 10-15mm",
+    "product": "Onion Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Minced 10-15mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-onion-powder-100mesh.html",
+    "name": "100 Mesh",
+    "product": "Onion Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-onion-powder-80mesh.html",
+    "name": "80 Mesh",
+    "product": "Onion Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "80 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-potato-flakes-chopped.html",
+    "name": "Potato Flakes 3-5mm",
+    "product": "Potato Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Chopped 3-5mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-potato-flakes-minced.html",
+    "name": "Potato Flakes 10-15mm",
+    "product": "Potato Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Minced 10-15mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-spinach-powder-100mesh.html",
+    "name": "100 Mesh",
+    "product": "Spinach Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-spinach-powder-80mesh.html",
+    "name": "80 Mesh",
+    "product": "Spinach Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "80 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-tomato-flakes-chopped.html",
+    "name": "Tomato Flakes 3-5mm",
+    "product": "Tomato Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Chopped 3-5mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-tomato-flakes-minced.html",
+    "name": "Tomato Flakes 10-15mm",
+    "product": "Tomato Flakes",
+    "category": "Dehydrated Products",
+    "subcategory": "Pieces & Flakes",
+    "spec": "Minced 10-15mm"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-tomato-powder-100mesh.html",
+    "name": "100 Mesh",
+    "product": "Tomato Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "dehy-tomato-powder-80mesh.html",
+    "name": "80 Mesh",
+    "product": "Tomato Powder",
+    "category": "Dehydrated Products",
+    "subcategory": "Powder",
+    "spec": "80 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-almonds-export.html",
+    "name": "Almonds Export",
+    "product": "Almonds",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-black-raisins-export.html",
+    "name": "Export Grade",
+    "product": "Black Raisins",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Raisins",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-cashew-splits.html",
+    "name": "Cashew Splits",
+    "product": "Cashews W180–W450",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts",
+    "spec": "Split halves"
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-cashew-w180.html",
+    "name": "Cashew W180",
+    "product": "Cashews W180–W450",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts",
+    "spec": "King size, 180/lb"
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-cashew-w240.html",
+    "name": "Cashew W240",
+    "product": "Cashews W180–W450",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts",
+    "spec": "240/lb"
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-cashew-w320.html",
+    "name": "Cashew W320",
+    "product": "Cashews W180–W450",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts",
+    "spec": "320/lb"
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-cashew-w450.html",
+    "name": "Cashew W450",
+    "product": "Cashews W180–W450",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts",
+    "spec": "450/lb"
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-dates-export.html",
+    "name": "Export Grade",
+    "product": "Dried Dates",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Other Dry Fruits",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-figs-export.html",
+    "name": "Export Grade",
+    "product": "Dried Figs",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Other Dry Fruits",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-golden-raisins-export.html",
+    "name": "Export Grade",
+    "product": "Golden Raisins",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Raisins",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-malayar-raisins-export.html",
+    "name": "Export Grade",
+    "product": "Malayar Raisins",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Raisins",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-nutmeg-export.html",
+    "name": "Export Grade",
+    "product": "Nutmeg",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Other Dry Fruits",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-walnuts-kernels.html",
+    "name": "Walnut Kernels",
+    "product": "Walnuts",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts",
+    "spec": "Light halves"
+  },
+  {
+    "level": "variant",
+    "file": "dryfruit-walnuts-shell.html",
+    "name": "Walnut In Shell",
+    "product": "Walnuts",
+    "category": "Dry Fruits & Nuts",
+    "subcategory": "Nuts",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-broken-corn-feed.html",
+    "name": "Feed Grade",
+    "product": "Broken Corn",
+    "category": "Animal Feed",
+    "subcategory": "Corn & Maize",
+    "spec": "GMP+ certified"
+  },
+  {
+    "level": "variant",
+    "file": "feed-corn-gluten-feed.html",
+    "name": "Feed Grade",
+    "product": "Corn Gluten Meal 60%",
+    "category": "Animal Feed",
+    "subcategory": "Corn & Maize",
+    "spec": "GMP+ certified"
+  },
+  {
+    "level": "variant",
+    "file": "feed-green-millet-feed.html",
+    "name": "Feed Grade",
+    "product": "Green Millet",
+    "category": "Animal Feed",
+    "subcategory": "Millets",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-mustard-cake-feed.html",
+    "name": "Feed Grade",
+    "product": "De-Oiled Mustard Cake",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-pearl-millet-feed.html",
+    "name": "Feed Grade",
+    "product": "Pearl Millet (Bajra)",
+    "category": "Animal Feed",
+    "subcategory": "Millets",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-ragi-feed.html",
+    "name": "Feed Grade",
+    "product": "Ragi",
+    "category": "Animal Feed",
+    "subcategory": "Millets",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-rice-bran-feed.html",
+    "name": "Feed Grade",
+    "product": "Rice Bran",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-sorghum-feed.html",
+    "name": "Feed Grade",
+    "product": "Sorghum (Jowar)",
+    "category": "Animal Feed",
+    "subcategory": "Millets",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-soybean-hulls-feed.html",
+    "name": "Feed Grade",
+    "product": "Soybean Hulls",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-soybean-meal-feed.html",
+    "name": "Feed Grade",
+    "product": "Soybean Meal 47.5%",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-sunflower-meal-feed.html",
+    "name": "Feed Grade",
+    "product": "Sunflower Meal",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-wheat-bran-feed.html",
+    "name": "Feed Grade",
+    "product": "Wheat Bran",
+    "category": "Animal Feed",
+    "subcategory": "Protein Meals",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "feed-yellow-corn-feed.html",
+    "name": "Feed Grade",
+    "product": "Whole Yellow Corn",
+    "category": "Animal Feed",
+    "subcategory": "Corn & Maize",
+    "spec": "GMP+ certified"
+  },
+  {
+    "level": "variant",
+    "file": "flour-besan-export.html",
+    "name": "Export Grade",
+    "product": "Besan (Chickpea Flour)",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "flour-corn-export.html",
+    "name": "Export Grade",
+    "product": "Corn Flour",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "flour-rice-export.html",
+    "name": "Export Grade",
+    "product": "Rice Flour",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "flour-semolina-export.html",
+    "name": "Export Grade",
+    "product": "Semolina (Suji)",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "flour-sorghum-export.html",
+    "name": "Export Grade",
+    "product": "Sorghum Flour",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "flour-wheat-export.html",
+    "name": "Export Grade",
+    "product": "Wheat Flour (Atta)",
+    "category": "Cereals & Flour",
+    "subcategory": "Flour / Milled",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-ajwain-export.html",
+    "name": "Export Grade",
+    "product": "Ajwain (Carom)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-amla-powder.html",
+    "name": "Amla (Gooseberry) Powder",
+    "product": "Amla (Gooseberry)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-amla-whole.html",
+    "name": "Amla (Gooseberry) Whole",
+    "product": "Amla (Gooseberry)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-ashwagandha-powder.html",
+    "name": "Ashwagandha Root Powder",
+    "product": "Ashwagandha Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-ashwagandha-whole.html",
+    "name": "Ashwagandha Root Whole",
+    "product": "Ashwagandha Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-baheda-powder.html",
+    "name": "Baheda Powder",
+    "product": "Baheda",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-baheda-whole.html",
+    "name": "Baheda Whole",
+    "product": "Baheda",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-brahmi-powder.html",
+    "name": "Brahmi (Bacopa) Powder",
+    "product": "Brahmi (Bacopa)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "80-100 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "herb-brahmi-whole.html",
+    "name": "Brahmi (Bacopa) Whole Dried",
+    "product": "Brahmi (Bacopa)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "TBC (Tightly Bound Clean)"
+  },
+  {
+    "level": "variant",
+    "file": "herb-fenugreek-pharma-export.html",
+    "name": "Export Grade",
+    "product": "Fenugreek Pharma",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-ginger-root-powder.html",
+    "name": "Dry Ginger Root Powder",
+    "product": "Dry Ginger Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-ginger-root-whole.html",
+    "name": "Dry Ginger Root Whole",
+    "product": "Dry Ginger Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-harad-powder.html",
+    "name": "Harad (Haritaki) Powder",
+    "product": "Harad (Haritaki)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-harad-whole.html",
+    "name": "Harad (Haritaki) Whole",
+    "product": "Harad (Haritaki)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-hibiscus-powder.html",
+    "name": "Hibiscus Flowers Powder",
+    "product": "Hibiscus Flowers",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "80-100 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "herb-hibiscus-whole.html",
+    "name": "Hibiscus Flowers Whole Dried",
+    "product": "Hibiscus Flowers",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "TBC (Tightly Bound Clean)"
+  },
+  {
+    "level": "variant",
+    "file": "herb-kalonji-export.html",
+    "name": "Export Grade",
+    "product": "Kalonji (Nigella)",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-licorice-powder.html",
+    "name": "Licorice Root Powder",
+    "product": "Licorice Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-licorice-whole.html",
+    "name": "Licorice Root Whole",
+    "product": "Licorice Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-moringa-powder.html",
+    "name": "Moringa Leaves Powder",
+    "product": "Moringa Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "80-100 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "herb-moringa-whole.html",
+    "name": "Moringa Leaves Whole Dried",
+    "product": "Moringa Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "TBC (Tightly Bound Clean)"
+  },
+  {
+    "level": "variant",
+    "file": "herb-neem-powder.html",
+    "name": "Neem Leaves Powder",
+    "product": "Neem Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "80-100 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "herb-neem-whole.html",
+    "name": "Neem Leaves Whole Dried",
+    "product": "Neem Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "TBC (Tightly Bound Clean)"
+  },
+  {
+    "level": "variant",
+    "file": "herb-psyllium-85.html",
+    "name": "Psyllium Husk 85%",
+    "product": "Psyllium Husk",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds",
+    "spec": "85% purity"
+  },
+  {
+    "level": "variant",
+    "file": "herb-psyllium-95.html",
+    "name": "Psyllium Husk 95%",
+    "product": "Psyllium Husk",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds",
+    "spec": "95% purity"
+  },
+  {
+    "level": "variant",
+    "file": "herb-psyllium-99.html",
+    "name": "Psyllium Husk 99%",
+    "product": "Psyllium Husk",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds",
+    "spec": "99% purity"
+  },
+  {
+    "level": "variant",
+    "file": "herb-psyllium-seeds.html",
+    "name": "Psyllium Seeds",
+    "product": "Psyllium Husk",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Seeds",
+    "spec": "Whole seeds"
+  },
+  {
+    "level": "variant",
+    "file": "herb-rose-petals-powder.html",
+    "name": "Rose Petals Powder",
+    "product": "Rose Petals",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "80-100 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "herb-rose-petals-whole.html",
+    "name": "Rose Petals Whole Dried",
+    "product": "Rose Petals",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "TBC (Tightly Bound Clean)"
+  },
+  {
+    "level": "variant",
+    "file": "herb-senna-powder.html",
+    "name": "Senna Leaves Powder",
+    "product": "Senna Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "80-100 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "herb-senna-whole.html",
+    "name": "Senna Leaves Whole Dried",
+    "product": "Senna Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "TBC (Tightly Bound Clean)"
+  },
+  {
+    "level": "variant",
+    "file": "herb-shatavari-powder.html",
+    "name": "Shatavari Powder",
+    "product": "Shatavari",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-shatavari-whole.html",
+    "name": "Shatavari Whole",
+    "product": "Shatavari",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-shikakai-powder.html",
+    "name": "Shikakai Pods Powder",
+    "product": "Shikakai Pods",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-shikakai-whole.html",
+    "name": "Shikakai Pods Whole",
+    "product": "Shikakai Pods",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-triphala-powder.html",
+    "name": "Triphala Powder",
+    "product": "Triphala",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-triphala-whole.html",
+    "name": "Triphala Whole",
+    "product": "Triphala",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Fruits & Pods",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-tulsi-powder.html",
+    "name": "Tulsi Leaves Powder",
+    "product": "Tulsi Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "80-100 mesh"
+  },
+  {
+    "level": "variant",
+    "file": "herb-tulsi-whole.html",
+    "name": "Tulsi Leaves Whole Dried",
+    "product": "Tulsi Leaves",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Leaves & Flowers",
+    "spec": "TBC (Tightly Bound Clean)"
+  },
+  {
+    "level": "variant",
+    "file": "herb-turmeric-root-powder.html",
+    "name": "Turmeric Root Powder",
+    "product": "Turmeric Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "herb-turmeric-root-whole.html",
+    "name": "Turmeric Root Whole",
+    "product": "Turmeric Root",
+    "category": "Herbs & Crude Drugs",
+    "subcategory": "Roots & Rhizomes",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-flax-export.html",
+    "name": "Export Grade",
+    "product": "Flax / Linseed",
+    "category": "Oil Seeds",
+    "subcategory": "Other Oil Seeds",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-hps-export.html",
+    "name": "HPS Groundnuts",
+    "product": "HPS Groundnuts",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-java-peanut-5060.html",
+    "name": "Java 50/60",
+    "product": "Java Peanut 50/60",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts",
+    "spec": "50-60 kernels/oz"
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-java-peanut-6070.html",
+    "name": "Java 60/70",
+    "product": "Java Peanut 50/60",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts",
+    "spec": "60-70 kernels/oz"
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-mustard-export.html",
+    "name": "Export Grade",
+    "product": "Mustard Seeds",
+    "category": "Oil Seeds",
+    "subcategory": "Other Oil Seeds",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-niger-export.html",
+    "name": "Export Grade",
+    "product": "Niger Seeds",
+    "category": "Oil Seeds",
+    "subcategory": "Other Oil Seeds",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-peanut-bold-3842.html",
+    "name": "Bold 38/42",
+    "product": "Peanut Bold 40/50",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts",
+    "spec": "38-42 kernels/oz"
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-peanut-bold-4050.html",
+    "name": "Bold 40/50",
+    "product": "Peanut Bold 40/50",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts",
+    "spec": "40-50 kernels/oz"
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-runner-peanut-6070.html",
+    "name": "Runner 60/70",
+    "product": "Runner Peanut 60/70",
+    "category": "Oil Seeds",
+    "subcategory": "Groundnuts",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-sesame-black-99.html",
+    "name": "Black Sesame 99%",
+    "product": "Black Sesame",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds",
+    "spec": "99%"
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-sesame-hulled-991.html",
+    "name": "Hulled Sesame 99/1",
+    "product": "Hulled Sesame 99.95%",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds",
+    "spec": "99% purity, 1% max imp"
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-sesame-hulled-9995.html",
+    "name": "Hulled Sesame 99.95%",
+    "product": "Hulled Sesame 99.95%",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds",
+    "spec": "99.95% purity"
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-sesame-mixed-export.html",
+    "name": "Mixed Sesame",
+    "product": "Mixed Sesame",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-sesame-natural-982.html",
+    "name": "Natural Sesame 98/2",
+    "product": "Natural White Sesame",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds",
+    "spec": "98% purity"
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-sesame-natural-991.html",
+    "name": "Natural Sesame 99/1",
+    "product": "Natural White Sesame",
+    "category": "Oil Seeds",
+    "subcategory": "Sesame Seeds",
+    "spec": "99% purity"
+  },
+  {
+    "level": "variant",
+    "file": "oilseed-sunflower-export.html",
+    "name": "Export Grade",
+    "product": "Sunflower Seeds",
+    "category": "Oil Seeds",
+    "subcategory": "Other Oil Seeds",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-black-urad-export.html",
+    "name": "Black Urad Whole",
+    "product": "Black Urad Whole",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-chana-dal-export.html",
+    "name": "Export Grade",
+    "product": "Chana Dal",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-chickpeas-4244.html",
+    "name": "Kabuli 42/44",
+    "product": "Kabuli Chickpeas",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": "42-44 count/oz"
+  },
+  {
+    "level": "variant",
+    "file": "pulse-chickpeas-4446.html",
+    "name": "Kabuli 44/46",
+    "product": "Kabuli Chickpeas",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": "44-46 count/oz"
+  },
+  {
+    "level": "variant",
+    "file": "pulse-chickpeas-5860.html",
+    "name": "Kabuli 58/60",
+    "product": "Kabuli Chickpeas",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": "58-60 count/oz"
+  },
+  {
+    "level": "variant",
+    "file": "pulse-desi-chana-export.html",
+    "name": "Desi Chana",
+    "product": "Desi Chana",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-green-moong-bold.html",
+    "name": "Green Moong Bold",
+    "product": "Green Moong Whole",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-green-peas-export.html",
+    "name": "Export Grade",
+    "product": "Green Split Peas",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-lobia-export.html",
+    "name": "Lobia Export",
+    "product": "Lobia",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-masoor-dal-export.html",
+    "name": "Export Grade",
+    "product": "Masoor Dal (Red Lentils)",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-moong-dal-export.html",
+    "name": "Export Grade",
+    "product": "Moong Dal Split",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-rajma-chitra.html",
+    "name": "Rajma Chitra",
+    "product": "Rajma (Kidney Beans)",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": "Speckled"
+  },
+  {
+    "level": "variant",
+    "file": "pulse-rajma-jammu.html",
+    "name": "Rajma Jammu",
+    "product": "Rajma (Kidney Beans)",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": "Small, red-brown"
+  },
+  {
+    "level": "variant",
+    "file": "pulse-rajma-red.html",
+    "name": "Rajma Red",
+    "product": "Rajma (Kidney Beans)",
+    "category": "Pulses",
+    "subcategory": "Whole Pulses",
+    "spec": "Dark red"
+  },
+  {
+    "level": "variant",
+    "file": "pulse-toor-dal-export.html",
+    "name": "Export Grade",
+    "product": "Toor Dal (Arhar)",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-urad-dal-export.html",
+    "name": "Export Grade",
+    "product": "Urad Dal White",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "pulse-yellow-peas-export.html",
+    "name": "Export Grade",
+    "product": "Yellow Split Peas",
+    "category": "Pulses",
+    "subcategory": "Split Pulses / Dal",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1121-golden.html",
+    "name": "1121 Golden Sella",
+    "product": "1121 Basmati (Sella/Raw)",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Deep Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1121-raw.html",
+    "name": "1121 Raw (White Milled)",
+    "product": "1121 Basmati (Sella/Raw)",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Pearly White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1121-sella.html",
+    "name": "1121 Sella (Parboiled)",
+    "product": "1121 Basmati (Sella/Raw)",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Golden/Cream"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1121-steam.html",
+    "name": "1121 Steam",
+    "product": "1121 Basmati (Sella/Raw)",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Off-White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1509-golden.html",
+    "name": "1509 Golden Sella",
+    "product": "1509 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Deep Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1509-raw.html",
+    "name": "1509 Raw (White)",
+    "product": "1509 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Pearly White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1509-sella.html",
+    "name": "1509 Sella (Parboiled)",
+    "product": "1509 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Golden/Cream"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1509-steam.html",
+    "name": "1509 Steam",
+    "product": "1509 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Off-White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1718-golden.html",
+    "name": "1718 Golden Sella",
+    "product": "1718 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Deep Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1718-raw.html",
+    "name": "1718 Raw (White)",
+    "product": "1718 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Pearly White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1718-sella.html",
+    "name": "1718 Sella (Parboiled)",
+    "product": "1718 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Golden/Cream"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-1718-steam.html",
+    "name": "1718 Steam",
+    "product": "1718 Basmati",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Off-White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-pusa-golden.html",
+    "name": "Pusa Golden Sella",
+    "product": "Pusa Basmati 1121",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Deep Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-pusa-raw.html",
+    "name": "Pusa Raw (White)",
+    "product": "Pusa Basmati 1121",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Pearly White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-pusa-sella.html",
+    "name": "Pusa Sella (Parboiled)",
+    "product": "Pusa Basmati 1121",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Golden/Cream"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-pusa-steam.html",
+    "name": "Pusa Steam",
+    "product": "Pusa Basmati 1121",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Off-White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-traditional-raw.html",
+    "name": "Traditional Raw",
+    "product": "Traditional Basmati (Dehraduni)",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Pearly White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-traditional-sella.html",
+    "name": "Traditional Sella",
+    "product": "Traditional Basmati (Dehraduni)",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Cream"
+  },
+  {
+    "level": "variant",
+    "file": "rice-basmati-traditional-steam.html",
+    "name": "Traditional Steam",
+    "product": "Traditional Basmati (Dehraduni)",
+    "category": "Indian Rice",
+    "subcategory": "Basmati Rice",
+    "spec": "Off-White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-gobindobhog-raw.html",
+    "name": "Gobindobhog Raw",
+    "product": "Gobindobhog",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-ir64-parboiled-100.html",
+    "name": "IR 64 Parboiled 100%",
+    "product": "IR 64 Parboiled",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-ir64-parboiled-25.html",
+    "name": "IR 64 Parboiled 25%",
+    "product": "IR 64 Parboiled",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-ir64-parboiled-5.html",
+    "name": "IR 64 Parboiled 5%",
+    "product": "IR 64 Parboiled",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-ir64-raw.html",
+    "name": "IR 64 Raw White",
+    "product": "IR 64 Parboiled",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-miniket-raw.html",
+    "name": "Miniket Raw",
+    "product": "Miniket Rice",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-parboiled-100.html",
+    "name": "Parboiled 100% Broken",
+    "product": "Parboiled Long Grain",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-parboiled-25.html",
+    "name": "Parboiled 25% Broken",
+    "product": "Parboiled Long Grain",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-parboiled-5.html",
+    "name": "Parboiled 5% Broken",
+    "product": "Parboiled Long Grain",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Golden"
+  },
+  {
+    "level": "variant",
+    "file": "rice-ponni-boiled.html",
+    "name": "Ponni Boiled",
+    "product": "Ponni Boiled",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Off-White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-pr11-raw.html",
+    "name": "PR 11 Raw White",
+    "product": "PR 11 / PR 14",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-pr11-sella.html",
+    "name": "PR 11 Sella Cream",
+    "product": "PR 11 / PR 14",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Cream"
+  },
+  {
+    "level": "variant",
+    "file": "rice-pr14-sella.html",
+    "name": "PR 14 Sella",
+    "product": "PR 11 / PR 14",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Cream"
+  },
+  {
+    "level": "variant",
+    "file": "rice-sona-masoori-boiled.html",
+    "name": "Sona Masoori Boiled",
+    "product": "Sona Masoori",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Off-White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-sona-masoori-raw.html",
+    "name": "Sona Masoori Raw",
+    "product": "Sona Masoori",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-swarna-raw.html",
+    "name": "Swarna Raw White",
+    "product": "Swarna / MTU 7029",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "White"
+  },
+  {
+    "level": "variant",
+    "file": "rice-swarna-sella.html",
+    "name": "Swarna Sella Golden",
+    "product": "Swarna / MTU 7029",
+    "category": "Indian Rice",
+    "subcategory": "Non-Basmati Rice",
+    "spec": "Golden"
+  },
+  {
+    "level": "variant",
+    "file": "spice-bay-leaves-faq.html",
+    "name": "Bay Leaves FAQ",
+    "product": "Bay Leaves",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "spice-bay-leaves-hps.html",
+    "name": "Bay Leaves Supreme HPS",
+    "product": "Bay Leaves",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Hand Picked Selected"
+  },
+  {
+    "level": "variant",
+    "file": "spice-biryani-masala-custom.html",
+    "name": "Custom Blend",
+    "product": "Biryani Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Buyer spec formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-biryani-masala-standard.html",
+    "name": "Standard Blend",
+    "product": "Biryani Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Standard formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-black-pepper-faq.html",
+    "name": "Black Pepper FAQ",
+    "product": "Black Pepper",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "500 g/L min"
+  },
+  {
+    "level": "variant",
+    "file": "spice-black-pepper-mg1.html",
+    "name": "Black Pepper MG1",
+    "product": "Black Pepper",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "550 g/L min"
+  },
+  {
+    "level": "variant",
+    "file": "spice-black-pepper-powder-100mesh.html",
+    "name": "Black Pepper Powder 100 Mesh",
+    "product": "Black Pepper Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "spice-black-pepper-powder-60mesh.html",
+    "name": "Black Pepper Powder 60 Mesh",
+    "product": "Black Pepper Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "60 mesh coarse"
+  },
+  {
+    "level": "variant",
+    "file": "spice-black-pepper-tgseb.html",
+    "name": "Black Pepper TGSEB",
+    "product": "Black Pepper",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "580 g/L min"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cardamom-5-6mm.html",
+    "name": "Cardamom 5–6mm",
+    "product": "Green Cardamom",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "5-6mm"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cardamom-6-7mm.html",
+    "name": "Cardamom 6–7mm",
+    "product": "Green Cardamom",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "6-7mm"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cardamom-7-8mm.html",
+    "name": "Cardamom 7–8mm",
+    "product": "Green Cardamom",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "7-8mm"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cardamom-8mm.html",
+    "name": "Cardamom 8mm+ (Alleppey Green Extra Bold)",
+    "product": "Green Cardamom",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "8mm+"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cardamom-powder-100mesh.html",
+    "name": "Cardamom Powder 100 Mesh",
+    "product": "Cardamom Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cardamom-powder-60mesh.html",
+    "name": "Cardamom Powder 60 Mesh",
+    "product": "Cardamom Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "60 mesh coarse"
+  },
+  {
+    "level": "variant",
+    "file": "spice-chaat-masala-custom.html",
+    "name": "Custom Blend",
+    "product": "Chaat Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Buyer spec formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-chaat-masala-standard.html",
+    "name": "Standard Blend",
+    "product": "Chaat Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Standard formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cinnamon-cassia.html",
+    "name": "Cinnamon Cassia (Chinese)",
+    "product": "Cinnamon",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "spice-cinnamon-true.html",
+    "name": "Cinnamon True (Ceylon-type)",
+    "product": "Cinnamon",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "spice-cloves-faq.html",
+    "name": "Cloves FAQ",
+    "product": "Cloves",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "14%+ oil"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cloves-grade1.html",
+    "name": "Cloves Grade 1",
+    "product": "Cloves",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "16%+ oil"
+  },
+  {
+    "level": "variant",
+    "file": "spice-coriander-double-parrot.html",
+    "name": "Coriander Seeds Double Parrot",
+    "product": "Coriander Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Machine cleaned"
+  },
+  {
+    "level": "variant",
+    "file": "spice-coriander-eagle.html",
+    "name": "Coriander Seeds Eagle Quality",
+    "product": "Coriander Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Sortex clean"
+  },
+  {
+    "level": "variant",
+    "file": "spice-coriander-faq.html",
+    "name": "Coriander Seeds FAQ",
+    "product": "Coriander Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "spice-coriander-powder-100mesh.html",
+    "name": "Coriander Powder 100 Mesh",
+    "product": "Coriander Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "spice-coriander-powder-60mesh.html",
+    "name": "Coriander Powder 60 Mesh",
+    "product": "Coriander Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "60 mesh coarse"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cumin-europe.html",
+    "name": "Cumin Seeds Europe Quality",
+    "product": "Cumin Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "99% purity, sortex"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cumin-faq.html",
+    "name": "Cumin Seeds FAQ",
+    "product": "Cumin Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "98% purity"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cumin-powder-100mesh.html",
+    "name": "Cumin Powder 100 Mesh",
+    "product": "Cumin Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cumin-powder-60mesh.html",
+    "name": "Cumin Powder 60 Mesh",
+    "product": "Cumin Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "60 mesh coarse"
+  },
+  {
+    "level": "variant",
+    "file": "spice-cumin-singapore.html",
+    "name": "Cumin Seeds Singapore Quality",
+    "product": "Cumin Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "99.5% purity"
+  },
+  {
+    "level": "variant",
+    "file": "spice-curry-powder-custom.html",
+    "name": "Custom Blend",
+    "product": "Curry Powder",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Buyer spec formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-curry-powder-standard.html",
+    "name": "Standard Blend",
+    "product": "Curry Powder",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Standard formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-fennel-europe.html",
+    "name": "Fennel Seeds Europe Quality",
+    "product": "Fennel Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Sortex clean, green"
+  },
+  {
+    "level": "variant",
+    "file": "spice-fennel-faq.html",
+    "name": "Fennel Seeds FAQ",
+    "product": "Fennel Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "spice-fennel-powder-100mesh.html",
+    "name": "Fennel Powder 100 Mesh",
+    "product": "Fennel Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "spice-fennel-powder-60mesh.html",
+    "name": "Fennel Powder 60 Mesh",
+    "product": "Fennel Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "60 mesh coarse"
+  },
+  {
+    "level": "variant",
+    "file": "spice-fennel-singapore.html",
+    "name": "Fennel Seeds Singapore Quality",
+    "product": "Fennel Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Machine cleaned"
+  },
+  {
+    "level": "variant",
+    "file": "spice-fenugreek-faq.html",
+    "name": "Fenugreek Seeds FAQ",
+    "product": "Fenugreek Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "spice-fenugreek-powder-100mesh.html",
+    "name": "Fenugreek Powder 100 Mesh",
+    "product": "Fenugreek Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "spice-fenugreek-powder-60mesh.html",
+    "name": "Fenugreek Powder 60 Mesh",
+    "product": "Fenugreek Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "60 mesh coarse"
+  },
+  {
+    "level": "variant",
+    "file": "spice-fenugreek-sortex.html",
+    "name": "Fenugreek Seeds Sortex",
+    "product": "Fenugreek Seeds",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "spice-garam-masala-custom.html",
+    "name": "Custom Blend",
+    "product": "Garam Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Buyer spec formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-garam-masala-standard.html",
+    "name": "Standard Blend",
+    "product": "Garam Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Standard formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-long-pepper-export.html",
+    "name": "Long Pepper",
+    "product": "Long Pepper",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Export grade"
+  },
+  {
+    "level": "variant",
+    "file": "spice-mace-export.html",
+    "name": "Mace",
+    "product": "Mace",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Export grade"
+  },
+  {
+    "level": "variant",
+    "file": "spice-nutmeg-spice-export.html",
+    "name": "Nutmeg",
+    "product": "Nutmeg",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Export grade"
+  },
+  {
+    "level": "variant",
+    "file": "spice-red-chilli-334.html",
+    "name": "Wonder Hot / 334",
+    "product": "Red Chilli Whole",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "ASTA 100+"
+  },
+  {
+    "level": "variant",
+    "file": "spice-red-chilli-byadgi.html",
+    "name": "Byadgi (Karnataka)",
+    "product": "Red Chilli Whole",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "ASTA 120-180"
+  },
+  {
+    "level": "variant",
+    "file": "spice-red-chilli-powder-100mesh.html",
+    "name": "Red Chilli Powder 100 Mesh",
+    "product": "Red Chilli Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "spice-red-chilli-powder-60mesh.html",
+    "name": "Red Chilli Powder 60 Mesh",
+    "product": "Red Chilli Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "60 mesh coarse"
+  },
+  {
+    "level": "variant",
+    "file": "spice-red-chilli-s17.html",
+    "name": "S17 / Teja (w/o stem)",
+    "product": "Red Chilli Whole",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "ASTA 60-80"
+  },
+  {
+    "level": "variant",
+    "file": "spice-red-chilli-s4.html",
+    "name": "S4 / Sannam (w/ stem)",
+    "product": "Red Chilli Whole",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "ASTA 80-100"
+  },
+  {
+    "level": "variant",
+    "file": "spice-red-chilli-teja.html",
+    "name": "Teja (Andhra)",
+    "product": "Red Chilli Whole",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "ASTA 80-100"
+  },
+  {
+    "level": "variant",
+    "file": "spice-sambar-powder-custom.html",
+    "name": "Custom Blend",
+    "product": "Sambar Powder",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Buyer spec formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-sambar-powder-standard.html",
+    "name": "Standard Blend",
+    "product": "Sambar Powder",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Standard formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-star-anise-broken.html",
+    "name": "Star Anise Broken",
+    "product": "Star Anise",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": ""
+  },
+  {
+    "level": "variant",
+    "file": "spice-star-anise-whole.html",
+    "name": "Star Anise Whole",
+    "product": "Star Anise",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "8 complete petals"
+  },
+  {
+    "level": "variant",
+    "file": "spice-tea-masala-custom.html",
+    "name": "Custom Blend",
+    "product": "Tea Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Buyer spec formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-tea-masala-standard.html",
+    "name": "Standard Blend",
+    "product": "Tea Masala",
+    "category": "Indian Spices",
+    "subcategory": "Mixed Spices",
+    "spec": "Standard formulation"
+  },
+  {
+    "level": "variant",
+    "file": "spice-turmeric-erode.html",
+    "name": "Turmeric Finger Erode",
+    "product": "Turmeric Finger",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Curcumin 3-3.5%"
+  },
+  {
+    "level": "variant",
+    "file": "spice-turmeric-powder-100mesh.html",
+    "name": "Turmeric Powder 100 Mesh",
+    "product": "Turmeric Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "100 mesh fine"
+  },
+  {
+    "level": "variant",
+    "file": "spice-turmeric-powder-60mesh.html",
+    "name": "Turmeric Powder 60 Mesh",
+    "product": "Turmeric Powder",
+    "category": "Indian Spices",
+    "subcategory": "Powdered Spices",
+    "spec": "60 mesh coarse"
+  },
+  {
+    "level": "variant",
+    "file": "spice-turmeric-rajapore.html",
+    "name": "Turmeric Finger Rajapore",
+    "product": "Turmeric Finger",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Curcumin 2.5-3%"
+  },
+  {
+    "level": "variant",
+    "file": "spice-turmeric-salem.html",
+    "name": "Turmeric Finger Salem",
+    "product": "Turmeric Finger",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Curcumin 3.5-5%"
+  },
+  {
+    "level": "variant",
+    "file": "spice-turmeric-sangli.html",
+    "name": "Turmeric Finger Sangli",
+    "product": "Turmeric Finger",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Curcumin 2-2.5%"
+  },
+  {
+    "level": "variant",
+    "file": "spice-white-pepper-export.html",
+    "name": "White Pepper",
+    "product": "White Pepper",
+    "category": "Indian Spices",
+    "subcategory": "Whole Spices",
+    "spec": "Export grade"
+  }
+]

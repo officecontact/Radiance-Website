@@ -203,15 +203,38 @@
     });
   }
 
+  function escapeHtml(str) {
+    var d = document.createElement('div');
+    d.appendChild(document.createTextNode(str));
+    return d.innerHTML;
+  }
+
   function openLightbox(src, caption) {
-    const lb = document.createElement('div');
+    var safeSrc = escapeHtml(src);
+    var safeCaption = caption ? escapeHtml(caption) : '';
+    var lb = document.createElement('div');
     lb.id = 'lightbox';
     lb.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:99999;display:flex;align-items:center;justify-content:center;flex-direction:column;';
-    lb.innerHTML = `
-      <button onclick="document.getElementById('lightbox').remove()" style="position:absolute;top:20px;right:24px;background:none;border:none;color:#fff;font-size:36px;cursor:pointer;line-height:1;">&times;</button>
-      <img src="${src}" style="max-width:90vw;max-height:80vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5);">
-      ${caption ? `<p style="color:rgba(255,255,255,.7);margin-top:14px;font-size:14px;">${caption}</p>` : ''}
-    `;
+
+    var closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '&times;';
+    closeBtn.style.cssText = 'position:absolute;top:20px;right:24px;background:none;border:none;color:#fff;font-size:36px;cursor:pointer;line-height:1;';
+    closeBtn.addEventListener('click', function() { lb.remove(); });
+
+    var img = document.createElement('img');
+    img.src = safeSrc;
+    img.style.cssText = 'max-width:90vw;max-height:80vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5);';
+
+    lb.appendChild(closeBtn);
+    lb.appendChild(img);
+
+    if (safeCaption) {
+      var p = document.createElement('p');
+      p.style.cssText = 'color:rgba(255,255,255,.7);margin-top:14px;font-size:14px;';
+      p.textContent = caption;
+      lb.appendChild(p);
+    }
+
     lb.addEventListener('click', function(e) { if (e.target === lb) lb.remove(); });
     document.body.appendChild(lb);
     document.addEventListener('keydown', function esc(e) { if (e.key === 'Escape') { lb.remove(); document.removeEventListener('keydown', esc); } });
@@ -262,19 +285,6 @@
     alert('Message could not be sent. Please email us directly at info@radianceoverseas.com');
   }
 
-  /* ── SMOOTH SCROLL ───────────────────────────────────────────── */
-  function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
-      a.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-  }
-
   /* ── BLOG LOADER ─────────────────────────────────────────────── */
   function loadBlogPosts() {
     const container = document.getElementById('blog-posts-container');
@@ -283,30 +293,62 @@
     fetch('https://www.radianceoverseas.com/blogs/wp-json/wp/v2/posts?per_page=6&_embed')
       .then(function(r) { return r.json(); })
       .then(function(posts) {
-        let html = '';
+        container.innerHTML = '';
         posts.forEach(function(post) {
-          const title = post.title.rendered;
-          const link = post.link;
-          const excerpt = post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 200) + '…';
-          const date = new Date(post.date).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' });
-          const img = (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0])
+          var title = post.title.rendered.replace(/<[^>]*>/g, '');
+          var link = post.link;
+          var excerpt = post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 200) + '\u2026';
+          var date = new Date(post.date).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' });
+          var img = (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0])
             ? post._embedded['wp:featuredmedia'][0].source_url
             : 'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600&q=80';
-          html += `
-            <div class="blog-card anim-fade-up">
-              <div class="blog-card-img"><img src="${img}" alt="${title}" loading="lazy"></div>
-              <div class="blog-card-body">
-                <div class="blog-card-meta">
-                  <span class="blog-card-tag">Organic</span>
-                  <span>📅 ${date}</span>
-                </div>
-                <h3>${title}</h3>
-                <p>${excerpt}</p>
-                <a href="${link}" target="_blank" class="read-more">Read More <span>→</span></a>
-              </div>
-            </div>`;
+
+          var card = document.createElement('div');
+          card.className = 'blog-card anim-fade-up';
+
+          var imgDiv = document.createElement('div');
+          imgDiv.className = 'blog-card-img';
+          var imgEl = document.createElement('img');
+          imgEl.src = img;
+          imgEl.alt = title;
+          imgEl.loading = 'lazy';
+          imgDiv.appendChild(imgEl);
+
+          var body = document.createElement('div');
+          body.className = 'blog-card-body';
+
+          var meta = document.createElement('div');
+          meta.className = 'blog-card-meta';
+          var tag = document.createElement('span');
+          tag.className = 'blog-card-tag';
+          tag.textContent = 'Organic';
+          var dateSpan = document.createElement('span');
+          dateSpan.textContent = '\uD83D\uDCC5 ' + date;
+          meta.appendChild(tag);
+          meta.appendChild(dateSpan);
+
+          var h3 = document.createElement('h3');
+          h3.textContent = title;
+          var p = document.createElement('p');
+          p.textContent = excerpt;
+          var a = document.createElement('a');
+          a.href = link;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.className = 'read-more';
+          a.textContent = 'Read More ';
+          var arrow = document.createElement('span');
+          arrow.textContent = '\u2192';
+          a.appendChild(arrow);
+
+          body.appendChild(meta);
+          body.appendChild(h3);
+          body.appendChild(p);
+          body.appendChild(a);
+          card.appendChild(imgDiv);
+          card.appendChild(body);
+          container.appendChild(card);
         });
-        container.innerHTML = html;
         initScrollReveal();
       })
       .catch(function() {
@@ -325,7 +367,6 @@
     initGradeTabs();
     initGallery();
     initContactForm();
-    initSmoothScroll();
     loadBlogPosts();
   });
 

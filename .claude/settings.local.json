@@ -7,7 +7,11 @@
       "Bash(find /c/Users/aagos/radiance_page_generators/generators/public_html -type f -name \"*.html\" | head -5 | xargs grep -l \"application/ld+json\" 2>/dev/null)",
       "Bash(grep -i \"unsplash\\\\|pexels\\\\|images\\\\.unsplash\" /c/Users/aagos/radiance_page_generators/generators/public_html/*.html | head -10)",
       "Bash(find /c/Users/aagos/radiance_page_generators/generators/public_html -type f -name \"*.html\" -exec grep -l \"og:image\" {} \\\\; | wc -l)",
-      "Bash(find /c/Users/aagos/radiance_page_generators/generators/public_html/webassets/js -type f | xargs wc -l)"
+      "Bash(find /c/Users/aagos/radiance_page_generators/generators/public_html/webassets/js -type f | xargs wc -l)",
+      "Bash(cd \"C:/Users/aagos/radiance_page_generators/generators/public_html\" && ls *.html | grep \"cumin-seeds\" | head -10)",
+      "Bash(cd \"C:/Users/aagos/radiance_page_generators/generators/public_html\" && ls *.html | grep \"basmati-rice-1121\" | head -10)",
+      "Bash(cd \"C:/Users/aagos/radiance_page_generators/generators/public_html\" && ls *.html | grep \"cumin-seeds\")",
+      "Bash(cd \"C:/Users/aagos/radiance_page_generators/generators/public_html\" && grep -c '\\\\.webp>' *.html 2>/dev/null | grep -v ':0$' | wc -l)"
     ]
   }
 }

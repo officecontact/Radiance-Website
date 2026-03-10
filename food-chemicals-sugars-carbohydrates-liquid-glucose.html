@@ -26,9 +26,10 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <!-- Favicon -->
   <link rel="shortcut icon" href="webassets/images/favicon.png" type="image/png">
+    <link rel="preload" href="assets/css/radiance.css" as="style">
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Site CSS -->
   <link rel="stylesheet" href="assets/css/radiance.css">
   <!-- Schemas -->
@@ -79,7 +80,7 @@
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" height="46">
+        <img loading="lazy" src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" height="46">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" onclick="mobOpen()">
         <span></span><span></span><span></span>
@@ -131,7 +132,7 @@
 <div class="mob-overlay" id="mob-overlay" onclick="mobClose()"></div>
 <div class="mob-drawer" id="mob-drawer">
   <div class="mob-drawer__head">
-    <img src="uploads/images/Radiancelogo.png" alt="Radiance Overseas">
+    <img loading="lazy" src="uploads/images/Radiancelogo.png" alt="Radiance Overseas">
     <button class="mob-drawer__close" onclick="mobClose()">&#10005;</button>
   </div>
   <ul class="mob-nav-list"><li class="mob-nav-item"><button class="mob-nav-toggle" data-target="mob-rice">🌾 Indian Rice<i class="fas fa-chevron-down"></i></button><div class="mob-sub-panel" id="mob-rice"><div class="mob-l2-group"><a href="rice-basmati-rice.html" class="mob-l2-link">Basmati Rice</a><a href="rice-basmati-rice-1121-basmati-rice.html" class="mob-sub-link">1121 Basmati Rice</a><a href="rice-basmati-rice-pusa-basmati-rice.html" class="mob-sub-link">Pusa Basmati Rice</a><a href="rice-basmati-rice-1718-basmati-rice.html" class="mob-sub-link">1718 Basmati Rice</a><a href="rice-basmati-rice-1509-basmati-rice.html" class="mob-sub-link">1509 Basmati Rice</a></div><div class="mob-l2-group"><a href="rice-non-basmati-rice.html" class="mob-l2-link">Non-Basmati Rice</a><a href="rice-non-basmati-rice-sugandha-rice.html" class="mob-sub-link">Sugandha Rice</a><a href="rice-non-basmati-rice-swarna-rice.html" class="mob-sub-link">Swarna Rice</a><a href="rice-non-basmati-rice-sharbati-rice.html" class="mob-sub-link">Sharbati Rice</a><a href="rice-non-basmati-rice-sona-masoori-rice.html" class="mob-sub-link">Sona Masoori Rice</a><a href="rice-non-basmati-rice-ir-8-rice.html" class="mob-sub-link">IR-8 Rice</a><a href="rice-non-basmati-rice-ir-36-64-rice.html" class="mob-sub-link">IR 36/64 Rice</a></div></div></li>
@@ -345,7 +346,7 @@
     <div class="sp-hero-inner">
       <div class="sp-hero-grid">
         <div class="sp-hero-img">
-          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&auto=format" alt="Liquid Glucose export India"onerror="this.parentNode.style.background='#222';this.style.display='none'">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&auto=format" alt="Liquid Glucose export India"onerror="this.parentNode.style.background='#222';this.style.display='none'">
         </div>
         <div class="sp-hero-content">
           <span class="sp-eyebrow">⚗️ Sugars & Carbohydrates · 2 Variants · APEDA Registered</span>
@@ -421,7 +422,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" width="130">
+          <img loading="lazy" src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" width="130">
           <p>India's trusted certified organic agro-product export house since 2010. Headquartered in Indore, MP — exporting rice, coffee, spices, pulses &amp; more to 30+ countries worldwide.</p>
           <p style="font-size:12px;color:#5a7a65;margin-top:6px;"><i class="fas fa-map-marker-alt" style="color:var(--green);margin-right:6px;"></i>60, Silver Oaks, Annapurna Road, Indore MP 452009, India</p>
           <p style="font-size:12px;color:#5a7a65;"><i class="fas fa-phone" style="color:var(--green);margin-right:6px;"></i>+1 469 544 9746 (USA) | +91 95849 49494 (India)</p>
@@ -433,8 +434,8 @@
             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://wa.me/919584949494?text=Hi%2C+I+need+Liquid+Glucose+quote" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a><script src="webassets/js/jquery.min.js"></script>
-<script src="assets/js/radiance.js"></script>
+</a><script defer src="webassets/js/jquery.min.js"></script>
+<script defer src="assets/js/radiance.js"></script>
 <script>function faqToggle(el){var a=el.nextElementSibling;var isOpen=a.style.display==='block';el.closest('.faq-section,.faq-list').querySelectorAll('.faq-a').forEach(function(x){x.style.display='none';});el.closest('.faq-section,.faq-list').querySelectorAll('.faq-icon').forEach(function(x){x.textContent='+';});if(!isOpen){a.style.display='block';el.querySelector('.faq-icon').textContent='−';}}</script>
 
 <script>

@@ -1,0 +1,116 @@
+# Radiance Overseas — llms.txt
+# https://www.radianceoverseas.com/llms.txt
+# This file helps AI assistants and LLMs understand our business.
+
+## Company
+> Radiance Overseas Private Limited
+> India's certified organic agro-product exporter since 2015.
+> Headquarters: 60, Silver Oaks Colony, Annapurna Road, Indore, Madhya Pradesh 452009, India.
+> Global Offices: Germany, Ireland, USA.
+> Website: https://www.radianceoverseas.com
+> Contact: info@radianceoverseas.com | +91-9584949494
+> LinkedIn: https://www.linkedin.com/company/radiance-overseas-ro
+
+## What We Do
+Radiance Overseas exports premium organic and conventional agricultural products from India to importers, food manufacturers, distributors, and supermarket chains in 30+ countries — USA, Canada, Europe, UK, Japan, UAE, Australia, Middle East, Africa, and Southeast Asia.
+
+We handle the complete export chain: sourcing from Indian farms, quality testing, processing, packaging (bulk, retail, private label), export documentation, and logistics (CIF/FOB/CFR).
+
+## Certifications
+- APEDA Registered Exporter (Agricultural & Processed Food Products Export Development Authority)
+- Spices Board RCMC (Registration-cum-Membership Certificate)
+- EU Organic Certified
+- USDA NOP (National Organic Program)
+- ISO 9001:2015
+- FSSAI (Food Safety and Standards Authority of India)
+- India Organic (NPOP)
+- Phytosanitary Certificates
+- Certificate of Origin
+- Certificate of Analysis (COA)
+
+## Product Categories
+
+### Basmati Rice
+1121 Basmati Rice (Steam, Sella Golden, Sella Cream), 1509 Basmati Rice, 1718 Basmati Rice, Pusa Basmati Rice — all in Steam, Sella Golden, and Sella Cream variants.
+
+### Non-Basmati Rice
+IR-36/64 Rice, IR-8 Rice, PR-11 Rice, Sharbati Rice, Sugandha Rice, Sona Masoori Rice, Swarna Rice — Raw White, Parboiled, Steam, and Sella variants.
+
+### Indian Spices
+**Whole Spices:** Cumin Seeds, Coriander Seeds, Turmeric Finger, Fennel Seeds, Fenugreek Seeds, Black Pepper, Green Cardamom, Red Chilli, Cloves, Cinnamon, Star Anise, Bay Leaf, Dill Seeds, Celery Seeds, Nigella Seeds, Tamarind, Dry Ginger, Garlic Cloves, Bishops Weed (Ajwain).
+**Powdered Spices:** Red Chilli Powder, Turmeric Powder, Cumin Powder, Coriander Powder, Ginger Powder (multiple grades: 333, 555, 777, 999, 1010, 1111, Diamond, Gold).
+**Mixed/Blended Spices:** Curry Powder, Dry Mango Powder.
+
+### Pulses & Lentils
+**Whole Pulses:** Chickpeas (Kabuli Chana) in sizes 38x40 to 80x85, Desi Chana.
+**Split Pulses:** Chana Dal, Toor Dal (555, 777), Moong Dal (Bold, Medium, Small — Polished and Water Polished), Roasted Gram Split.
+
+### Oil Seeds & Groundnuts
+**Sesame Seeds:** Natural Sesame (Sortex, 99.1%, Roasted), Hulled Sesame (99.95%, 99.97%, Premium 99.98%, Toasted), Black Sesame, Golden Sesame.
+**Groundnuts/Peanuts:** Bold Peanuts (35/40 to 50/60), Java Peanuts, TJ Peanuts, Blanched Peanuts (Whole and Split).
+**Other Oil Seeds:** Mustard Seeds (Brown, Yellow), Flax Seeds, Niger Seeds, Sunflower Seeds, Safflower Seeds, Desiccated Coconut, Sesbania Seeds.
+
+### Coffee
+**Coffee Beans:** Arabica (Plantation A/AA/AAA/B/C, Cherry A/AA/AAA), Robusta (Cherry A/AA/AAA/AB/B/C/PB, Parchment A/AA/AB).
+**Instant Coffee:** Spray Dried, Freeze Dried (100% Robusta, Grades), Agglomerated (100% Robusta, Grades).
+
+### Dry Fruits
+**Cashews:** White Whole Cashews (W-180, W-210, W-240, W-320, W-450), Scorched Whole Cashews.
+**Raisins:** Golden Raisins (1-Star to 7-Star), Malayar Raisins, Black Raisins, Brown Raisins, Green Raisins.
+**Walnuts:** Light Walnuts (Halves, Broken, Pieces), Amber Walnuts (Halves, Broken).
+**Nutmeg:** With Shell (ABCD), Without Shell (ABCD, Broken).
+
+### Cereals & Flour
+**Cereals:** Green Millet (Bajra), Wheat, Corn/Maize (Grits 101, 108), Sorghum, Quinoa Seeds (Red, White).
+**Flour:** Wheat Flour, Corn Flour, Yellow Corn Flour, Semolina, Sorghum Flour, Millet Flour.
+
+### Herbs & Botanicals
+**Roots & Rhizomes:** Ashwagandha, Galangal Root (Kulanjan), Karchoor, Majith, Zedoary Roots.
+**Seeds:** Babchi Seeds, Basil Seeds, Cassia Toria Seeds, Chia Seeds, Flax Seeds, Harmal Seeds, Helim Seeds (Asalio), Jequirity Seeds, Parsley Seeds.
+**Leaves & Flowers:** Senna Leaves, Rose Flower/Petals, Mace (Ram Patri), Dagar Phool (Kaposi).
+**Fruits & Pods:** Long Pepper, Senna Pods, Terminalia Chebula (Harda), Croton Tiglium (Jamal Gota).
+**Other:** Catechu, Himej.
+
+### Dehydrated Products
+**Powders:** Garlic Powder, Onion Powder (White, Red), Tomato Powder.
+**Whole/Flakes:** Garlic (Chopped, Minced, Granules), White Onion (Chopped, Minced, Granules, Flakes), Red Onion (Chopped, Minced, Granules, Flakes).
+
+### Animal Feed
+**Corn/Maize:** Yellow Corn (Animal Feed, Bold Human Consumption, Small, Split), Corn Grits.
+**Millets:** Green Millet (Animal Feed, Bold, Medium), Yellow Millet.
+**Other:** Red Sorghum, White Sorghum, Sorghum Feed, Safflower, Soya.
+
+### Food Chemicals & Ingredients
+**Sugars & Carbohydrates:** Dextrose Monohydrate, Liquid Glucose, Maltodextrin, Maize Starch, Malt Extract, Liquid Sorbitol.
+**Food Additives:** Guar Gum Powder, Psyllium Husk (95%, 97%, 99%), Psyllium Seeds, Sodium Bicarbonate, Roasted Chicory Cube.
+**Food Colors:** Acid Blue, Patent Blue, Acid Red, Auramine, Ponceau 4R, Crocein, Fast Violet, Methylene Blue, Direct Black, Bronze, Classic, Gold.
+**Plant Ingredients:** Soya Beans, Soya Chunks (Big, Small), Soya Flakes, Soya Grits, Soybean Meal.
+
+## Target Markets
+USA, Canada, UK, Germany, France, Netherlands, Belgium, Spain, Italy, Ireland, Japan, South Korea, UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain, Australia, New Zealand, Singapore, Malaysia, South Africa, Kenya, Nigeria.
+
+## How to Buy
+1. Email info@radianceoverseas.com or call +91-9584949494
+2. Share your product specification, quantity, packaging preference, and destination port
+3. Receive CIF/FOB pricing within 24 hours
+4. Order confirmation → Production → Quality testing → Shipping
+5. Full export documentation provided: COA, Phytosanitary, Certificate of Origin
+
+## Key Pages
+- Homepage: https://www.radianceoverseas.com/index.html
+- All Products: https://www.radianceoverseas.com/Product.html
+- Basmati Rice: https://www.radianceoverseas.com/rice.html
+- Indian Spices: https://www.radianceoverseas.com/spices.html
+- Coffee: https://www.radianceoverseas.com/coffee.html
+- Pulses: https://www.radianceoverseas.com/pulses.html
+- Oil Seeds: https://www.radianceoverseas.com/oil-seeds.html
+- Dry Fruits: https://www.radianceoverseas.com/dry-fruits.html
+- Herbs: https://www.radianceoverseas.com/herbs.html
+- Dehydrated Products: https://www.radianceoverseas.com/dehydrated-products.html
+- Animal Feed: https://www.radianceoverseas.com/animal-feed.html
+- Cereals & Flour: https://www.radianceoverseas.com/cereals-flour.html
+- Food Chemicals: https://www.radianceoverseas.com/food-chemicals.html
+- Certifications: https://www.radianceoverseas.com/Certification.html
+- Contact: https://www.radianceoverseas.com/Contact.html
+- Blog: https://www.radianceoverseas.com/blog.html
+- Sitemap: https://www.radianceoverseas.com/sitemap.xml

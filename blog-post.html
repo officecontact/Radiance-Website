@@ -21,331 +21,92 @@
   <link rel="stylesheet" href="assets/css/radiance.css">
   <script type="application/ld+json" id="article-schema">{}</script>
   <style>
-    /* ── Hero ── */
     .post-hero {
+      background: var(--green-deep);
+      padding: 80px 0 0;
       position: relative;
-      background: #0a1a0e;
-      min-height: 420px;
-      display: flex;
-      align-items: flex-end;
-      overflow: hidden;
     }
     .post-hero-img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+      border-radius: 0;
+    }
+    .post-hero-overlay {
       position: absolute;
       inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: .55;
+      background: linear-gradient(to bottom, rgba(0,46,30,.55) 0%, transparent 60%);
+      pointer-events: none;
     }
-    .post-hero-content {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      padding: 80px 0 48px;
+    .post-meta-bar {
+      background: #fff;
+      border-bottom: 1px solid #e5ede5;
+      padding: 18px 0;
     }
-    .post-hero-content .container {
-      max-width: 900px;
-    }
-    .post-tag-pill {
-      display: inline-block;
-      background: var(--green);
-      color: #fff;
-      padding: 5px 14px;
-      border-radius: 20px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .8px;
-      margin-bottom: 16px;
-    }
-    .post-hero-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(24px, 4vw, 48px);
-      color: #fff;
-      line-height: 1.2;
-      margin: 0 0 20px;
-      text-shadow: 0 2px 8px rgba(0,0,0,.4);
-    }
-    .post-hero-meta {
+    .post-meta-inner {
       display: flex;
       align-items: center;
       gap: 20px;
       flex-wrap: wrap;
       font-family: 'Poppins', sans-serif;
       font-size: 12px;
-      color: rgba(255,255,255,.7);
+      color: #666;
     }
-    .post-hero-meta span { display: flex; align-items: center; gap: 6px; }
-    .post-hero-meta i { color: var(--green); }
-
-    /* ── Layout ── */
-    .post-layout {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 48px;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 56px 24px 80px;
-    }
-    @media(max-width:900px) {
-      .post-layout { grid-template-columns: 1fr; padding: 36px 18px 60px; }
-      .post-sidebar { order: -1; }
-    }
-
-    /* ── Article Body ── */
-    .post-article { min-width: 0; }
-    .post-excerpt-block {
-      border-left: 4px solid var(--green);
-      padding: 18px 22px;
-      background: #f5fbf5;
-      border-radius: 0 8px 8px 0;
-      margin-bottom: 36px;
-      font-size: 16px;
-      line-height: 1.85;
-      color: #3a5a3a;
-      font-style: italic;
-    }
-
-    /* ── TOC ── */
-    .post-toc {
-      background: #f9fdf9;
-      border: 1px solid #d4e8d4;
-      border-radius: 10px;
-      padding: 22px 24px;
-      margin-bottom: 40px;
-    }
-    .post-toc h4 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--green-deep);
-      margin: 0 0 14px;
-    }
-    .post-toc ol {
-      margin: 0; padding-left: 20px;
-    }
-    .post-toc ol li {
-      margin-bottom: 8px;
-    }
-    .post-toc ol li a {
-      color: var(--green-deep);
-      text-decoration: none;
-      font-family: 'Poppins', sans-serif;
-      font-size: 13px;
-      transition: color .2s;
-    }
-    .post-toc ol li a:hover { color: var(--green); }
-
-    /* ── Section types ── */
-    .post-section {
-      margin-bottom: 44px;
-    }
-    .post-section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(20px, 2.5vw, 28px);
-      color: var(--green-deep);
-      margin: 0 0 18px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #e0f0e0;
-    }
-    .post-section p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 15.5px;
-      line-height: 1.85;
-      color: #333;
-      margin: 0 0 16px;
-    }
-
-    /* Stats row */
-    .stats-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-      gap: 16px;
-      margin-bottom: 40px;
-    }
-    .stat-card {
-      background: linear-gradient(135deg, var(--green-deep) 0%, #1a4a1a 100%);
-      border-radius: 10px;
-      padding: 20px 16px;
-      text-align: center;
+    .post-tag-badge {
+      background: var(--green);
       color: #fff;
-    }
-    .stat-value {
-      font-family: 'Playfair Display', serif;
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--green);
-      display: block;
-      margin-bottom: 6px;
-    }
-    .stat-label {
-      font-family: 'Poppins', sans-serif;
+      padding: 4px 12px;
+      border-radius: 20px;
       font-size: 11px;
-      color: rgba(255,255,255,.7);
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: .5px;
     }
-
-    /* Inline image */
-    .post-inline-img {
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-      max-height: 360px;
-      display: block;
-      margin-bottom: 10px;
+    .post-body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 72px;
     }
-    .post-inline-caption {
-      font-family: 'Poppins', sans-serif;
-      font-size: 12px;
-      color: #888;
-      text-align: center;
-      margin-bottom: 32px;
+    .post-body h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(26px, 4vw, 42px);
+      color: var(--green-deep);
+      line-height: 1.25;
+      margin-bottom: 28px;
+    }
+    .post-excerpt-text {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.9;
+      border-left: 4px solid var(--green);
+      padding-left: 20px;
+      margin-bottom: 40px;
       font-style: italic;
     }
-
-    /* Callout box */
-    .callout-box {
-      display: flex;
-      gap: 16px;
-      background: linear-gradient(135deg, #e8f8e8 0%, #f0fdf0 100%);
-      border: 1px solid #b8e0b8;
-      border-left: 5px solid var(--green);
-      border-radius: 0 10px 10px 0;
-      padding: 20px 22px;
-      margin-bottom: 36px;
-    }
-    .callout-icon {
-      font-size: 26px;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    .callout-content { flex: 1; }
-    .callout-label {
-      font-family: 'Poppins', sans-serif;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--green-deep);
-      margin-bottom: 8px;
-    }
-    .callout-text {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14.5px;
-      line-height: 1.7;
-      color: #2a4a2a;
-      margin: 0;
-    }
-
-    /* Related products */
-    .related-products-block {
-      background: #f9fdf9;
-      border: 1px solid #d4e8d4;
-      border-radius: 10px;
-      padding: 22px 24px;
-      margin-bottom: 40px;
-    }
-    .related-products-block h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--green-deep);
-      margin: 0 0 14px;
-    }
-    .rp-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 10px;
-    }
-    .rp-link {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: #fff;
-      border: 1px solid #c8e0c8;
-      border-radius: 7px;
-      padding: 10px 12px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--green-deep);
-      text-decoration: none;
-      transition: all .2s;
-    }
-    .rp-link:hover {
-      background: var(--green);
-      border-color: var(--green);
-      color: #fff;
-    }
-    .rp-link::before { content: '→'; font-size: 14px; }
-
-    /* Divider */
     .post-divider {
       border: none;
-      border-top: 1px solid #e0ece0;
-      margin: 40px 0;
+      border-top: 1px solid #e5ede5;
+      margin: 36px 0;
     }
-
-    /* CTA box */
     .post-cta-box {
-      background: linear-gradient(135deg, var(--green-deep) 0%, #1a3a1a 100%);
-      border-radius: 14px;
-      padding: 40px 36px;
+      background: var(--green-deep);
+      border-radius: 12px;
+      padding: 36px 32px;
       text-align: center;
       margin-top: 48px;
     }
     .post-cta-box h3 {
       font-family: 'Playfair Display', serif;
       color: #fff;
-      font-size: 24px;
+      font-size: 22px;
       margin-bottom: 10px;
     }
     .post-cta-box p {
       color: rgba(255,255,255,.7);
       font-size: 14px;
-      margin-bottom: 24px;
-      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 20px;
     }
-    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-
-    /* Share bar */
-    .post-share-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 48px;
-      padding-top: 32px;
-      border-top: 1px solid #e0ece0;
-    }
-    .share-links { display: flex; align-items: center; gap: 10px; }
-    .share-label {
-      font-family: 'Poppins', sans-serif;
-      font-size: 12px;
-      color: #888;
-    }
-    .share-icon {
-      width: 36px; height: 36px;
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 15px;
-      text-decoration: none;
-      transition: transform .2s, opacity .2s;
-    }
-    .share-icon:hover { transform: translateY(-2px); opacity: .85; }
-    .share-li { background: #0077b5; color: #fff; }
-    .share-wa { background: #25d366; color: #fff; }
-    .share-tw { background: #1da1f2; color: #fff; }
-    .share-em { background: #555; color: #fff; }
-
     .post-back-link {
       display: inline-flex;
       align-items: center;
@@ -355,137 +116,24 @@
       font-size: 13px;
       font-weight: 600;
       text-decoration: none;
+      margin-bottom: 32px;
       transition: gap .2s;
     }
     .post-back-link:hover { gap: 10px; }
-
-    /* ── Sidebar ── */
-    .post-sidebar { position: relative; }
-    .sidebar-sticky {
-      position: sticky;
-      top: 90px;
-    }
-    .sidebar-card {
-      background: #fff;
-      border: 1px solid #d8ecd8;
-      border-radius: 12px;
-      padding: 22px;
-      margin-bottom: 24px;
-    }
-    .sidebar-card h4 {
-      font-family: 'Playfair Display', serif;
-      font-size: 16px;
-      color: var(--green-deep);
-      margin: 0 0 16px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #e0f0e0;
-    }
-    .sidebar-tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .sidebar-tag {
-      background: #f0fdf0;
-      border: 1px solid #c0e0c0;
-      border-radius: 20px;
-      padding: 4px 12px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--green-deep);
-      cursor: pointer;
-      text-decoration: none;
-      transition: all .2s;
-    }
-    .sidebar-tag:hover, .sidebar-tag.active { background: var(--green); color: #fff; border-color: var(--green); }
-
-    .related-post {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 14px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid #f0f0f0;
-      text-decoration: none;
-    }
-    .related-post:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .related-post-thumb {
-      width: 64px;
-      height: 52px;
-      border-radius: 6px;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-    .related-post-info { flex: 1; min-width: 0; }
-    .related-post-tag {
-      font-family: 'Poppins', sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--green);
-      display: block;
-      margin-bottom: 4px;
-    }
-    .related-post-title {
-      font-family: 'Poppins', sans-serif;
-      font-size: 12px;
-      color: var(--green-deep);
-      line-height: 1.4;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .sidebar-cta {
-      background: linear-gradient(135deg, var(--green-deep) 0%, #1a4a1a 100%);
-      border-radius: 12px;
-      padding: 24px;
+    #post-not-found {
       text-align: center;
-      color: #fff;
-      margin-bottom: 24px;
+      padding: 80px 24px;
+      display: none;
     }
-    .sidebar-cta h4 {
-      font-family: 'Playfair Display', serif;
-      font-size: 17px;
-      margin-bottom: 8px;
-      color: #fff;
-    }
-    .sidebar-cta p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 13px;
-      color: rgba(255,255,255,.7);
-      margin-bottom: 16px;
-    }
-    .sidebar-cert-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      margin-bottom: 24px;
-    }
-    .cert-badge {
-      background: rgba(54,208,34,.12);
-      border: 1px solid rgba(54,208,34,.3);
-      border-radius: 6px;
-      padding: 5px 10px;
+    #post-loading {
+      text-align: center;
+      padding: 80px 24px;
+      color: #888;
       font-family: 'Poppins', sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      color: var(--green);
-      text-align: center;
     }
-
-    /* Loading / 404 */
-    #post-loading, #post-not-found {
-      text-align: center;
-      padding: 100px 24px;
-    }
-    #post-not-found { display: none; }
   </style>
 </head>
 <body>
-
 <div class="topbar">
   <div class="container">
     <div class="topbar-inner">
@@ -500,12 +148,11 @@
       </div>
     </div>
   </div>
-</div>
 <nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="Radiance Overseas Home">
-        <img src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" width="125" height="50">
+        <img loading="lazy" src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" width="125" height="50">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -1167,132 +814,61 @@
 })();
 </script>
 
-
-
 <main>
-  <div id="post-loading" style="color:#888;font-family:'Poppins',sans-serif;">
-    <div style="font-size:40px;margin-bottom:16px;">⏳</div>
-    <p>Loading article...</p>
+  <div id="post-loading">
+    <div style="font-size:32px;margin-bottom:12px;">⏳</div>
+    <p>Loading post...</p>
   </div>
 
   <div id="post-not-found">
-    <div style="font-size:56px;margin-bottom:20px;">📭</div>
+    <div style="font-size:48px;margin-bottom:16px;">📭</div>
     <h2 style="font-family:'Playfair Display',serif;color:var(--green-deep);margin-bottom:12px;">Post Not Found</h2>
-    <p style="color:#666;margin-bottom:28px;">This article may have been removed or the link is incorrect.</p>
+    <p style="color:#666;margin-bottom:24px;">This post may have been removed or the link is incorrect.</p>
     <a href="blog.html" class="btn btn-primary">← Back to Blog</a>
   </div>
 
-  <div id="post-main" style="display:none;">
-    <!-- Hero -->
+  <article id="post-article" style="display:none;">
     <div class="post-hero">
-      <img id="post-img" src="" alt="" class="post-hero-img" onerror="this.style.opacity=0">
-      <div class="post-hero-content">
-        <div class="container">
-          <span class="post-tag-pill" id="post-tag"></span>
-          <h1 class="post-hero-title" id="post-title-h1"></h1>
-          <div class="post-hero-meta">
-            <span><i class="fas fa-calendar-alt"></i> <span id="post-date"></span></span>
-            <span><i class="fas fa-user"></i> <span id="post-author"></span></span>
-            <span><i class="fas fa-clock"></i> <span id="post-read-time"></span></span>
-          </div>
+      <img loading="lazy" id="post-img" src="" alt="" class="post-hero-img" onerror="this.style.display='none'">
+    </div>
+    <div class="post-meta-bar">
+      <div class="container">
+        <div class="post-meta-inner">
+          <a href="blog.html" class="post-back-link"><i class="fas fa-arrow-left"></i> All Posts</a>
+          <span class="post-tag-badge" id="post-tag"></span>
+          <span><i class="fas fa-calendar-alt" style="color:var(--green);margin-right:5px;"></i><span id="post-date"></span></span>
+          <span><i class="fas fa-user" style="color:var(--green);margin-right:5px;"></i><span id="post-author"></span></span>
         </div>
       </div>
     </div>
-
-    <!-- Content Layout -->
-    <div class="post-layout">
-      <!-- Main Article -->
-      <article class="post-article">
-        <a href="blog.html" class="post-back-link" style="margin-bottom:28px;display:inline-flex;">
-          <i class="fas fa-arrow-left"></i> All Posts
-        </a>
-
-        <!-- Lead excerpt -->
-        <blockquote class="post-excerpt-block" id="post-excerpt-text"></blockquote>
-
-        <!-- Table of Contents -->
-        <nav class="post-toc" id="post-toc" aria-label="Table of contents">
-          <h4><i class="fas fa-list-ul" style="color:var(--green);margin-right:8px;"></i> In This Article</h4>
-          <ol id="toc-list"></ol>
-        </nav>
-
-        <!-- Dynamic sections rendered here -->
-        <div id="post-body-sections"></div>
-
-        <hr class="post-divider">
-
-        <!-- CTA Box -->
-        <div class="post-cta-box">
-          <h3>Ready to Source from India?</h3>
-          <p>Get bulk pricing, NABL lab reports, and a shipping quote within 24 hours from our export team.</p>
-          <div class="cta-btns">
-            <a href="Contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Request a Quote</a>
-            <a href="Product.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff;"><i class="fas fa-th"></i> Browse Products</a>
-            <a href="https://wa.me/14695449746" target="_blank" rel="noopener" class="btn" style="background:#25d366;border-color:#25d366;color:#fff;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
-          </div>
+    <div class="post-body">
+      <h1 id="post-title-h1"></h1>
+      <p class="post-excerpt-text" id="post-excerpt-text"></p>
+      <hr class="post-divider">
+      <p style="font-size:14px;color:#888;font-family:'Poppins',sans-serif;text-align:center;">
+        <i class="fas fa-info-circle" style="margin-right:6px;color:var(--green);"></i>
+        For complete product specifications and bulk pricing, contact our export team below.
+      </p>
+      <div class="post-cta-box">
+        <h3>Interested in This Product?</h3>
+        <p>Get bulk pricing, lab reports and a shipping quote within 24 hours.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="Contact.html" class="btn btn-primary"><i class="fas fa-envelope"></i> Request a Quote</a>
+          <a href="Product.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff;">Browse Products</a>
+          <a href="https://wa.me/14695449746" target="_blank" rel="noopener" class="btn" style="background:#25d366;border-color:#25d366;color:#fff;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
         </div>
-
-        <!-- Share Bar -->
-        <div class="post-share-bar">
-          <a href="blog.html" class="post-back-link"><i class="fas fa-arrow-left"></i> Back to All Posts</a>
-          <div class="share-links">
-            <span class="share-label">Share:</span>
-            <a id="share-linkedin" href="#" target="_blank" rel="noopener" class="share-icon share-li" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a id="share-whatsapp" href="#" target="_blank" rel="noopener" class="share-icon share-wa" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a id="share-tw" href="#" target="_blank" rel="noopener" class="share-icon share-tw" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-            <a id="share-em" href="#" class="share-icon share-em" title="Email this article"><i class="fas fa-envelope"></i></a>
-          </div>
+      </div>
+      <div style="margin-top:40px;padding-top:32px;border-top:1px solid #e5ede5;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+        <a href="blog.html" class="post-back-link"><i class="fas fa-arrow-left"></i> Back to All Posts</a>
+        <div style="display:flex;gap:10px;align-items:center;">
+          <span style="font-family:'Poppins',sans-serif;font-size:12px;color:#888;">Share:</span>
+          <a id="share-linkedin" href="#" target="_blank" rel="noopener" style="color:#0077b5;font-size:18px;" title="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a id="share-wa" href="#" target="_blank" rel="noopener" style="color:#25d366;font-size:18px;" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a id="share-twitter" href="#" target="_blank" rel="noopener" style="color:#1da1f2;font-size:18px;" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
         </div>
-      </article>
-
-      <!-- Sidebar -->
-      <aside class="post-sidebar">
-        <div class="sidebar-sticky">
-          <!-- Quick CTA -->
-          <div class="sidebar-cta">
-            <h4>Get a Free Quote</h4>
-            <p>Bulk pricing for any product, any quantity. 24-hour response.</p>
-            <a href="Contact.html#quote" class="btn btn-primary" style="width:100%;justify-content:center;font-size:13px;">
-              <i class="fas fa-paper-plane"></i> Send Enquiry
-            </a>
-            <a href="https://wa.me/14695449746?text=Hi%20Radiance%20Overseas%2C%20I%27d%20like%20to%20get%20a%20quote." target="_blank" rel="noopener" class="btn" style="width:100%;justify-content:center;margin-top:8px;background:#25d366;color:#fff;border-color:#25d366;font-size:13px;">
-              <i class="fab fa-whatsapp"></i> WhatsApp Us
-            </a>
-          </div>
-
-          <!-- Certifications -->
-          <div class="sidebar-card">
-            <h4>Our Certifications</h4>
-            <div class="sidebar-cert-badges">
-              <span class="cert-badge">USDA Organic</span>
-              <span class="cert-badge">EU Organic</span>
-              <span class="cert-badge">India Organic</span>
-              <span class="cert-badge">Canada Organic</span>
-              <span class="cert-badge">ISO 9001:2015</span>
-              <span class="cert-badge">GMP+</span>
-              <span class="cert-badge">APEDA</span>
-              <span class="cert-badge">FIEO</span>
-            </div>
-            <a href="Certification.html" style="display:block;text-align:center;margin-top:12px;font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;color:var(--green);text-decoration:none;">
-              View All Certifications →
-            </a>
-          </div>
-
-          <!-- Browse by Category -->
-          <div class="sidebar-card">
-            <h4>Browse by Category</h4>
-            <div class="sidebar-tag-list" id="sidebar-tags"></div>
-          </div>
-
-          <!-- Related Posts -->
-          <div class="sidebar-card">
-            <h4>Related Articles</h4>
-            <div id="related-posts"></div>
-          </div>
-        </div>
-      </aside>
+      </div>
     </div>
-  </div>
+  </article>
 </main>
 
 <footer role="contentinfo">
@@ -1300,7 +876,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" width="130">
+          <img loading="lazy" src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" width="130">
           <p>India's trusted certified organic agro-product export house since 2010. Headquartered in Indore, MP — exporting rice, coffee, spices, pulses &amp; more to 30+ countries worldwide.</p>
           <p style="font-size:12px;color:#5a7a65;margin-top:6px;"><i class="fas fa-map-marker-alt" style="color:var(--green);margin-right:6px;"></i>60, Silver Oaks, Annapurna Road, Indore MP 452009, India</p>
           <p style="font-size:12px;color:#5a7a65;"><i class="fas fa-phone" style="color:var(--green);margin-right:6px;"></i>+1 469 544 9746 (USA) &nbsp;|&nbsp; +91 95849 49494 (India)</p>
@@ -1313,11 +889,11 @@
             <a href="https://wa.me/14695449746" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
           <div class="footer-cert-logos">
-            <img src="https://apeda.gov.in/apedawebsite/Theme/img/logo.png" onerror="this.style.display='none'" alt="APEDA Registered" title="APEDA">
-            <img src="uploads/certification/india-organic.png" alt="India Organic NPOP" title="India Organic">
-            <img src="uploads/certification/eu-organic-logo-600x400.png" alt="EU Organic" title="EU Organic">
-            <img src="uploads/certification/gmp.png" alt="GMP+" title="GMP+">
-            <img src="uploads/certification/footer_logobar_ISO90012015.png" alt="ISO 9001:2015" title="ISO 9001">
+            <img loading="lazy" src="https://apeda.gov.in/apedawebsite/Theme/img/logo.png" onerror="this.style.display='none'" alt="APEDA Registered" title="APEDA">
+            <img loading="lazy" src="uploads/certification/india-organic.png" alt="India Organic NPOP" title="India Organic">
+            <img loading="lazy" src="uploads/certification/eu-organic-logo-600x400.png" alt="EU Organic" title="EU Organic">
+            <img loading="lazy" src="uploads/certification/gmp.png" alt="GMP+" title="GMP+">
+            <img loading="lazy" src="uploads/certification/footer_logobar_ISO90012015.png" alt="ISO 9001:2015" title="ISO 9001">
           </div>
         </div>
         <div class="footer-col">
@@ -1360,8 +936,8 @@
           <h3>Export Team</h3>
           <p><i class="fas fa-user"></i><strong>Gopal Bansal</strong><br>Director — <a href="tel:+919406800327">+91 9406800327</a></p>
           <p><i class="fas fa-user"></i><strong>Geet Agarwal</strong><br>Export — <a href="tel:+919584949494">+91 9584949494</a></p>
-          <p><i class="fas fa-envelope"></i><a href="mailto:gopal@radianceoverseas.com">gopal@radianceoverseas.com</a></p>
-          <p><i class="fas fa-envelope"></i><a href="mailto:geet@radianceoverseas.com">geet@radianceoverseas.com</a></p>
+          <p><i class="fas fa-envelope"></i><a href="mailto:info@radianceoverseas.com">info@radianceoverseas.com</a></p>
+          <p><i class="fas fa-envelope"></i><a href="mailto:info@radianceoverseas.com">info@radianceoverseas.com</a></p>
           <p><i class="fab fa-whatsapp" style="color:#25d366;"></i><a href="https://wa.me/14695449746" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
           <p style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.1);"><i class="fas fa-flag-usa" style="color:#4fc3f7;"></i><strong>USA Office</strong><br><a href="tel:+14695449746" style="color:#a5d6a7;">+1 469 544 9746</a></p>
           <div style="margin-top:20px;padding:14px;background:rgba(54,208,34,.08);border:1px solid rgba(54,208,34,.2);border-radius:8px;">
@@ -1378,34 +954,128 @@
   <div class="footer-bottom">
     <div class="container">
       <div class="footer-bottom-inner">
-        <p style="font-family:'Playfair Display',serif;font-size:13px;font-style:italic;color:#7a9e85;margin-bottom:4px;letter-spacing:.3px;">&#8220;Eternal Vigilance for Unvarying Quality&#8221;</p>
         <p>&copy; 2025 <strong>Radiance Overseas</strong>. All Rights Reserved. | Certified Organic Agro Exporter, Indore, India</p>
         <p>Designed by <a href="https://elixirmultinational.com" target="_blank" rel="noopener">Elixir Multinational</a></p>
       </div>
     </div>
   </div>
 </footer>
-<style>
-.wa-float{position:fixed;bottom:28px;right:28px;z-index:9999;
-  width:56px;height:56px;border-radius:50%;background:#25d366;
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 4px 16px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s;
-  text-decoration:none;}
-.wa-float:hover{transform:scale(1.1);box-shadow:0 6px 22px rgba(0,0,0,.35);}
-.wa-float svg{width:32px;height:32px;fill:#fff;}
-</style>
-<a href="https://wa.me/919584949494?text=Hi%20Radiance%20Overseas%2C%20I%20am%20interested%20in%20your%20products."
-   class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.556 4.118 1.524 5.847L0 24l6.337-1.505A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.809 9.809 0 01-4.951-1.333l-.355-.211-3.681.875.939-3.551-.231-.365A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-  </svg>
-</a>
+<a href="https://wa.me/14695449746" target="_blank" rel="noopener" class="btn" style="width:100%;justify-content:center;margin-top:8px;background:#25d366;color:#fff;border-color:#25d366;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
 
-<script src="assets/js/radiance.js"></script>
+<style>
+@media(max-width:900px){.blog-layout{grid-template-columns:1fr!important;}}
+@media(max-width:600px){#blog-grid{grid-template-columns:1fr!important;}}
+</style>
+
+<footer role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img loading="lazy" src="uploads/images/Radiancelogo.png" alt="Radiance Overseas" width="130">
+          <p>India's trusted certified organic agro-product export house since 2010. Headquartered in Indore, MP — exporting rice, coffee, spices, pulses &amp; more to 30+ countries worldwide.</p>
+          <p style="font-size:12px;color:#5a7a65;margin-top:6px;"><i class="fas fa-map-marker-alt" style="color:var(--green);margin-right:6px;"></i>60, Silver Oaks, Annapurna Road, Indore MP 452009, India</p>
+          <p style="font-size:12px;color:#5a7a65;"><i class="fas fa-phone" style="color:var(--green);margin-right:6px;"></i>+1 469 544 9746 (USA) &nbsp;|&nbsp; +91 95849 49494 (India)</p>
+          <p style="font-size:12px;color:#5a7a65;"><i class="fas fa-envelope" style="color:var(--green);margin-right:6px;"></i><a href="mailto:info@radianceoverseas.com">info@radianceoverseas.com</a></p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/14695449746" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div class="footer-cert-logos">
+            <img loading="lazy" src="https://apeda.gov.in/apedawebsite/Theme/img/logo.png" onerror="this.style.display='none'" alt="APEDA Registered" title="APEDA">
+            <img loading="lazy" src="uploads/certification/india-organic.png" alt="India Organic NPOP" title="India Organic">
+            <img loading="lazy" src="uploads/certification/eu-organic-logo-600x400.png" alt="EU Organic" title="EU Organic">
+            <img loading="lazy" src="uploads/certification/gmp.png" alt="GMP+" title="GMP+">
+            <img loading="lazy" src="uploads/certification/footer_logobar_ISO90012015.png" alt="ISO 9001:2015" title="ISO 9001">
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Our Products</h3>
+          <ul>
+            <li><a href="rice.html">Indian Rice (Basmati &amp; Non-Basmati)</a></li>
+            <li><a href="coffee.html">Coffee (Arabica, Robusta, Instant)</a></li>
+            <li><a href="spices.html">Organic Spices</a></li>
+            <li><a href="oil-seeds.html">Organic Oil Seeds</a></li>
+            <li><a href="pulses.html">Organic Pulses &amp; Legumes</a></li>
+            <li><a href="cereals-flour.html">Cereals &amp; Flour</a></li>
+            <li><a href="dry-fruits.html">Dry Fruits &amp; Nuts</a></li>
+            <li><a href="dehydrated-products.html">Dehydrated Products</a></li>
+            <li><a href="herbs.html">Herbs &amp; Crude Drugs</a></li>
+            <li><a href="food-chemicals.html">Food Chemicals</a></li>
+            <li><a href="animal-feed.html">Organic Animal Feed</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Product.html">All Products</a></li>
+            <li><a href="Certification.html">Certifications</a></li>
+                        <li><a href="blog.html">Blog &amp; News</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="Contact.html#quote">Request a Quote</a></li>
+          </ul>
+          <div style="margin-top:22px;">
+            <h3>Global Offices</h3>
+            <ul>
+              <li><a href="Contact.html#india">🇮🇳 Indore, India (HQ)</a></li>
+              <li><a href="Contact.html#germany">🇩🇪 Wolfsburg, Germany</a></li>
+              <li><a href="Contact.html#ireland">🇮🇪 Galway, Ireland</a></li>
+              <li><a href="Contact.html#usa">🇺🇸 United States</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col footer-contact">
+          <h3>Export Team</h3>
+          <p><i class="fas fa-user"></i><strong>Gopal Bansal</strong><br>Director — <a href="tel:+919406800327">+91 9406800327</a></p>
+          <p><i class="fas fa-user"></i><strong>Geet Agarwal</strong><br>Export — <a href="tel:+919584949494">+91 9584949494</a></p>
+          <p><i class="fas fa-envelope"></i><a href="mailto:info@radianceoverseas.com">info@radianceoverseas.com</a></p>
+          <p><i class="fas fa-envelope"></i><a href="mailto:info@radianceoverseas.com">info@radianceoverseas.com</a></p>
+          <p><i class="fab fa-whatsapp" style="color:#25d366;"></i><a href="https://wa.me/14695449746" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+          <p style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.1);"><i class="fas fa-flag-usa" style="color:#4fc3f7;"></i><strong>USA Office</strong><br><a href="tel:+14695449746" style="color:#a5d6a7;">+1 469 544 9746</a></p>
+          <div style="margin-top:20px;padding:14px;background:rgba(54,208,34,.08);border:1px solid rgba(54,208,34,.2);border-radius:8px;">
+            <p style="color:#a5d6a7;font-size:11px;margin:0 0 4px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;">APEDA Registered Exporter</p>
+            <p style="color:#7a9e85;font-size:11px;margin:0;">ISO 9001:2015 | GMP+ | India Organic</p>
+          </div>
+          <div style="margin-top:16px;">
+            <a href="Contact.html#quote" style="display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;padding:10px 18px;border-radius:6px;font-size:12px;font-weight:700;font-family:'Poppins',sans-serif;text-transform:uppercase;letter-spacing:.5px;text-decoration:none;transition:background .2s;"><i class="fas fa-file-alt"></i> Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2025 <strong>Radiance Overseas</strong>. All Rights Reserved. | Certified Organic Agro Exporter, Indore, India</p>
+        <p>Designed by <a href="https://elixirmultinational.com" target="_blank" rel="noopener">Elixir Multinational</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/14695449746?text=Hi%20Radiance%20Overseas%2C%20I'd%20like%20to%20enquire%20about%20your%20organic%20products." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script defer src="webassets/js/jquery.min.js"></script>
+<script defer src="webassets/js/three.r69.min.js"></script>
+<script defer src="webassets/js/orbit_controls.js"></script>
+<script defer src="webassets/js/globe_lightbox.js"></script>
+<script defer src="webassets/js/globe.js"></script>
+<script defer src="webassets/js/curve.js"></script>
+<script defer src="webassets/js/label_manager.js"></script>
+<script defer src="assets/js/radiance.js"></script>
+
 <script>
 (function () {
-  var MONTHS = ['January','February','March','April','May','June','July',
+  var months = ['January','February','March','April','May','June','July',
                 'August','September','October','November','December'];
 
   function getParam(name) {
@@ -1415,122 +1085,10 @@
   function formatDate(dateStr) {
     try {
       var d = new Date(dateStr + 'T00:00:00');
-      return MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+      return months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
     } catch(e) { return dateStr; }
   }
 
-  function esc(str) {
-    return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-  }
-
-  function buildSection(sec, idx) {
-    var html = '';
-    if (sec.type === 'intro') {
-      html += '<div class="post-section" id="sec-' + idx + '">';
-      html += '<h2>' + esc(sec.heading) + '</h2>';
-      html += '<p>' + (sec.body || '') + '</p>';
-      html += '</div>';
-    } else if (sec.type === 'stats') {
-      html += '<div class="stats-row" id="sec-' + idx + '">';
-      (sec.items || []).forEach(function(item) {
-        html += '<div class="stat-card">';
-        html += '<span class="stat-value">' + esc(item.value) + '</span>';
-        html += '<span class="stat-label">' + esc(item.label) + '</span>';
-        html += '</div>';
-      });
-      html += '</div>';
-    } else if (sec.type === 'image') {
-      html += '<div id="sec-' + idx + '">';
-      html += '<img src="' + esc(sec.src) + '" alt="' + esc(sec.caption||'') + '" class="post-inline-img" loading="lazy">';
-      if (sec.caption) html += '<p class="post-inline-caption">' + esc(sec.caption) + '</p>';
-      html += '</div>';
-    } else if (sec.type === 'section') {
-      html += '<div class="post-section" id="sec-' + idx + '">';
-      html += '<h2>' + esc(sec.heading) + '</h2>';
-      html += '<p>' + (sec.body || '') + '</p>';
-      html += '</div>';
-    } else if (sec.type === 'callout') {
-      html += '<div class="callout-box" id="sec-' + idx + '">';
-      html += '<div class="callout-icon">' + (sec.icon || '💡') + '</div>';
-      html += '<div class="callout-content">';
-      html += '<div class="callout-label">' + esc(sec.label || '') + '</div>';
-      html += '<p class="callout-text">' + (sec.text || '') + '</p>';
-      html += '</div></div>';
-    } else if (sec.type === 'products') {
-      html += '<div class="related-products-block" id="sec-' + idx + '">';
-      html += '<h3><i class="fas fa-box-open" style="color:var(--green);margin-right:8px;"></i>' + esc(sec.heading || 'Related Products') + '</h3>';
-      html += '<div class="rp-grid">';
-      (sec.links || []).forEach(function(lnk) {
-        html += '<a href="' + esc(lnk.href) + '" class="rp-link">' + esc(lnk.label) + '</a>';
-      });
-      html += '</div></div>';
-    }
-    return html;
-  }
-
-  function buildTOC(sections) {
-    var headings = sections.filter(function(s) {
-      return (s.type === 'intro' || s.type === 'section') && s.heading;
-    });
-    if (headings.length < 2) {
-      document.getElementById('post-toc').style.display = 'none';
-      return;
-    }
-    var ol = document.getElementById('toc-list');
-    headings.forEach(function(s, i) {
-      var li = document.createElement('li');
-      var a = document.createElement('a');
-      // find real index in sections
-      var realIdx = sections.indexOf(s);
-      a.href = '#sec-' + realIdx;
-      a.textContent = s.heading;
-      a.addEventListener('click', function(e) {
-        e.preventDefault();
-        var el = document.getElementById('sec-' + realIdx);
-        if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
-      });
-      li.appendChild(a);
-      ol.appendChild(li);
-    });
-  }
-
-  function buildSidebarTags(posts, currentTag) {
-    var tags = {};
-    posts.forEach(function(p) { if (p.tag) tags[p.tag] = (tags[p.tag]||0)+1; });
-    var container = document.getElementById('sidebar-tags');
-    Object.keys(tags).sort().forEach(function(tag) {
-      var a = document.createElement('a');
-      a.href = 'blog.html?tag=' + encodeURIComponent(tag);
-      a.className = 'sidebar-tag' + (tag === currentTag ? ' active' : '');
-      a.textContent = tag + ' (' + tags[tag] + ')';
-      container.appendChild(a);
-    });
-  }
-
-  function buildRelatedPosts(posts, currentSlug, currentTag) {
-    var related = posts.filter(function(p) {
-      return p.slug !== currentSlug && p.tag === currentTag;
-    }).slice(0, 4);
-    if (!related.length) {
-      related = posts.filter(function(p) { return p.slug !== currentSlug; }).slice(0, 4);
-    }
-    var container = document.getElementById('related-posts');
-    related.forEach(function(p) {
-      var a = document.createElement('a');
-      a.href = 'blog-post.html?id=' + encodeURIComponent(p.slug);
-      a.className = 'related-post';
-      a.innerHTML =
-        '<img class="related-post-thumb" src="' + (p.image||'') + '" alt="" loading="lazy" onerror="this.style.background=\'#e0f0e0\'">' +
-        '<div class="related-post-info">' +
-          '<span class="related-post-tag">' + esc(p.tag) + '</span>' +
-          '<span class="related-post-title">' + esc(p.title) + '</span>' +
-        '</div>';
-      container.appendChild(a);
-    });
-  }
-
-  // ── Main init ──
-  function loadPost() {
   var slug = getParam('id');
   if (!slug) {
     document.getElementById('post-loading').style.display = 'none';
@@ -1538,108 +1096,70 @@
     return;
   }
 
-  function doFetch(url) { return fetch(url).then(function(r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
-  var postsUrl = 'blogs/posts.json?v=' + Date.now();
-  doFetch(postsUrl)
-    .catch(function(e) {
-      console.warn('[RO Blog] blogs/posts.json failed (' + e.message + '), trying root...');
-      return doFetch('posts.json?v=' + Date.now());
-    })
-    .then(function(posts) {
-      console.log('[RO Blog] posts.json loaded. Count:', posts.length, '| Looking for slug:', JSON.stringify(slug));
+  fetch('blogs/posts.json?v=' + Date.now())
+    .then(function (r) { return r.json(); })
+    .then(function (posts) {
       var post = null;
       for (var i = 0; i < posts.length; i++) {
         if (posts[i].slug === slug) { post = posts[i]; break; }
       }
-      if (!post) {
-        console.warn('[RO Blog] No match found. Available slugs (first 5):', posts.slice(0,5).map(function(p){return p.slug;}));
-      }
       document.getElementById('post-loading').style.display = 'none';
-
       if (!post) {
         document.getElementById('post-not-found').style.display = 'block';
         return;
       }
 
-      document.getElementById('post-main').style.display = 'block';
-
+      // Populate page
       var title   = post.title   || '';
       var excerpt = post.excerpt || '';
       var tag     = post.tag     || '';
       var date    = formatDate(post.date || '');
       var author  = post.author  || 'Radiance Export Team';
       var image   = post.image   || 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200&q=80';
-      var readTime = post.readTime || '8 min read';
-      var sections = post.sections || [];
       var pageUrl = 'https://www.radianceoverseas.com/blog-post.html?id=' + encodeURIComponent(slug);
 
-      // Meta
       document.title = title + ' — Radiance Overseas Blog';
-      document.getElementById('page-desc').setAttribute('content', excerpt.substring(0, 160));
-      document.getElementById('og-title').setAttribute('content', title + ' — Radiance Overseas');
-      document.getElementById('og-desc').setAttribute('content', excerpt.substring(0, 160));
-      document.getElementById('og-image').setAttribute('content', image);
-      document.getElementById('page-canonical').setAttribute('href', pageUrl);
+      document.getElementById('page-desc').content    = excerpt.substring(0, 160);
+      document.getElementById('og-title').content     = title + ' — Radiance Overseas';
+      document.getElementById('og-desc').content      = excerpt.substring(0, 160);
+      document.getElementById('og-image').content     = image;
+      document.getElementById('page-canonical').href  = pageUrl;
 
-      // Hero
-      document.getElementById('post-img').src = image;
-      document.getElementById('post-img').alt = title;
+      document.getElementById('post-img').src         = image;
+      document.getElementById('post-img').alt         = title;
       document.getElementById('post-tag').textContent = tag;
-      document.getElementById('post-title-h1').textContent = title;
       document.getElementById('post-date').textContent = date;
       document.getElementById('post-author').textContent = author;
-      document.getElementById('post-read-time').textContent = readTime;
+      document.getElementById('post-title-h1').textContent = title;
       document.getElementById('post-excerpt-text').textContent = excerpt;
 
-      // Schema
+      // Share links
+      document.getElementById('share-linkedin').href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(pageUrl) + '&title=' + encodeURIComponent(title);
+      document.getElementById('share-wa').href       = 'https://wa.me/?text=' + encodeURIComponent(title + ' ' + pageUrl);
+      document.getElementById('share-twitter').href  = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(title) + '&url=' + encodeURIComponent(pageUrl);
+
+      // Article schema
       var schema = {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": title,
-        "description": excerpt.substring(0,160),
-        "image": image,
-        "author": {"@type":"Person","name":author},
-                "publisher": {"@type":"Organization","name":"Radiance Overseas","logo":{"@type":"ImageObject","url":"https://radianceoverseas.com/uploads/images/Radiancelogo.png"}},
-        "datePublished": post.date || '',
-        "dateModified": post.date || '',
-        "mainEntityOfPage": {"@type":"WebPage","@id": pageUrl}
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        'headline': title,
+        'description': excerpt,
+        'image': image,
+        'author': {'@type': 'Organization', 'name': 'Radiance Overseas'},
+        'publisher': {'@type': 'Organization', 'name': 'Radiance Overseas',
+                      'logo': {'@type': 'ImageObject', 'url': 'https://www.radianceoverseas.com/uploads/images/Radiancelogo.png'}},
+        'datePublished': post.date || '',
+        'url': pageUrl
       };
       document.getElementById('article-schema').textContent = JSON.stringify(schema);
 
-      // Build sections
-      var sectionsHTML = '';
-      sections.forEach(function(sec, idx) {
-        sectionsHTML += buildSection(sec, idx);
-      });
-      document.getElementById('post-body-sections').innerHTML = sectionsHTML;
-
-      // Build TOC
-      buildTOC(sections);
-
-      // Sidebar
-      buildSidebarTags(posts, tag);
-      buildRelatedPosts(posts, slug, tag);
-
-      // Share
-      document.getElementById('share-linkedin').href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(pageUrl) + '&title=' + encodeURIComponent(title);
-            document.getElementById('share-whatsapp').href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(title + ' ' + pageUrl);
-      document.getElementById('share-tw').href = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(pageUrl) + '&text=' + encodeURIComponent(title);
-      document.getElementById('share-em').href = 'mailto:?subject=' + encodeURIComponent(title) + '&body=' + encodeURIComponent('I thought you might find this article interesting: ' + pageUrl);
-
+      // Show article
+      document.getElementById('post-article').style.display = 'block';
     })
-    .catch(function(err) {
-      console.error('[RO Blog] FETCH FAILED completely:', err);
+    .catch(function () {
       document.getElementById('post-loading').style.display = 'none';
-      var nf = document.getElementById('post-not-found');
-      nf.style.display = 'block';
-      var h = nf.querySelector('h2');
-      if (h) h.textContent = 'Could not load post data';
-      var p = nf.querySelector('p');
-      if (p) p.innerHTML = 'Please ensure <code>posts.json</code> is uploaded to the <code>blogs/</code> folder on the server.<br><small>Error: ' + err.message + '</small>';
+      document.getElementById('post-not-found').style.display = 'block';
     });
-  }
-
-  document.addEventListener('DOMContentLoaded', loadPost);
 })();
 </script>
 </body>

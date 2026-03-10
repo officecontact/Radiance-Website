@@ -1,250 +1,1027 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Blog Admin — Radiance Overseas</title>
-<meta name="robots" content="noindex,nofollow">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Open Sans',sans-serif;background:#f5f7f5;color:#333;min-height:100vh}
-.admin-bar{background:#1a4731;color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
-.admin-bar h1{font-family:'Poppins',sans-serif;font-size:16px;font-weight:700}
-.admin-bar a{color:#7dff6b;text-decoration:none;font-size:13px}
-.container{max-width:1000px;margin:0 auto;padding:24px}
-.card{background:#fff;border-radius:10px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.06);margin-bottom:20px}
-.card h2{font-family:'Poppins',sans-serif;font-size:18px;color:#1a4731;margin-bottom:16px}
-label{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;color:#555;display:block;margin-bottom:4px;margin-top:12px}
-input,select,textarea{width:100%;padding:10px 14px;border:1.5px solid #dde5dd;border-radius:6px;font-size:14px;font-family:'Open Sans',sans-serif;margin-bottom:4px}
-input:focus,select:focus,textarea:focus{outline:none;border-color:#36d022}
-textarea{min-height:80px;resize:vertical}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border:none;border-radius:6px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s}
-.btn-green{background:#36d022;color:#fff}.btn-green:hover{background:#2aa518}
-.btn-red{background:#e53935;color:#fff;font-size:11px;padding:6px 12px}.btn-red:hover{background:#c62828}
-.btn-edit{background:#1565c0;color:#fff;font-size:11px;padding:6px 12px}.btn-edit:hover{background:#0d47a1}
-.msg{padding:12px 16px;border-radius:6px;margin-bottom:16px;font-size:13px;display:none}
-.msg-ok{background:#e8f5e9;color:#2e7d32;border:1px solid #a5d6a7}
-.msg-err{background:#ffebee;color:#c62828;border:1px solid #ef9a9a}
-table{width:100%;border-collapse:collapse;font-size:13px}
-th{background:#f0f7f0;padding:10px;text-align:left;font-family:'Poppins',sans-serif;font-size:11px;color:#555;text-transform:uppercase;letter-spacing:.5px}
-td{padding:10px;border-bottom:1px solid #eee;vertical-align:top}
-td:first-child{font-weight:600;color:#1a4731;max-width:300px}
-.tag{display:inline-block;background:#e8f5e9;color:#2e7d32;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;font-family:'Poppins',sans-serif}
-#login-gate{position:fixed;inset:0;background:rgba(26,71,49,.95);display:flex;align-items:center;justify-content:center;z-index:9999}
-#login-box{background:#fff;border-radius:12px;padding:40px;text-align:center;max-width:360px;width:90%}
-#login-box h2{font-family:'Poppins',sans-serif;color:#1a4731;margin-bottom:20px}
-#login-box input{text-align:center;font-size:16px;margin-bottom:12px}
-.post-count{font-family:'Poppins',sans-serif;font-size:12px;color:#888;margin-bottom:16px}
-.search-box{margin-bottom:16px}
-.search-box input{padding:10px 14px 10px 36px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16' fill='%23999'%3E%3Cpath d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3C/svg%3E") 12px center no-repeat}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog Admin — Radiance Overseas</title>
+  <link rel="shortcut icon" href="webassets/images/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #36d022;
+      --green-deep: #002E5B;
+      --green-dark: #1a4a1a;
+      --amber: #fab702;
+      --bg: #f3f7f3;
+      --sidebar-w: 240px;
+      --nav-h: 60px;
+    }
+    body { font-family: 'Poppins', sans-serif; background: var(--bg); color: #222; }
+
+    /* ── Top nav ── */
+    .admin-nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h);
+      background: var(--green-deep);
+      display: flex; align-items: center; padding: 0 24px;
+      gap: 16px; box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    }
+    .admin-nav .logo { display: flex; align-items: center; gap: 10px; }
+    .admin-nav .logo img { height: 36px; }
+    .admin-nav .logo span { font-family: 'Playfair Display',serif; color:#fff; font-size:16px; }
+    .admin-nav .nav-badge {
+      background: var(--green); color:#fff;
+      font-size:10px; font-weight:700; padding:3px 8px;
+      border-radius:10px; letter-spacing:.5px; text-transform:uppercase;
+    }
+    .admin-nav .nav-right { margin-left:auto; display:flex; align-items:center; gap:14px; }
+    .admin-nav .nav-btn {
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+      color:#fff; padding:7px 14px; border-radius:6px;
+      font-family:'Poppins',sans-serif; font-size:12px; font-weight:600;
+      cursor:pointer; text-decoration:none; transition:background .2s;
+      display:flex; align-items:center; gap:6px;
+    }
+    .admin-nav .nav-btn:hover { background: rgba(255,255,255,.2); }
+    .admin-nav .nav-btn.green { background:var(--green); border-color:var(--green); }
+    .admin-nav .nav-btn.green:hover { background:#2db81e; }
+
+    /* ── Sidebar ── */
+    .admin-sidebar {
+      position: fixed; top: var(--nav-h); left: 0; bottom: 0;
+      width: var(--sidebar-w);
+      background: #fff;
+      border-right: 1px solid #dde8dd;
+      padding: 20px 0;
+      overflow-y: auto;
+    }
+    .sidebar-section-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1px; color: #aaa;
+      padding: 16px 20px 8px;
+    }
+    .sidebar-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 20px;
+      font-size: 13px; font-weight: 500; color: #444;
+      cursor: pointer; transition: all .15s;
+      border-left: 3px solid transparent;
+      text-decoration: none;
+    }
+    .sidebar-item:hover { background: #f0fdf0; color: var(--green-deep); }
+    .sidebar-item.active { background: #e8fde8; color: var(--green-deep); border-left-color: var(--green); font-weight: 700; }
+    .sidebar-item i { width: 18px; text-align: center; color: var(--green); }
+    .sidebar-count {
+      margin-left: auto;
+      background: #f0f0f0; color: #666;
+      border-radius: 10px; padding: 2px 7px;
+      font-size: 11px; font-weight: 700;
+    }
+    .sidebar-item.active .sidebar-count { background: var(--green); color:#fff; }
+
+    /* ── Main ── */
+    .admin-main {
+      margin-left: var(--sidebar-w);
+      margin-top: var(--nav-h);
+      padding: 32px;
+      min-height: calc(100vh - var(--nav-h));
+    }
+
+    /* ── Views ── */
+    .admin-view { display: none; }
+    .admin-view.active { display: block; }
+
+    /* ── Page header ── */
+    .page-hdr {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 28px; flex-wrap: wrap; gap: 12px;
+    }
+    .page-hdr h1 {
+      font-family: 'Playfair Display',serif;
+      font-size: 26px; color: var(--green-deep);
+    }
+    .page-hdr p { font-size: 13px; color: #888; margin-top: 3px; }
+
+    /* ── Stats cards ── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+      gap: 16px; margin-bottom: 32px;
+    }
+    .stat-card {
+      background: #fff; border: 1px solid #dde8dd;
+      border-radius: 12px; padding: 20px 18px;
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .stat-card .val {
+      font-family: 'Playfair Display',serif;
+      font-size: 32px; color: var(--green-deep);
+    }
+    .stat-card .lbl { font-size: 12px; color: #888; }
+    .stat-card .ico { font-size: 20px; margin-bottom: 4px; }
+
+    /* ── Posts table ── */
+    .toolbar {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 18px; flex-wrap: wrap;
+    }
+    .search-box {
+      display: flex; align-items: center; gap: 8px;
+      background: #fff; border: 1px solid #dde; border-radius: 8px;
+      padding: 8px 14px; flex: 1; min-width: 200px; max-width: 400px;
+    }
+    .search-box i { color: #aaa; }
+    .search-box input {
+      border: none; outline: none; font-family: 'Poppins',sans-serif;
+      font-size: 13px; width: 100%; background: transparent;
+    }
+    .filter-select {
+      border: 1px solid #dde; border-radius: 8px;
+      padding: 8px 12px; font-family:'Poppins',sans-serif; font-size:13px;
+      background:#fff; color:#444; cursor:pointer; outline:none;
+    }
+    .btn-sm {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 16px; border-radius: 7px;
+      font-family:'Poppins',sans-serif; font-size:12px; font-weight:700;
+      cursor:pointer; border:none; text-decoration:none; transition:all .2s;
+    }
+    .btn-primary { background:var(--green); color:#fff; }
+    .btn-primary:hover { background:#2db81e; }
+    .btn-danger { background:#fee2e2; color:#dc2626; }
+    .btn-danger:hover { background:#fecaca; }
+    .btn-outline { background:#fff; color:var(--green-deep); border:1px solid #c0d8c0; }
+    .btn-outline:hover { background:#f0fdf0; }
+    .btn-amber { background:var(--amber); color:#fff; }
+    .btn-amber:hover { background:#e0a500; }
+
+    .posts-table {
+      width:100%; border-collapse:collapse;
+      background:#fff; border-radius:12px; overflow:hidden;
+      box-shadow:0 1px 4px rgba(0,0,0,.06);
+    }
+    .posts-table th {
+      background: var(--green-deep); color:#fff;
+      padding: 12px 16px; text-align:left;
+      font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.5px;
+    }
+    .posts-table td {
+      padding: 13px 16px; border-bottom: 1px solid #f0f5f0;
+      font-size: 13px; vertical-align: middle;
+    }
+    .posts-table tr:last-child td { border-bottom: none; }
+    .posts-table tr:hover td { background: #f9fdf9; }
+    .post-thumb { width:60px; height:46px; border-radius:6px; object-fit:cover; }
+    .post-title-cell { max-width: 280px; }
+    .post-title-cell .title { font-weight:600; color:var(--green-deep); margin-bottom:3px;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:280px; }
+    .post-title-cell .slug { font-size:11px; color:#aaa;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:280px; }
+    .tag-pill {
+      display:inline-block;
+      background:#e8fde8; color:var(--green-deep);
+      padding:3px 10px; border-radius:12px;
+      font-size:11px; font-weight:700;
+    }
+    .act-btns { display:flex; gap:6px; }
+    .act-btn {
+      width:30px; height:30px; border-radius:6px;
+      display:flex; align-items:center; justify-content:center;
+      cursor:pointer; border:none; font-size:13px; transition:all .2s;
+    }
+    .act-edit { background:#e8f4fd; color:#2563eb; }
+    .act-edit:hover { background:#2563eb; color:#fff; }
+    .act-view { background:#e8fde8; color:var(--green-dark); }
+    .act-view:hover { background:var(--green); color:#fff; }
+    .act-del { background:#fee2e2; color:#dc2626; }
+    .act-del:hover { background:#dc2626; color:#fff; }
+    .act-up, .act-dn {
+      background:#f5f5f5; color:#555;
+      cursor:pointer; border:none;
+    }
+    .act-up:hover, .act-dn:hover { background:#e0e0e0; }
+
+    /* Pagination */
+    .pagination {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 20px; flex-wrap: wrap; gap: 12px;
+    }
+    .pagination-info { font-size:13px; color:#888; }
+    .pagination-btns { display:flex; gap:4px; }
+    .pg-btn {
+      width:34px; height:34px; border-radius:6px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:13px; font-weight:600; cursor:pointer;
+      border:1px solid #dde; background:#fff; color:#555;
+      transition:all .2s;
+    }
+    .pg-btn:hover { border-color:var(--green); color:var(--green); }
+    .pg-btn.active { background:var(--green); border-color:var(--green); color:#fff; }
+    .pg-btn:disabled { opacity:.4; cursor:not-allowed; }
+
+    /* ── Modal ── */
+    .modal-overlay {
+      position:fixed; inset:0; z-index:200;
+      background:rgba(0,0,0,.55); backdrop-filter:blur(4px);
+      display:none; align-items:center; justify-content:center; padding:20px;
+    }
+    .modal-overlay.open { display:flex; }
+    .modal {
+      background:#fff; border-radius:16px;
+      width:100%; max-width:780px; max-height:90vh;
+      overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,.3);
+    }
+    .modal-hdr {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:22px 28px 18px;
+      border-bottom:1px solid #eee; position:sticky; top:0; background:#fff; z-index:1;
+    }
+    .modal-hdr h2 { font-family:'Playfair Display',serif; font-size:20px; color:var(--green-deep); }
+    .modal-close {
+      width:32px; height:32px; border-radius:50%;
+      border:none; background:#f0f0f0; color:#666;
+      font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+      transition:all .2s;
+    }
+    .modal-close:hover { background:#dc2626; color:#fff; }
+    .modal-body { padding:24px 28px; }
+    .modal-footer {
+      display:flex; gap:12px; justify-content:flex-end;
+      padding:18px 28px 22px; border-top:1px solid #eee;
+    }
+
+    /* Form */
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .form-group { display:flex; flex-direction:column; gap:6px; }
+    .form-group.full { grid-column:1/-1; }
+    .form-group label {
+      font-size:11px; font-weight:700; text-transform:uppercase;
+      letter-spacing:.5px; color:#666;
+    }
+    .form-control {
+      border:1px solid #dde; border-radius:8px;
+      padding:10px 14px; font-family:'Poppins',sans-serif;
+      font-size:13px; outline:none; color:#333; background:#fff;
+      transition:border .2s;
+    }
+    .form-control:focus { border-color:var(--green); box-shadow:0 0 0 3px rgba(54,208,34,.12); }
+    textarea.form-control { resize:vertical; min-height:100px; }
+    .img-preview {
+      width:100%; height:140px; border-radius:8px;
+      object-fit:cover; margin-top:8px; display:none;
+      border:1px solid #dde;
+    }
+    .img-preview.show { display:block; }
+    .form-hint { font-size:11px; color:#aaa; margin-top:3px; }
+
+    /* Section editor */
+    .section-editor { border:1px solid #dde; border-radius:10px; margin-bottom:12px; overflow:hidden; }
+    .section-hdr {
+      display:flex; align-items:center; gap:10px; padding:12px 16px;
+      background:#f9fdf9; border-bottom:1px solid #eef5ee; cursor:pointer;
+    }
+    .section-type-badge {
+      background:var(--green); color:#fff;
+      padding:2px 8px; border-radius:10px; font-size:10px; font-weight:700; text-transform:uppercase;
+    }
+    .section-hdr-title { flex:1; font-size:13px; font-weight:600; color:#444; }
+    .section-body { padding:14px 16px; display:none; }
+    .section-body.open { display:block; }
+    .section-del { background:none; border:none; color:#dc2626; cursor:pointer; font-size:14px; }
+
+    /* Toast */
+    .toast {
+      position:fixed; bottom:28px; right:28px; z-index:300;
+      background:var(--green-deep); color:#fff;
+      padding:14px 22px; border-radius:10px;
+      font-size:13px; font-weight:600;
+      display:flex; align-items:center; gap:10px;
+      box-shadow:0 4px 20px rgba(0,0,0,.25);
+      transform:translateY(80px); opacity:0; transition:all .3s;
+      pointer-events:none;
+    }
+    .toast.show { transform:translateY(0); opacity:1; }
+    .toast.green { background:var(--green); }
+    .toast.red { background:#dc2626; }
+
+    /* Empty state */
+    .empty-state {
+      text-align:center; padding:60px 20px;
+      color:#888; font-size:14px;
+    }
+    .empty-state .ico { font-size:48px; margin-bottom:12px; display:block; }
+
+    /* Confirm dialog */
+    .confirm-dialog {
+      background:#fff; border-radius:14px;
+      padding:32px 28px; max-width:420px; width:100%;
+      box-shadow:0 20px 60px rgba(0,0,0,.3); text-align:center;
+    }
+    .confirm-dialog .ico { font-size:40px; margin-bottom:12px; }
+    .confirm-dialog h3 { font-family:'Playfair Display',serif; font-size:20px; color:var(--green-deep); margin-bottom:8px; }
+    .confirm-dialog p { font-size:13px; color:#666; margin-bottom:22px; }
+    .confirm-btns { display:flex; gap:12px; justify-content:center; }
+
+    /* Dashboard chart placeholder */
+    .tag-dist {
+      display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:12px;
+    }
+    .tag-bar-item { background:#fff; border:1px solid #dde; border-radius:10px; padding:14px 16px; }
+    .tag-bar-name { font-size:12px; font-weight:700; color:var(--green-deep); margin-bottom:8px; }
+    .tag-bar-track { background:#e8f5e8; border-radius:10px; height:8px; overflow:hidden; margin-bottom:6px; }
+    .tag-bar-fill { background:var(--green); height:100%; border-radius:10px; transition:width .5s; }
+    .tag-bar-count { font-size:11px; color:#888; }
+
+    @media(max-width:768px) {
+      .admin-sidebar { display:none; }
+      .admin-main { margin-left:0; padding:16px; }
+      .form-grid { grid-template-columns:1fr; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- LOGIN GATE -->
-<div id="login-gate">
-  <div id="login-box">
-    <div style="font-size:48px;margin-bottom:16px;">🔐</div>
-    <h2>Blog Admin</h2>
-    <p style="color:#666;font-size:13px;margin-bottom:20px;">Enter admin password to manage blog posts</p>
-    <input type="password" id="login-pass" placeholder="Password" onkeypress="if(event.key==='Enter')doLogin()">
-    <button class="btn btn-green" style="width:100%;justify-content:center;" onclick="doLogin()"><i class="fas fa-sign-in-alt"></i> Login</button>
-    <p id="login-err" style="color:#e53935;font-size:12px;margin-top:10px;display:none;">Wrong password</p>
+<!-- Top Nav -->
+<nav class="admin-nav">
+  <div class="logo">
+    <img src="uploads/images/Radiancelogo.png" alt="Radiance Overseas">
+    <span>Blog Admin</span>
+  </div>
+  <span class="nav-badge">Admin Panel</span>
+  <div class="nav-right">
+    <button class="nav-btn" onclick="exportJSON()"><i class="fas fa-download"></i> Export JSON</button>
+    <button class="nav-btn green" onclick="openAddModal()"><i class="fas fa-plus"></i> New Post</button>
+    <a href="blog.html" class="nav-btn" target="_blank"><i class="fas fa-external-link-alt"></i> View Blog</a>
+  </div>
+</nav>
+
+<!-- Sidebar -->
+<aside class="admin-sidebar">
+  <span class="sidebar-section-label">Navigation</span>
+  <a class="sidebar-item active" onclick="showView('dashboard')" href="#">
+    <i class="fas fa-chart-pie"></i> Dashboard
+    <span class="sidebar-count" id="sbc-total">–</span>
+  </a>
+  <a class="sidebar-item" onclick="showView('posts')" href="#">
+    <i class="fas fa-newspaper"></i> All Posts
+    <span class="sidebar-count" id="sbc-all">–</span>
+  </a>
+  <span class="sidebar-section-label">By Category</span>
+  <div id="sidebar-tag-links"></div>
+  <span class="sidebar-section-label">Actions</span>
+  <a class="sidebar-item" onclick="openAddModal()" href="#">
+    <i class="fas fa-plus-circle"></i> Add New Post
+  </a>
+  <a class="sidebar-item" onclick="exportJSON()" href="#">
+    <i class="fas fa-file-export"></i> Export posts.json
+  </a>
+  <a class="sidebar-item" href="blog.html" target="_blank">
+    <i class="fas fa-external-link-alt"></i> View Live Blog
+  </a>
+</aside>
+
+<!-- Main -->
+<main class="admin-main">
+
+  <!-- Dashboard View -->
+  <div class="admin-view active" id="view-dashboard">
+    <div class="page-hdr">
+      <div>
+        <h1>Dashboard</h1>
+        <p>Overview of your blog content</p>
+      </div>
+    </div>
+    <div class="stats-grid" id="dash-stats"></div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--green-deep);margin-bottom:16px;">Posts by Category</h2>
+    <div class="tag-dist" id="tag-dist"></div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:18px;color:var(--green-deep);margin:28px 0 16px;">Recent Posts</h2>
+    <table class="posts-table" id="recent-table">
+      <thead><tr>
+        <th></th><th>Title</th><th>Tag</th><th>Date</th><th>Author</th><th>Actions</th>
+      </tr></thead>
+      <tbody id="recent-tbody"></tbody>
+    </table>
+  </div>
+
+  <!-- Posts View -->
+  <div class="admin-view" id="view-posts">
+    <div class="page-hdr">
+      <div>
+        <h1>All Posts</h1>
+        <p id="posts-subtitle">Loading…</p>
+      </div>
+      <button class="btn-sm btn-primary" onclick="openAddModal()"><i class="fas fa-plus"></i> New Post</button>
+    </div>
+    <div class="toolbar">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-input" placeholder="Search posts…" oninput="renderPostsTable()">
+      </div>
+      <select class="filter-select" id="tag-filter" onchange="renderPostsTable()">
+        <option value="">All Categories</option>
+      </select>
+      <button class="btn-sm btn-outline" onclick="sortPosts('date')"><i class="fas fa-calendar"></i> Sort by Date</button>
+      <button class="btn-sm btn-outline" onclick="sortPosts('title')"><i class="fas fa-sort-alpha-down"></i> Sort by Title</button>
+    </div>
+    <table class="posts-table">
+      <thead><tr>
+        <th style="width:72px"></th>
+        <th>Title / Slug</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Author</th>
+        <th style="width:130px">Actions</th>
+      </tr></thead>
+      <tbody id="posts-tbody"></tbody>
+    </table>
+    <div class="pagination">
+      <div class="pagination-info" id="pagination-info"></div>
+      <div class="pagination-btns" id="pagination-btns"></div>
+    </div>
+  </div>
+
+</main>
+
+<!-- Add/Edit Modal -->
+<div class="modal-overlay" id="post-modal">
+  <div class="modal">
+    <div class="modal-hdr">
+      <h2 id="modal-title">Add New Post</h2>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-grid">
+        <div class="form-group full">
+          <label>Title *</label>
+          <input type="text" id="f-title" class="form-control" placeholder="Article title…" oninput="autoSlug()">
+        </div>
+        <div class="form-group">
+          <label>Slug (URL ID) *</label>
+          <input type="text" id="f-slug" class="form-control" placeholder="auto-generated">
+          <span class="form-hint">URL: blog-post.html?id=[slug]</span>
+        </div>
+        <div class="form-group">
+          <label>Category / Tag *</label>
+          <select id="f-tag" class="form-control">
+            <option value="Rice Export">Rice Export</option>
+            <option value="Spices">Spices</option>
+            <option value="Coffee">Coffee</option>
+            <option value="Oil Seeds">Oil Seeds</option>
+            <option value="Pulses">Pulses</option>
+            <option value="Herbs">Herbs</option>
+            <option value="Dehydrated">Dehydrated</option>
+            <option value="Market Trends">Market Trends</option>
+            <option value="Supply Chain">Supply Chain</option>
+            <option value="Certifications">Certifications</option>
+            <option value="Trade Compliance">Trade Compliance</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Publication Date *</label>
+          <input type="date" id="f-date" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Author</label>
+          <input type="text" id="f-author" class="form-control" placeholder="Radiance Export Team">
+        </div>
+        <div class="form-group">
+          <label>Read Time</label>
+          <input type="text" id="f-readtime" class="form-control" placeholder="8 min read">
+        </div>
+        <div class="form-group full">
+          <label>Hero Image URL *</label>
+          <input type="url" id="f-image" class="form-control" placeholder="https://images.unsplash.com/…" oninput="previewImg()">
+          <img id="img-preview" class="img-preview" alt="">
+        </div>
+        <div class="form-group full">
+          <label>Excerpt (Lead paragraph shown in blog listing) *</label>
+          <textarea id="f-excerpt" class="form-control" rows="4" placeholder="A compelling 2–4 sentence summary of this article…"></textarea>
+        </div>
+      </div>
+
+      <!-- Sections editor -->
+      <div style="margin-top:28px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+          <h3 style="font-family:'Playfair Display',serif;font-size:16px;color:var(--green-deep);">
+            Article Sections
+          </h3>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button class="btn-sm btn-outline" onclick="addSection('intro')">+ Intro</button>
+            <button class="btn-sm btn-outline" onclick="addSection('section')">+ Section</button>
+            <button class="btn-sm btn-outline" onclick="addSection('stats')">+ Stats</button>
+            <button class="btn-sm btn-outline" onclick="addSection('callout')">+ Callout</button>
+            <button class="btn-sm btn-outline" onclick="addSection('image')">+ Image</button>
+            <button class="btn-sm btn-outline" onclick="addSection('products')">+ Products</button>
+          </div>
+        </div>
+        <div id="sections-editor"></div>
+        <p class="form-hint" style="margin-top:8px;">Drag sections to reorder (planned). Sections render in order on the blog post page.</p>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-sm btn-outline" onclick="closeModal()">Cancel</button>
+      <button class="btn-sm btn-primary" onclick="savePost()"><i class="fas fa-save"></i> Save Post</button>
+    </div>
   </div>
 </div>
 
-<!-- ADMIN PANEL -->
-<div class="admin-bar">
-  <h1><i class="fas fa-newspaper"></i> Blog Admin — Radiance Overseas</h1>
-  <div><a href="blog.html"><i class="fas fa-external-link-alt"></i> View Blog</a> &nbsp; <a href="index.html"><i class="fas fa-home"></i> Home</a></div>
-</div>
-
-<div class="container">
-  <div id="msg" class="msg"></div>
-
-  <!-- ADD NEW POST -->
-  <div class="card">
-    <h2><i class="fas fa-plus-circle" style="color:#36d022;"></i> Add New Post</h2>
-    <div class="form-row">
-      <div>
-        <label>Title *</label>
-        <input type="text" id="post-title" placeholder="e.g. India's Turmeric Export Hits Record High in 2025">
-      </div>
-      <div>
-        <label>Category / Tag *</label>
-        <select id="post-tag">
-          <option value="Rice Export">🌾 Rice Export</option>
-          <option value="Coffee">☕ Coffee</option>
-          <option value="Spices">🌶 Spices</option>
-          <option value="Oil Seeds">🌻 Oil Seeds</option>
-          <option value="Pulses">🫘 Pulses</option>
-          <option value="Herbs">🌿 Herbs</option>
-          <option value="Dehydrated">🧅 Dehydrated</option>
-          <option value="Supply Chain">🚢 Supply Chain</option>
-          <option value="Market Trends">📈 Market Trends</option>
-          <option value="Certifications">🏆 Certifications</option>
-          <option value="Trade Compliance">📋 Trade Compliance</option>
-        </select>
-      </div>
-    </div>
-    <label>Excerpt / Summary *</label>
-    <textarea id="post-excerpt" placeholder="Brief summary of the blog post (150-250 characters ideal for SEO)"></textarea>
-    <div class="form-row">
-      <div>
-        <label>Date</label>
-        <input type="date" id="post-date">
-      </div>
-      <div>
-        <label>Image URL (optional — paste Unsplash/CDN URL)</label>
-        <input type="url" id="post-image" placeholder="https://images.unsplash.com/photo-...?w=800&q=80">
-      </div>
-    </div>
-    <div class="form-row">
-      <div>
-        <label>Author</label>
-        <input type="text" id="post-author" value="Radiance Export Team">
-      </div>
-      <div style="display:flex;align-items:end;">
-        <button class="btn btn-green" style="width:100%;justify-content:center;margin-bottom:4px;" onclick="addPost()"><i class="fas fa-paper-plane"></i> Publish Post</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- EXISTING POSTS -->
-  <div class="card">
-    <h2><i class="fas fa-list" style="color:#1565c0;"></i> Existing Posts</h2>
-    <p class="post-count" id="total-count"></p>
-    <div class="search-box"><input type="text" id="search-posts" placeholder="Search posts..." oninput="searchPosts(this.value)"></div>
-    <div style="overflow-x:auto;">
-      <table>
-        <thead><tr><th>Title</th><th>Category</th><th>Date</th><th>Actions</th></tr></thead>
-        <tbody id="posts-table"></tbody>
-      </table>
+<!-- Confirm Modal -->
+<div class="modal-overlay" id="confirm-modal">
+  <div class="confirm-dialog">
+    <div class="ico">🗑️</div>
+    <h3>Delete Post?</h3>
+    <p id="confirm-msg">This action cannot be undone.</p>
+    <div class="confirm-btns">
+      <button class="btn-sm btn-outline" onclick="closeConfirm()">Cancel</button>
+      <button class="btn-sm btn-danger" id="confirm-ok-btn" onclick="confirmDelete()">Delete</button>
     </div>
   </div>
 </div>
+
+<!-- Toast -->
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i> <span id="toast-msg"></span></div>
 
 <script>
-var API_URL = 'api/blog-save.php';
-var adminPass = '';
-var allPosts = [];
+// ── State ──
+var ALL_POSTS = [];
+var FILTERED = [];
+var PAGE = 1;
+var PER_PAGE = 15;
+var EDIT_SLUG = null; // null = adding new
+var DELETE_SLUG = null;
+var SORT_KEY = 'date';
+var SORT_DIR = -1; // -1 = desc
 
-function doLogin() {
-  adminPass = document.getElementById('login-pass').value;
-  // Quick test — try to load posts
-  fetch('blogs/posts.json')
-    .then(function(r) { return r.json(); })
-    .then(function(posts) {
-      if (adminPass.length > 3) {
-        document.getElementById('login-gate').style.display = 'none';
-        allPosts = posts;
-        renderTable(posts);
-        document.getElementById('post-date').value = new Date().toISOString().split('T')[0];
-      } else {
-        document.getElementById('login-err').style.display = 'block';
-      }
-    });
-}
+var SECTION_COUNT = 0;
 
-function showMsg(text, isError) {
-  var m = document.getElementById('msg');
-  m.textContent = text;
-  m.className = 'msg ' + (isError ? 'msg-err' : 'msg-ok');
-  m.style.display = 'block';
-  setTimeout(function() { m.style.display = 'none'; }, 4000);
-}
-
-function renderTable(posts) {
-  var html = '';
-  posts.sort(function(a,b) { return b.date.localeCompare(a.date); });
-  posts.forEach(function(p) {
-    html += '<tr data-title="' + p.title.toLowerCase() + '">' +
-      '<td>' + p.title + '</td>' +
-      '<td><span class="tag">' + p.tag + '</span></td>' +
-      '<td style="white-space:nowrap;">' + p.date + '</td>' +
-      '<td style="white-space:nowrap;"><button class="btn-red" onclick="deletePost(' + p.id + ')"><i class="fas fa-trash"></i> Delete</button></td>' +
-      '</tr>';
-  });
-  document.getElementById('posts-table').innerHTML = html;
-  document.getElementById('total-count').textContent = posts.length + ' posts total';
-}
-
-function searchPosts(query) {
-  var q = query.toLowerCase();
-  document.querySelectorAll('#posts-table tr').forEach(function(row) {
-    row.style.display = row.dataset.title.indexOf(q) !== -1 ? '' : 'none';
-  });
-}
-
-function addPost() {
-  var title = document.getElementById('post-title').value.trim();
-  var excerpt = document.getElementById('post-excerpt').value.trim();
-  var tag = document.getElementById('post-tag').value;
-  var date = document.getElementById('post-date').value;
-  var image = document.getElementById('post-image').value.trim();
-  var author = document.getElementById('post-author').value.trim();
-  
-  if (!title || !excerpt) { showMsg('Title and excerpt are required', true); return; }
-  
-  fetch(API_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      password: adminPass,
-      action: 'add',
-      title: title,
-      excerpt: excerpt,
-      tag: tag,
-      date: date || new Date().toISOString().split('T')[0],
-      image: image || 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80',
-      author: author || 'Radiance Export Team'
-    })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(data) {
-    if (data.success) {
-      showMsg('Post published: ' + title, false);
-      document.getElementById('post-title').value = '';
-      document.getElementById('post-excerpt').value = '';
-      document.getElementById('post-image').value = '';
-      loadPosts();
-    } else {
-      showMsg(data.error || 'Failed to add post', true);
-    }
-  })
-  .catch(function(err) { showMsg('Error: ' + err.message, true); });
-}
-
-function deletePost(id) {
-  if (!confirm('Delete this post permanently?')) return;
-  
-  fetch(API_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ password: adminPass, action: 'delete', id: id })
-  })
-  .then(function(r) { return r.json(); })
-  .then(function(data) {
-    if (data.success) {
-      showMsg('Post deleted', false);
-      loadPosts();
-    } else {
-      showMsg(data.error || 'Failed to delete', true);
-    }
-  })
-  .catch(function(err) { showMsg('Error: ' + err.message, true); });
-}
+// ── Boot ──
+document.addEventListener('DOMContentLoaded', function() {
+  loadPosts();
+  // Set today as default date
+  document.getElementById('f-date').value = new Date().toISOString().split('T')[0];
+});
 
 function loadPosts() {
   fetch('blogs/posts.json?v=' + Date.now())
     .then(function(r) { return r.json(); })
-    .then(function(posts) {
-      allPosts = posts;
-      renderTable(posts);
+    .then(function(data) {
+      ALL_POSTS = data;
+      FILTERED = data.slice();
+      buildSidebar();
+      renderDashboard();
+      renderPostsTable();
+    })
+    .catch(function() {
+      // Start with empty if not found
+      ALL_POSTS = [];
+      FILTERED = [];
+      renderDashboard();
+      renderPostsTable();
+      showToast('Could not load posts.json — starting fresh.', 'red');
     });
+}
+
+// ── Views ──
+function showView(name) {
+  document.querySelectorAll('.admin-view').forEach(function(v) { v.classList.remove('active'); });
+  document.querySelectorAll('.sidebar-item').forEach(function(i) { i.classList.remove('active'); });
+  document.getElementById('view-' + name).classList.add('active');
+  if (name === 'posts') renderPostsTable();
+}
+
+// ── Sidebar ──
+function buildSidebar() {
+  var tags = {};
+  ALL_POSTS.forEach(function(p) { tags[p.tag] = (tags[p.tag]||0)+1; });
+  document.getElementById('sbc-total').textContent = ALL_POSTS.length;
+  document.getElementById('sbc-all').textContent = ALL_POSTS.length;
+
+  var container = document.getElementById('sidebar-tag-links');
+  container.innerHTML = '';
+  Object.keys(tags).sort().forEach(function(tag) {
+    var a = document.createElement('a');
+    a.href = '#';
+    a.className = 'sidebar-item';
+    a.innerHTML = '<i class="fas fa-tag"></i>' + tag + '<span class="sidebar-count">' + tags[tag] + '</span>';
+    a.onclick = function(e) {
+      e.preventDefault();
+      document.getElementById('tag-filter').value = tag;
+      showView('posts');
+      renderPostsTable();
+    };
+    container.appendChild(a);
+  });
+
+  // Populate tag filter
+  var sel = document.getElementById('tag-filter');
+  // Keep first option
+  while(sel.options.length > 1) sel.remove(1);
+  Object.keys(tags).sort().forEach(function(tag) {
+    var opt = document.createElement('option');
+    opt.value = tag; opt.textContent = tag + ' (' + tags[tag] + ')';
+    sel.appendChild(opt);
+  });
+}
+
+// ── Dashboard ──
+function renderDashboard() {
+  var tags = {};
+  var authors = {};
+  ALL_POSTS.forEach(function(p) {
+    tags[p.tag] = (tags[p.tag]||0)+1;
+    authors[p.author||'Unknown'] = (authors[p.author||'Unknown']||0)+1;
+  });
+  var topTag = Object.keys(tags).sort(function(a,b){return tags[b]-tags[a];})[0] || '–';
+  var topAuthor = Object.keys(authors).sort(function(a,b){return authors[b]-authors[a];})[0] || '–';
+
+  document.getElementById('dash-stats').innerHTML =
+    statCard('📰', ALL_POSTS.length, 'Total Posts') +
+    statCard('🏷️', Object.keys(tags).length, 'Categories') +
+    statCard('✍️', Object.keys(authors).length, 'Authors') +
+    statCard('🥇', topTag, 'Top Category');
+
+  // Tag distribution
+  var maxCount = Math.max.apply(null, Object.values(tags));
+  var distHTML = '';
+  Object.keys(tags).sort(function(a,b){return tags[b]-tags[a];}).forEach(function(tag) {
+    var pct = Math.round(tags[tag]/maxCount*100);
+    distHTML += '<div class="tag-bar-item">' +
+      '<div class="tag-bar-name">' + tag + '</div>' +
+      '<div class="tag-bar-track"><div class="tag-bar-fill" style="width:' + pct + '%"></div></div>' +
+      '<div class="tag-bar-count">' + tags[tag] + ' posts</div>' +
+      '</div>';
+  });
+  document.getElementById('tag-dist').innerHTML = distHTML;
+
+  // Recent posts (last 8)
+  var recent = ALL_POSTS.slice().sort(function(a,b){return b.date.localeCompare(a.date);}).slice(0,8);
+  var tbody = document.getElementById('recent-tbody');
+  tbody.innerHTML = '';
+  recent.forEach(function(p) {
+    tbody.innerHTML += postRow(p);
+  });
+}
+
+function statCard(ico, val, lbl) {
+  return '<div class="stat-card"><div class="ico">' + ico + '</div><div class="val">' + val + '</div><div class="lbl">' + lbl + '</div></div>';
+}
+
+// ── Posts Table ──
+function renderPostsTable() {
+  var q = (document.getElementById('search-input').value||'').toLowerCase().trim();
+  var tag = document.getElementById('tag-filter').value;
+
+  FILTERED = ALL_POSTS.filter(function(p) {
+    var matchQ = !q || (p.title||'').toLowerCase().includes(q) || (p.slug||'').toLowerCase().includes(q) || (p.excerpt||'').toLowerCase().includes(q);
+    var matchTag = !tag || p.tag === tag;
+    return matchQ && matchTag;
+  });
+
+  FILTERED.sort(function(a,b) {
+    var av = (SORT_KEY === 'date') ? (a.date||'') : (a.title||'');
+    var bv = (SORT_KEY === 'date') ? (b.date||'') : (b.title||'');
+    return av.localeCompare(bv) * SORT_DIR;
+  });
+
+  document.getElementById('posts-subtitle').textContent = FILTERED.length + ' posts found';
+
+  var total = FILTERED.length;
+  var pages = Math.max(1, Math.ceil(total/PER_PAGE));
+  if (PAGE > pages) PAGE = pages;
+
+  var start = (PAGE-1)*PER_PAGE;
+  var pageItems = FILTERED.slice(start, start+PER_PAGE);
+
+  var tbody = document.getElementById('posts-tbody');
+  tbody.innerHTML = '';
+  if (!pageItems.length) {
+    tbody.innerHTML = '<tr><td colspan="6"><div class="empty-state"><span class="ico">📭</span>No posts found</div></td></tr>';
+  } else {
+    pageItems.forEach(function(p) { tbody.innerHTML += postRow(p); });
+  }
+
+  // Pagination
+  document.getElementById('pagination-info').textContent =
+    'Showing ' + (start+1) + '–' + Math.min(start+PER_PAGE, total) + ' of ' + total + ' posts';
+
+  var pgBtns = document.getElementById('pagination-btns');
+  pgBtns.innerHTML = '';
+  function pgBtn(lbl, p, disabled) {
+    var btn = document.createElement('button');
+    btn.className = 'pg-btn' + (p === PAGE ? ' active' : '');
+    btn.textContent = lbl;
+    btn.disabled = !!disabled;
+    btn.onclick = function() { PAGE = p; renderPostsTable(); };
+    pgBtns.appendChild(btn);
+  }
+  pgBtn('‹', Math.max(1,PAGE-1), PAGE===1);
+  var lo = Math.max(1,PAGE-2), hi = Math.min(pages, PAGE+2);
+  if (lo>1) { pgBtn(1,1); if(lo>2) pgBtn('…', lo, true); }
+  for(var i=lo;i<=hi;i++) pgBtn(i,i);
+  if (hi<pages) { if(hi<pages-1) pgBtn('…', hi, true); pgBtn(pages,pages); }
+  pgBtn('›', Math.min(pages,PAGE+1), PAGE===pages);
+}
+
+function postRow(p) {
+  return '<tr>' +
+    '<td><img class="post-thumb" src="' + esc(p.image||'') + '" alt="" onerror="this.style.background=\'#e0f0e0\'"></td>' +
+    '<td class="post-title-cell"><div class="title">' + esc(p.title||'') + '</div><div class="slug">' + esc(p.slug||'') + '</div></td>' +
+    '<td><span class="tag-pill">' + esc(p.tag||'') + '</span></td>' +
+    '<td>' + esc(p.date||'') + '</td>' +
+    '<td>' + esc(p.author||'–') + '</td>' +
+    '<td><div class="act-btns">' +
+      '<button class="act-btn act-view" title="View post" onclick="viewPost(\'' + esc(p.slug) + '\')"><i class="fas fa-eye"></i></button>' +
+      '<button class="act-btn act-edit" title="Edit post" onclick="openEditModal(\'' + esc(p.slug) + '\')"><i class="fas fa-edit"></i></button>' +
+      '<button class="act-btn act-del" title="Delete post" onclick="askDelete(\'' + esc(p.slug) + '\')"><i class="fas fa-trash"></i></button>' +
+    '</div></td>' +
+  '</tr>';
+}
+
+function sortPosts(key) {
+  if (SORT_KEY === key) SORT_DIR *= -1;
+  else { SORT_KEY = key; SORT_DIR = -1; }
+  PAGE = 1;
+  renderPostsTable();
+}
+
+// ── Modal ──
+function openAddModal() {
+  EDIT_SLUG = null;
+  SECTION_COUNT = 0;
+  document.getElementById('modal-title').textContent = 'Add New Post';
+  document.getElementById('f-title').value = '';
+  document.getElementById('f-slug').value = '';
+  document.getElementById('f-tag').value = 'Rice Export';
+  document.getElementById('f-date').value = new Date().toISOString().split('T')[0];
+  document.getElementById('f-author').value = '';
+  document.getElementById('f-readtime').value = '';
+  document.getElementById('f-image').value = '';
+  document.getElementById('f-excerpt').value = '';
+  document.getElementById('img-preview').classList.remove('show');
+  document.getElementById('sections-editor').innerHTML = '';
+  document.getElementById('post-modal').classList.add('open');
+}
+
+function openEditModal(slug) {
+  var post = ALL_POSTS.find(function(p) { return p.slug === slug; });
+  if (!post) return;
+  EDIT_SLUG = slug;
+  SECTION_COUNT = 0;
+  document.getElementById('modal-title').textContent = 'Edit Post';
+  document.getElementById('f-title').value = post.title || '';
+  document.getElementById('f-slug').value = post.slug || '';
+  document.getElementById('f-tag').value = post.tag || '';
+  document.getElementById('f-date').value = post.date || '';
+  document.getElementById('f-author').value = post.author || '';
+  document.getElementById('f-readtime').value = post.readTime || '';
+  document.getElementById('f-image').value = post.image || '';
+  document.getElementById('f-excerpt').value = post.excerpt || '';
+  previewImg();
+
+  document.getElementById('sections-editor').innerHTML = '';
+  (post.sections || []).forEach(function(sec) {
+    renderSectionEditor(sec);
+  });
+
+  document.getElementById('post-modal').classList.add('open');
+}
+
+function closeModal() {
+  document.getElementById('post-modal').classList.remove('open');
+}
+
+function autoSlug() {
+  if (EDIT_SLUG) return; // don't overwrite slug when editing
+  var title = document.getElementById('f-title').value;
+  var slug = title.toLowerCase()
+    .replace(/[^a-z0-9\s-]/g,'')
+    .trim()
+    .replace(/\s+/g,'-')
+    .substring(0,60);
+  document.getElementById('f-slug').value = slug;
+}
+
+function previewImg() {
+  var url = document.getElementById('f-image').value;
+  var img = document.getElementById('img-preview');
+  if (url) { img.src = url; img.classList.add('show'); }
+  else img.classList.remove('show');
+}
+
+// ── Section Editor ──
+function addSection(type) {
+  renderSectionEditor({ type: type });
+}
+
+function renderSectionEditor(sec) {
+  var id = 'sec-' + (SECTION_COUNT++);
+  var container = document.getElementById('sections-editor');
+  var div = document.createElement('div');
+  div.className = 'section-editor';
+  div.id = id;
+
+  var typeLabel = sec.type || 'section';
+  var previewTitle = sec.heading || sec.label || sec.caption || ('Section ' + SECTION_COUNT);
+
+  var fields = '';
+  if (sec.type === 'intro' || sec.type === 'section') {
+    fields =
+      '<div class="form-group" style="margin-bottom:10px;"><label>Heading</label>' +
+      '<input type="text" class="form-control sec-heading" value="' + esc(sec.heading||'') + '" placeholder="Section heading…"></div>' +
+      '<div class="form-group"><label>Body (HTML allowed)</label>' +
+      '<textarea class="form-control sec-body" rows="4" placeholder="Content…">' + (sec.body||'') + '</textarea></div>';
+  } else if (sec.type === 'stats') {
+    var itemsJSON = JSON.stringify(sec.items||[
+      {label:'Label 1',value:'Value'},
+      {label:'Label 2',value:'Value'},
+    ], null, 2);
+    fields =
+      '<div class="form-group"><label>Stats Items (JSON array: [{label, value}])</label>' +
+      '<textarea class="form-control sec-stats-json" rows="6">' + esc(itemsJSON) + '</textarea></div>';
+  } else if (sec.type === 'image') {
+    fields =
+      '<div class="form-group" style="margin-bottom:10px;"><label>Image URL</label>' +
+      '<input type="url" class="form-control sec-img-src" value="' + esc(sec.src||'') + '" placeholder="https://…"></div>' +
+      '<div class="form-group"><label>Caption</label>' +
+      '<input type="text" class="form-control sec-img-cap" value="' + esc(sec.caption||'') + '" placeholder="Image caption…"></div>';
+  } else if (sec.type === 'callout') {
+    fields =
+      '<div class="form-group" style="margin-bottom:10px;"><label>Icon (emoji)</label>' +
+      '<input type="text" class="form-control sec-co-icon" value="' + esc(sec.icon||'💡') + '" style="width:80px"></div>' +
+      '<div class="form-group" style="margin-bottom:10px;"><label>Label</label>' +
+      '<input type="text" class="form-control sec-co-label" value="' + esc(sec.label||'') + '" placeholder="Callout label…"></div>' +
+      '<div class="form-group"><label>Text</label>' +
+      '<textarea class="form-control sec-co-text" rows="3" placeholder="Callout text…">' + (sec.text||'') + '</textarea></div>';
+  } else if (sec.type === 'products') {
+    var linksJSON = JSON.stringify(sec.links||[
+      {label:'Product Name',href:'product.html'},
+    ], null, 2);
+    fields =
+      '<div class="form-group" style="margin-bottom:10px;"><label>Heading</label>' +
+      '<input type="text" class="form-control sec-prod-heading" value="' + esc(sec.heading||'Related Products') + '"></div>' +
+      '<div class="form-group"><label>Links (JSON array: [{label, href}])</label>' +
+      '<textarea class="form-control sec-prod-links" rows="6">' + esc(linksJSON) + '</textarea></div>';
+  }
+
+  div.innerHTML =
+    '<div class="section-hdr" onclick="toggleSec(\'' + id + '\')">' +
+      '<span class="section-type-badge">' + typeLabel + '</span>' +
+      '<span class="section-hdr-title">' + esc(previewTitle) + '</span>' +
+      '<button class="section-del" onclick="event.stopPropagation();deleteSec(\'' + id + '\')" title="Remove section"><i class="fas fa-times"></i></button>' +
+    '</div>' +
+    '<div class="section-body" data-type="' + typeLabel + '">' + fields + '</div>';
+
+  container.appendChild(div);
+}
+
+function toggleSec(id) {
+  var body = document.querySelector('#' + id + ' .section-body');
+  body.classList.toggle('open');
+}
+
+function deleteSec(id) {
+  var el = document.getElementById(id);
+  if (el) el.remove();
+}
+
+function readSections() {
+  var sections = [];
+  document.querySelectorAll('#sections-editor .section-editor').forEach(function(div) {
+    var body = div.querySelector('.section-body');
+    var type = body.dataset.type;
+    var sec = { type: type };
+    if (type === 'intro' || type === 'section') {
+      sec.heading = (body.querySelector('.sec-heading')||{}).value || '';
+      sec.body = (body.querySelector('.sec-body')||{}).value || '';
+    } else if (type === 'stats') {
+      try { sec.items = JSON.parse(body.querySelector('.sec-stats-json').value); } catch(e) { sec.items = []; }
+    } else if (type === 'image') {
+      sec.src = (body.querySelector('.sec-img-src')||{}).value || '';
+      sec.caption = (body.querySelector('.sec-img-cap')||{}).value || '';
+    } else if (type === 'callout') {
+      sec.icon = (body.querySelector('.sec-co-icon')||{}).value || '💡';
+      sec.label = (body.querySelector('.sec-co-label')||{}).value || '';
+      sec.text = (body.querySelector('.sec-co-text')||{}).value || '';
+    } else if (type === 'products') {
+      sec.heading = (body.querySelector('.sec-prod-heading')||{}).value || 'Related Products';
+      try { sec.links = JSON.parse(body.querySelector('.sec-prod-links').value); } catch(e) { sec.links = []; }
+    }
+    sections.push(sec);
+  });
+  return sections;
+}
+
+// ── Save Post ──
+function savePost() {
+  var title = document.getElementById('f-title').value.trim();
+  var slug = document.getElementById('f-slug').value.trim();
+  var tag = document.getElementById('f-tag').value;
+  var date = document.getElementById('f-date').value;
+  var author = document.getElementById('f-author').value.trim() || 'Radiance Export Team';
+  var readTime = document.getElementById('f-readtime').value.trim() || '8 min read';
+  var image = document.getElementById('f-image').value.trim();
+  var excerpt = document.getElementById('f-excerpt').value.trim();
+
+  if (!title || !slug || !date || !excerpt) {
+    showToast('Please fill in all required fields.', 'red');
+    return;
+  }
+
+  var sections = readSections();
+
+  // Check slug uniqueness
+  var existingIdx = ALL_POSTS.findIndex(function(p) { return p.slug === slug; });
+  if (EDIT_SLUG) {
+    // Editing — find original
+    var origIdx = ALL_POSTS.findIndex(function(p) { return p.slug === EDIT_SLUG; });
+    if (origIdx === -1) { showToast('Post not found.', 'red'); return; }
+    // If slug changed, check new slug isn't taken
+    if (slug !== EDIT_SLUG && existingIdx !== -1) {
+      showToast('Slug "' + slug + '" already exists. Choose a unique slug.', 'red');
+      return;
+    }
+    var newPost = Object.assign({}, ALL_POSTS[origIdx], {
+      title: title, slug: slug, tag: tag, date: date,
+      author: author, readTime: readTime, image: image, excerpt: excerpt,
+      sections: sections
+    });
+    ALL_POSTS.splice(origIdx, 1, newPost);
+    showToast('Post updated!', 'green');
+  } else {
+    if (existingIdx !== -1) {
+      showToast('Slug "' + slug + '" already exists. Choose a unique slug.', 'red');
+      return;
+    }
+    var maxId = ALL_POSTS.reduce(function(m, p) { return Math.max(m, p.id||0); }, 0);
+    ALL_POSTS.unshift({
+      id: maxId + 1, title: title, slug: slug, tag: tag, date: date,
+      author: author, readTime: readTime, image: image, excerpt: excerpt,
+      sections: sections
+    });
+    showToast('Post created!', 'green');
+  }
+
+  closeModal();
+  buildSidebar();
+  renderDashboard();
+  renderPostsTable();
+}
+
+// ── Delete ──
+function askDelete(slug) {
+  DELETE_SLUG = slug;
+  var post = ALL_POSTS.find(function(p) { return p.slug === slug; });
+  document.getElementById('confirm-msg').textContent = '"' + (post ? post.title : slug) + '" will be permanently deleted.';
+  document.getElementById('confirm-modal').classList.add('open');
+}
+
+function closeConfirm() {
+  DELETE_SLUG = null;
+  document.getElementById('confirm-modal').classList.remove('open');
+}
+
+function confirmDelete() {
+  if (!DELETE_SLUG) return;
+  ALL_POSTS = ALL_POSTS.filter(function(p) { return p.slug !== DELETE_SLUG; });
+  FILTERED = FILTERED.filter(function(p) { return p.slug !== DELETE_SLUG; });
+  closeConfirm();
+  buildSidebar();
+  renderDashboard();
+  renderPostsTable();
+  showToast('Post deleted.', 'red');
+}
+
+// ── View Post ──
+function viewPost(slug) {
+  window.open('blog-post.html?id=' + encodeURIComponent(slug), '_blank');
+}
+
+// ── Export JSON ──
+function exportJSON() {
+  // Export clean version (without admin-specific fields if any)
+  var blob = new Blob([JSON.stringify(ALL_POSTS, null, 2)], { type: 'application/json' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'posts.json';
+  a.click();
+  showToast('posts.json downloaded! Upload to blogs/ folder on server.', 'green');
+}
+
+// ── Toast ──
+function showToast(msg, type) {
+  var t = document.getElementById('toast');
+  document.getElementById('toast-msg').textContent = msg;
+  t.className = 'toast show' + (type ? ' ' + type : '');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(function() { t.classList.remove('show'); }, 3500);
+}
+
+// ── Helpers ──
+function esc(str) {
+  return (str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 </script>
 </body>

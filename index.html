@@ -1915,7 +1915,9 @@
 
   <script>
     // Load latest 3 blog posts on homepage
-    (function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      var grid = document.getElementById('index-blog-grid');
+      if (!grid) return;
       fetch('blogs/posts.json?v=' + Date.now())
         .then(function (r) { return r.json(); })
         .then(function (posts) {
@@ -1936,14 +1938,13 @@
               '<a href="blog-post.html?id=' + p.slug + '" class="read-more">Read More <span>→</span></a>' +
               '</div></div>';
           });
-          document.getElementById('index-blog-grid').innerHTML = html;
-          // Make visible
-          document.querySelectorAll('#index-blog-grid .anim-fade-up').forEach(function (el) { el.classList.add('visible'); });
+          grid.innerHTML = html;
+          grid.querySelectorAll('.anim-fade-up').forEach(function (el) { el.classList.add('visible'); });
         })
         .catch(function () {
-          document.getElementById('indedocument.getElementById('index-blog-grid').innerHTML = '<div style="text-align:center;grid-column:1/-1;padding:20px;"><a href="blog.html" style="color:var(--green);font-weight:700;">Visit our Blog →</a></div>';
+          grid.innerHTML = '<div style="text-align:center;grid-column:1/-1;padding:20px;"><a href="blog.html" style="color:var(--green);font-weight:700;">Visit our Blog →</a></div>';
         });
-    })();
+    });
   </script>
 
 

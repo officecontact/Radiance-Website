@@ -54,10 +54,16 @@
     let current = 0;
     let timer;
 
+    function loadBg(slide) {
+      var bg = slide.getAttribute('data-bg');
+      if (bg) { slide.style.backgroundImage = "url('" + bg + "')"; slide.removeAttribute('data-bg'); }
+    }
+
     function goTo(n) {
       slides[current].classList.remove('active');
       if (dots[current]) dots[current].classList.remove('active');
       current = (n + slides.length) % slides.length;
+      loadBg(slides[current]);
       slides[current].classList.add('active');
       if (dots[current]) dots[current].classList.add('active');
     }

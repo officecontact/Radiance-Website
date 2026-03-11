@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T3S959KM');</script>
+<!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Blog Admin — Radiance Overseas</title>
   <link rel="shortcut icon" href="webassets/images/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap"></noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -343,11 +355,15 @@
   </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3S959KM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- Top Nav -->
 <nav class="admin-nav">
   <div class="logo">
-    <img src="uploads/images/Radiancelogo.png" alt="Radiance Overseas">
+    <img decoding="async" loading="lazy" src="uploads/images/Radiancelogo.png" alt="Radiance Overseas">
     <span>Blog Admin</span>
   </div>
   <span class="nav-badge">Admin Panel</span>
@@ -494,7 +510,7 @@
         <div class="form-group full">
           <label>Hero Image URL *</label>
           <input type="url" id="f-image" class="form-control" placeholder="https://images.unsplash.com/…" oninput="previewImg()">
-          <img id="img-preview" class="img-preview" alt="">
+          <img decoding="async" loading="lazy" id="img-preview" class="img-preview" alt="">
         </div>
         <div class="form-group full">
           <label>Excerpt (Lead paragraph shown in blog listing) *</label>
@@ -727,7 +743,7 @@ function renderPostsTable() {
 
 function postRow(p) {
   return '<tr>' +
-    '<td><img class="post-thumb" src="' + esc(p.image||'') + '" alt="" onerror="this.style.background=\'#e0f0e0\'"></td>' +
+    '<td><img decoding="async" loading="lazy" class="post-thumb" src="' + esc(p.image||'') + '" alt="" onerror="this.style.background=\'#e0f0e0\'"></td>' +
     '<td class="post-title-cell"><div class="title">' + esc(p.title||'') + '</div><div class="slug">' + esc(p.slug||'') + '</div></td>' +
     '<td><span class="tag-pill">' + esc(p.tag||'') + '</span></td>' +
     '<td>' + esc(p.date||'') + '</td>' +

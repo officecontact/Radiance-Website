@@ -1476,6 +1476,7 @@ footer { background: #0d1f13; }
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 4px 20px rgba(37,211,102,.45);
   animation: float 3s ease-in-out infinite;
+  will-change: transform;
   transition: transform .2s;
 }
 .whatsapp-float:hover { transform: scale(1.12); animation: none; }

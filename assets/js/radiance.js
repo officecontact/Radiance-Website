@@ -291,7 +291,7 @@
     if (!container) return;
 
     fetch('https://www.radianceoverseas.com/blogs/wp-json/wp/v2/posts?per_page=6&_embed')
-      .then(function(r) { return r.json(); })
+      .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function(posts) {
         container.innerHTML = '';
         posts.forEach(function(post) {

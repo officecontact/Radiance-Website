@@ -276,7 +276,7 @@
             showFormSuccess();
             form.reset();
           })
-          .catch(function() { showFormError(); })
+          .catch(function(err) { console.error('EmailJS error:', err); showFormError(err); })
           .finally(function() { btn.textContent = origText; btn.disabled = false; });
       } else {
         // Fallback: open mailto
@@ -290,8 +290,9 @@
     const msg = document.getElementById('form-success');
     if (msg) { msg.style.display = 'block'; setTimeout(function() { msg.style.display = 'none'; }, 5000); }
   }
-  function showFormError() {
-    alert('Message could not be sent. Please email us directly at info@radianceoverseas.com');
+  function showFormError(err) {
+    var detail = err && err.text ? err.text : (err || 'Unknown error');
+    alert('Message could not be sent (' + detail + '). Please email us directly at info@radianceoverseas.com');
   }
 
   /* ── BLOG LOADER ─────────────────────────────────────────────── */

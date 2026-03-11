@@ -60,10 +60,12 @@
     }
 
     function goTo(n) {
+      slides[current].style.animation = 'none';
       slides[current].classList.remove('active');
       if (dots[current]) dots[current].classList.remove('active');
       current = (n + slides.length) % slides.length;
       loadBg(slides[current]);
+      slides[current].style.animation = '';
       slides[current].classList.add('active');
       if (dots[current]) dots[current].classList.add('active');
     }

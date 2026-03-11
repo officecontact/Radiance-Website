@@ -49,7 +49,7 @@
   <meta property="business:contact_data:phone_number" content="+14695449746">
   <meta property="business:contact_data:email" content="info@radianceoverseas.com">
   <link rel="shortcut icon" href="webassets/images/favicon.png" type="image/x-icon">
-  <link rel="preload" as="image" href="uploads/images/products/basmati-rice-1121-steam-india-export.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="uploads/images/hero/hero-rice-field.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -68,6 +68,9 @@ h1,h2,h3,h4,h5,h6{font-family:var(--font-head);line-height:1.2}.container{max-wi
 @media(max-width:900px){#hero-categories .container>div:nth-child(2){grid-template-columns:repeat(2,1fr)!important}#hero-categories a{height:240px!important}}
 @media(max-width:500px){#hero-categories .container>div:nth-child(2){grid-template-columns:1fr 1fr!important}#hero-categories a{height:200px!important}}
 @media(max-width:768px){.rsp-1col{grid-template-columns:1fr!important;gap:32px!important}}
+.hero-slide{background-size:cover;background-position:center;animation:none;}
+.hero-slide.active{animation:kenburns 8s ease-in-out forwards;}
+@keyframes kenburns{0%{transform:scale(1);} 100%{transform:scale(1.08);}}
 </style>
   <link rel="stylesheet" href="assets/css/radiance.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="assets/css/radiance.css"></noscript>
@@ -260,13 +263,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- HERO SLIDER -->
     <section class="hero-slider" aria-label="Radiance Overseas — India Organic Agro Exporter">
       <div class="hero-slide active"
-        style="background-image:url('uploads/images/products/basmati-rice-1121-steam-india-export.webp');"></div>
+        style="background-image:url('uploads/images/hero/hero-rice-field.jpg');"></div>
       <div class="hero-slide"
-        data-bg="uploads/images/products/turmeric-finger-europe-india-export.webp"></div>
+        data-bg="uploads/images/hero/hero-spices.jpg"></div>
       <div class="hero-slide"
-        data-bg="uploads/images/products/coffee-beans-india-export.webp"></div>
+        data-bg="uploads/images/hero/hero-export.jpg"></div>
       <div class="hero-slide"
-        data-bg="uploads/images/products/cumin-seeds-europe-india-export.webp"></div>
+        data-bg="uploads/images/hero/hero-farmland.jpg"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div class="container">

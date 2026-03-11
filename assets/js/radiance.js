@@ -271,7 +271,7 @@
 
       // EmailJS send
       if (window.emailjs) {
-        emailjs.send('service_4tenaxt', 'template_radiance', data)
+        emailjs.send('service_4tenaxt', 'template_n785d2s', data)
           .then(function() {
             showFormSuccess();
             form.reset();

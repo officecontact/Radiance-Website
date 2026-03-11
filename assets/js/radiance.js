@@ -261,6 +261,9 @@
         from_name: form.querySelector('#name') ? form.querySelector('#name').value : '',
         user_email: form.querySelector('#email') ? form.querySelector('#email').value : '',
         phone: form.querySelector('#phone') ? form.querySelector('#phone').value : '',
+        company: form.querySelector('#company') ? form.querySelector('#company').value : '',
+        country: form.querySelector('#country') ? form.querySelector('#country').value : '',
+        product: form.querySelector('#product') ? form.querySelector('#product').value : '',
         subject: form.querySelector('#subject') ? form.querySelector('#subject').value : '',
         message: form.querySelector('#message') ? form.querySelector('#message').value : '',
         to_email: 'aagosh@radianceoverseas.com'

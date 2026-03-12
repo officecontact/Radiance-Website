@@ -20,12 +20,16 @@
     "file": "blog.html"
   },
   {
+    "level": "static",
+    "file": "agro-export-india.html"
+  },
+  {
     "level": "category",
     "file": "animal-feed.html"
   },
   {
     "level": "category",
-    "file": "cereals.html"
+    "file": "cereals-flour.html"
   },
   {
     "level": "category",
@@ -33,7 +37,7 @@
   },
   {
     "level": "category",
-    "file": "dehydrated.html"
+    "file": "dehydrated-products.html"
   },
   {
     "level": "category",
